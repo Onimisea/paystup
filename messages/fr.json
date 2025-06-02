@@ -1,0 +1,90 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Envoyez de l'argent dans le monde entier avec",
+      "brand": "Paystup",
+      "subtitle": "La façon intelligente de transférer de l'argent à l'international en utilisant les paiements locaux",
+      "description": "Évitez les frais bancaires internationaux coûteux. Notre plateforme peer-to-peer vous connecte aux réseaux de paiement locaux dans les pays expéditeur et destinataire.",
+      "cta": {
+        "primary": "Commencer à envoyer de l'argent",
+        "secondary": "Découvrir comment ça marche"
+      }
+    },
+    "navigation": {
+      "sendMoney": "Envoyer de l'argent",
+      "receiveMoney": "Recevoir de l'argent",
+      "howItWorks": "Comment ça marche",
+      "pricing": "Tarifs",
+      "support": "Support",
+      "login": "Connexion",
+      "signup": "Commencer"
+    },
+    "features": {
+      "title": "Pourquoi choisir Paystup ?",
+      "items": {
+        "lowFees": {
+          "title": "Frais réduits",
+          "description": "Économisez jusqu'à 90% sur les frais de transfert par rapport aux banques traditionnelles"
+        },
+        "fastTransfers": {
+          "title": "Transferts rapides",
+          "description": "L'argent arrive en quelques minutes, pas en jours"
+        },
+        "secure": {
+          "title": "Sécurité bancaire",
+          "description": "Votre argent et vos données sont protégés par une sécurité de niveau entreprise"
+        },
+        "global": {
+          "title": "Portée mondiale",
+          "description": "Envoyez de l'argent dans plus de 50 pays dans le monde"
+        }
+      }
+    }
+  },
+  "Common": {
+    "footer": {
+      "privacyPolicy": "Politique de confidentialité",
+      "language": "Langue"
+    },
+    "languages": {
+      "en": "English",
+      "fr": "Français",
+      "pt": "Português", 
+      "ar": "العربية",
+      "sw": "Kiswahili"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "Bon retour",
+      "subtitle": "Connectez-vous à votre compte Paystup",
+      "email": "Email",
+      "password": "Mot de passe",
+      "rememberMe": "Se souvenir de moi",
+      "forgotPassword": "Mot de passe oublié ?",
+      "signIn": "Se connecter",
+      "noAccount": "Vous n'avez pas de compte ?",
+      "signUp": "S'inscrire",
+      "backToHome": "Retour à l'accueil",
+      "trustIndicator": "Protégé par une sécurité de niveau bancaire"
+    },
+    "signup": {
+      "title": "Créez votre compte",
+      "subtitle": "Rejoignez des milliers de personnes qui envoient de l'argent dans le monde",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmer le mot de passe",
+      "agreeToTerms": "J'accepte les",
+      "termsOfService": "Conditions d'utilisation",
+      "and": "et la",
+      "privacyPolicy": "Politique de confidentialité",
+      "createAccount": "Créer un compte",
+      "haveAccount": "Vous avez déjà un compte ?",
+      "signIn": "Se connecter",
+      "backToHome": "Retour à l'accueil",
+      "trustIndicator": "Vos données sont protégées par un chiffrement de niveau bancaire"
+    }
+  }
+}

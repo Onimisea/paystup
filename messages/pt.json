@@ -1,0 +1,90 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Envie dinheiro globalmente com",
+      "brand": "Paystup",
+      "subtitle": "A forma inteligente de transferir dinheiro internacionalmente usando pagamentos locais",
+      "description": "Evite taxas bancárias internacionais caras. Nossa plataforma peer-to-peer conecta você às redes de pagamento locais nos países remetente e destinatário.",
+      "cta": {
+        "primary": "Começar a enviar dinheiro",
+        "secondary": "Saiba como funciona"
+      }
+    },
+    "navigation": {
+      "sendMoney": "Enviar dinheiro",
+      "receiveMoney": "Receber dinheiro",
+      "howItWorks": "Como funciona",
+      "pricing": "Preços",
+      "support": "Suporte",
+      "login": "Entrar",
+      "signup": "Começar"
+    },
+    "features": {
+      "title": "Por que escolher Paystup?",
+      "items": {
+        "lowFees": {
+          "title": "Taxas baixas",
+          "description": "Economize até 90% nas taxas de transferência comparado aos bancos tradicionais"
+        },
+        "fastTransfers": {
+          "title": "Transferências rápidas",
+          "description": "O dinheiro chega em minutos, não em dias"
+        },
+        "secure": {
+          "title": "Segurança bancária",
+          "description": "Seu dinheiro e dados são protegidos com segurança de nível empresarial"
+        },
+        "global": {
+          "title": "Alcance global",
+          "description": "Envie dinheiro para mais de 50 países ao redor do mundo"
+        }
+      }
+    }
+  },
+  "Common": {
+    "footer": {
+      "privacyPolicy": "Política de Privacidade",
+      "language": "Idioma"
+    },
+    "languages": {
+      "en": "English",
+      "fr": "Français",
+      "pt": "Português", 
+      "ar": "العربية",
+      "sw": "Kiswahili"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "Bem-vindo de volta",
+      "subtitle": "Entre na sua conta Paystup",
+      "email": "Email",
+      "password": "Senha",
+      "rememberMe": "Lembrar de mim",
+      "forgotPassword": "Esqueceu a senha?",
+      "signIn": "Entrar",
+      "noAccount": "Não tem uma conta?",
+      "signUp": "Cadastre-se",
+      "backToHome": "Voltar ao início",
+      "trustIndicator": "Protegido por segurança de nível bancário"
+    },
+    "signup": {
+      "title": "Crie sua conta",
+      "subtitle": "Junte-se a milhares enviando dinheiro globalmente",
+      "firstName": "Nome",
+      "lastName": "Sobrenome",
+      "email": "Email",
+      "password": "Senha",
+      "confirmPassword": "Confirmar senha",
+      "agreeToTerms": "Eu concordo com os",
+      "termsOfService": "Termos de Serviço",
+      "and": "e",
+      "privacyPolicy": "Política de Privacidade",
+      "createAccount": "Criar conta",
+      "haveAccount": "Já tem uma conta?",
+      "signIn": "Entrar",
+      "backToHome": "Voltar ao início",
+      "trustIndicator": "Seus dados são protegidos com criptografia de nível bancário"
+    }
+  }
+}

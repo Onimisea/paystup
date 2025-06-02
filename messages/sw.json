@@ -1,0 +1,90 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Tuma pesa duniani kote na",
+      "brand": "Paystup",
+      "subtitle": "Njia mahiri ya kuhamisha pesa kimataifa kwa kutumia malipo ya ndani",
+      "description": "Epuka ada za benki za kimataifa zenye gharama kubwa. Jukwaa letu la rika-kwa-rika linakuunganisha na mitandao ya malipo ya ndani katika nchi za mtumaji na mpokeaji.",
+      "cta": {
+        "primary": "Anza kutuma pesa",
+        "secondary": "Jifunze jinsi inavyofanya kazi"
+      }
+    },
+    "navigation": {
+      "sendMoney": "Tuma pesa",
+      "receiveMoney": "Pokea pesa",
+      "howItWorks": "Jinsi inavyofanya kazi",
+      "pricing": "Bei",
+      "support": "Msaada",
+      "login": "Ingia",
+      "signup": "Anza"
+    },
+    "features": {
+      "title": "Kwa nini uchague Paystup?",
+      "items": {
+        "lowFees": {
+          "title": "Ada za chini",
+          "description": "Okoa hadi 90% ya ada za uhamishaji ikilinganishwa na benki za jadi"
+        },
+        "fastTransfers": {
+          "title": "Uhamishaji wa haraka",
+          "description": "Pesa zinafika kwa dakika, si siku"
+        },
+        "secure": {
+          "title": "Usalama wa kiwango cha benki",
+          "description": "Pesa na data zako zinalindwa na usalama wa kiwango cha makampuni"
+        },
+        "global": {
+          "title": "Ufikio wa kimataifa",
+          "description": "Tuma pesa katika nchi zaidi ya 50 duniani kote"
+        }
+      }
+    }
+  },
+  "Common": {
+    "footer": {
+      "privacyPolicy": "Sera ya Faragha",
+      "language": "Lugha"
+    },
+    "languages": {
+      "en": "English",
+      "fr": "Français",
+      "pt": "Português", 
+      "ar": "العربية",
+      "sw": "Kiswahili"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "Karibu tena",
+      "subtitle": "Ingia kwenye akaunti yako ya Paystup",
+      "email": "Barua pepe",
+      "password": "Nenosiri",
+      "rememberMe": "Nikumbuke",
+      "forgotPassword": "Umesahau nenosiri?",
+      "signIn": "Ingia",
+      "noAccount": "Huna akaunti?",
+      "signUp": "Jisajili",
+      "backToHome": "Rudi nyumbani",
+      "trustIndicator": "Inalindwa na usalama wa kiwango cha benki"
+    },
+    "signup": {
+      "title": "Unda akaunti yako",
+      "subtitle": "Jiunge na maelfu wanaotuma pesa duniani kote",
+      "firstName": "Jina la kwanza",
+      "lastName": "Jina la ukoo",
+      "email": "Barua pepe",
+      "password": "Nenosiri",
+      "confirmPassword": "Thibitisha nenosiri",
+      "agreeToTerms": "Nakubali",
+      "termsOfService": "Masharti ya Huduma",
+      "and": "na",
+      "privacyPolicy": "Sera ya Faragha",
+      "createAccount": "Unda akaunti",
+      "haveAccount": "Una akaunti tayari?",
+      "signIn": "Ingia",
+      "backToHome": "Rudi nyumbani",
+      "trustIndicator": "Data yako inalindwa na usimbaji wa kiwango cha benki"
+    }
+  }
+}

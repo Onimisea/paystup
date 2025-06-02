@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1500" height="1500" viewBox="0 0 1500 1500">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #ff7d7d;
+      }
+
+      .cls-4 {
+        fill: #a24545;
+      }
+
+      .cls-5 {
+        fill: #705353;
+      }
+
+      .cls-6 {
+        fill: #eb0d0d;
+      }
+
+      .cls-7 {
+        fill: #c52ad7;
+      }
+
+      .cls-8 {
+        fill: #f5a0ff;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3_copy_5" data-name="Group 3 copy 5" class="cls-1">
+    <path class="cls-2" d="M617.774,571.2h90.154v90.154H617.774V571.2Z"/>
+    <path id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-3" d="M704.923,571.2h90.154v90.154H704.923V571.2Z"/>
+    <path id="Rectangle_1_copy_2" data-name="Rectangle 1 copy 2" class="cls-4" d="M795.077,571.2h90.154v90.154H795.077V571.2Z"/>
+    <path id="Rectangle_1_copy_3" data-name="Rectangle 1 copy 3" class="cls-5" d="M795.077,661.349h90.154V751.5H795.077V661.349Z"/>
+    <path id="Rectangle_1_copy_4" data-name="Rectangle 1 copy 4" class="cls-6" d="M795.077,748.5h90.154v90.154H795.077V748.5Z"/>
+    <path id="Rectangle_1_copy_5" data-name="Rectangle 1 copy 5" class="cls-7" d="M704.923,748.5h90.154v90.154H704.923V748.5Z"/>
+    <path id="Rectangle_1_copy_6" data-name="Rectangle 1 copy 6" class="cls-8" d="M614.769,838.651h90.154v90.154H614.769V838.651Z"/>
+  </g>
+</svg>

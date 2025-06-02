@@ -1,0 +1,123 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Send Money Globally with",
+      "brand": "Paystup",
+      "subtitle": "The smart way to transfer money internationally using local payments",
+      "description": "Skip expensive international banking fees. Our peer-to-peer platform connects you with local payment networks in both sender and receiver countries.",
+      "cta": {
+        "primary": "Start Sending Money",
+        "secondary": "Learn How It Works"
+      }
+    },
+    "navigation": {
+      "sendMoney": "Send Money",
+      "receiveMoney": "Receive Money",
+      "howItWorks": "How It Works",
+      "pricing": "Pricing",
+      "support": "Support",
+      "login": "Login",
+      "signup": "Get Started"
+    },
+    "features": {
+      "title": "Why Choose Paystup?",
+      "items": {
+        "lowFees": {
+          "title": "Low Fees",
+          "description": "Save up to 90% on transfer fees compared to traditional banks"
+        },
+        "fastTransfers": {
+          "title": "Fast Transfers",
+          "description": "Money arrives in minutes, not days"
+        },
+        "secure": {
+          "title": "Bank-Level Security",
+          "description": "Your money and data are protected with enterprise-grade security"
+        },
+        "global": {
+          "title": "Global Reach",
+          "description": "Send money to over 50 countries worldwide"
+        }
+      }
+    }
+  },
+  "Common": {
+    "footer": {
+      "privacyPolicy": "Privacy Policy",
+      "language": "Language"
+    },
+    "languages": {
+      "en": "English",
+      "fr": "Français",
+      "pt": "Português",
+      "ar": "العربية",
+      "sw": "Kiswahili"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "Welcome back",
+      "subtitle": "Sign in to your Paystup account",
+      "email": "Email",
+      "password": "Password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "signIn": "Sign In",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "backToHome": "Back to Home",
+      "trustIndicator": "Protected by bank-level security"
+    },
+    "signup": {
+      "title": "Create your account",
+      "subtitle": "Join thousands sending money globally",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "country": "Country",
+      "agreeToTerms": "I agree to the",
+      "termsOfService": "Terms of Service",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy",
+      "createAccount": "Create Account",
+      "continueWithEmail": "Continue with Email",
+      "continueWithGoogle": "Continue with Google",
+      "continueWithApple": "Continue with Apple",
+      "orContinueWith": "Or continue with",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "backToHome": "Back to Home",
+      "trustIndicator": "Your data is protected with bank-level encryption",
+      "steps": {
+        "email": {
+          "title": "Enter your email",
+          "subtitle": "We'll send you a verification code",
+          "continue": "Continue",
+          "emailPlaceholder": "Enter your email address"
+        },
+        "verification": {
+          "title": "Verify your email",
+          "subtitle": "Enter the 6-digit code sent to",
+          "continue": "Verify",
+          "resend": "Resend code",
+          "codePlaceholder": "Enter verification code"
+        },
+        "password": {
+          "title": "Create a password",
+          "subtitle": "Choose a strong password for your account",
+          "continue": "Continue",
+          "passwordPlaceholder": "Create a strong password",
+          "confirmPlaceholder": "Confirm your password"
+        },
+        "country": {
+          "title": "Select your country",
+          "subtitle": "This helps us provide better service",
+          "continue": "Complete Signup",
+          "countryPlaceholder": "Select your country"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,343 @@
+export interface Country {
+  code: string;
+  name: string;
+  flag: string;
+}
+
+export interface Bank {
+  id: string;
+  name: string;
+  code?: string;
+  countryCode: string;
+}
+
+export const countries: Country[] = [
+  { code: "NG", name: "Nigeria", flag: "🇳🇬" },
+  { code: "US", name: "United States", flag: "🇺🇸" },
+  { code: "GB", name: "United Kingdom", flag: "🇬🇧" },
+  { code: "CA", name: "Canada", flag: "🇨🇦" },
+  { code: "AU", name: "Australia", flag: "🇦🇺" },
+  { code: "DE", name: "Germany", flag: "🇩🇪" },
+  { code: "FR", name: "France", flag: "🇫🇷" },
+  { code: "IT", name: "Italy", flag: "🇮🇹" },
+  { code: "ES", name: "Spain", flag: "🇪🇸" },
+  { code: "NL", name: "Netherlands", flag: "🇳🇱" },
+  { code: "BE", name: "Belgium", flag: "🇧🇪" },
+  { code: "CH", name: "Switzerland", flag: "🇨🇭" },
+  { code: "AT", name: "Austria", flag: "🇦🇹" },
+  { code: "SE", name: "Sweden", flag: "🇸🇪" },
+  { code: "NO", name: "Norway", flag: "🇳🇴" },
+  { code: "DK", name: "Denmark", flag: "🇩🇰" },
+  { code: "FI", name: "Finland", flag: "🇫🇮" },
+  { code: "IE", name: "Ireland", flag: "🇮🇪" },
+  { code: "PT", name: "Portugal", flag: "🇵🇹" },
+  { code: "GR", name: "Greece", flag: "🇬🇷" },
+  { code: "PL", name: "Poland", flag: "🇵🇱" },
+  { code: "CZ", name: "Czech Republic", flag: "🇨🇿" },
+  { code: "HU", name: "Hungary", flag: "🇭🇺" },
+  { code: "SK", name: "Slovakia", flag: "🇸🇰" },
+  { code: "SI", name: "Slovenia", flag: "🇸🇮" },
+  { code: "HR", name: "Croatia", flag: "🇭🇷" },
+  { code: "BG", name: "Bulgaria", flag: "🇧🇬" },
+  { code: "RO", name: "Romania", flag: "🇷🇴" },
+  { code: "EE", name: "Estonia", flag: "🇪🇪" },
+  { code: "LV", name: "Latvia", flag: "🇱🇻" },
+  { code: "LT", name: "Lithuania", flag: "🇱🇹" },
+  { code: "LU", name: "Luxembourg", flag: "🇱🇺" },
+  { code: "MT", name: "Malta", flag: "🇲🇹" },
+  { code: "CY", name: "Cyprus", flag: "🇨🇾" },
+  { code: "JP", name: "Japan", flag: "🇯🇵" },
+  { code: "KR", name: "South Korea", flag: "🇰🇷" },
+  { code: "CN", name: "China", flag: "🇨🇳" },
+  { code: "IN", name: "India", flag: "🇮🇳" },
+  { code: "SG", name: "Singapore", flag: "🇸🇬" },
+  { code: "HK", name: "Hong Kong", flag: "🇭🇰" },
+  { code: "MY", name: "Malaysia", flag: "🇲🇾" },
+  { code: "TH", name: "Thailand", flag: "🇹🇭" },
+  { code: "ID", name: "Indonesia", flag: "🇮🇩" },
+  { code: "PH", name: "Philippines", flag: "🇵🇭" },
+  { code: "VN", name: "Vietnam", flag: "🇻🇳" },
+  { code: "BD", name: "Bangladesh", flag: "🇧🇩" },
+  { code: "PK", name: "Pakistan", flag: "🇵🇰" },
+  { code: "LK", name: "Sri Lanka", flag: "🇱🇰" },
+  { code: "NP", name: "Nepal", flag: "🇳🇵" },
+  { code: "MM", name: "Myanmar", flag: "🇲🇲" },
+  { code: "KH", name: "Cambodia", flag: "🇰🇭" },
+  { code: "LA", name: "Laos", flag: "🇱🇦" },
+  { code: "BN", name: "Brunei", flag: "🇧🇳" },
+  { code: "MV", name: "Maldives", flag: "🇲🇻" },
+  { code: "BT", name: "Bhutan", flag: "🇧🇹" },
+  { code: "MN", name: "Mongolia", flag: "🇲🇳" },
+  { code: "KZ", name: "Kazakhstan", flag: "🇰🇿" },
+  { code: "UZ", name: "Uzbekistan", flag: "🇺🇿" },
+  { code: "KG", name: "Kyrgyzstan", flag: "🇰🇬" },
+  { code: "TJ", name: "Tajikistan", flag: "🇹🇯" },
+  { code: "TM", name: "Turkmenistan", flag: "🇹🇲" },
+  { code: "AF", name: "Afghanistan", flag: "🇦🇫" },
+  { code: "IR", name: "Iran", flag: "🇮🇷" },
+  { code: "IQ", name: "Iraq", flag: "🇮🇶" },
+  { code: "SA", name: "Saudi Arabia", flag: "🇸🇦" },
+  { code: "AE", name: "United Arab Emirates", flag: "🇦🇪" },
+  { code: "QA", name: "Qatar", flag: "🇶🇦" },
+  { code: "KW", name: "Kuwait", flag: "🇰🇼" },
+  { code: "BH", name: "Bahrain", flag: "🇧🇭" },
+  { code: "OM", name: "Oman", flag: "🇴🇲" },
+  { code: "YE", name: "Yemen", flag: "🇾🇪" },
+  { code: "JO", name: "Jordan", flag: "🇯🇴" },
+  { code: "LB", name: "Lebanon", flag: "🇱🇧" },
+  { code: "SY", name: "Syria", flag: "🇸🇾" },
+  { code: "IL", name: "Israel", flag: "🇮🇱" },
+  { code: "PS", name: "Palestine", flag: "🇵🇸" },
+  { code: "TR", name: "Turkey", flag: "🇹🇷" },
+  { code: "GE", name: "Georgia", flag: "🇬🇪" },
+  { code: "AM", name: "Armenia", flag: "🇦🇲" },
+  { code: "AZ", name: "Azerbaijan", flag: "🇦🇿" },
+  { code: "RU", name: "Russia", flag: "🇷🇺" },
+  { code: "UA", name: "Ukraine", flag: "🇺🇦" },
+  { code: "BY", name: "Belarus", flag: "🇧🇾" },
+  { code: "MD", name: "Moldova", flag: "🇲🇩" },
+  { code: "RS", name: "Serbia", flag: "🇷🇸" },
+  { code: "ME", name: "Montenegro", flag: "🇲🇪" },
+  { code: "BA", name: "Bosnia and Herzegovina", flag: "🇧🇦" },
+  { code: "MK", name: "North Macedonia", flag: "🇲🇰" },
+  { code: "AL", name: "Albania", flag: "🇦🇱" },
+  { code: "XK", name: "Kosovo", flag: "🇽🇰" },
+  { code: "IS", name: "Iceland", flag: "🇮🇸" },
+  { code: "GL", name: "Greenland", flag: "🇬🇱" },
+  { code: "FO", name: "Faroe Islands", flag: "🇫🇴" },
+  { code: "BR", name: "Brazil", flag: "🇧🇷" },
+  { code: "AR", name: "Argentina", flag: "🇦🇷" },
+  { code: "CL", name: "Chile", flag: "🇨🇱" },
+  { code: "PE", name: "Peru", flag: "🇵🇪" },
+  { code: "CO", name: "Colombia", flag: "🇨🇴" },
+  { code: "VE", name: "Venezuela", flag: "🇻🇪" },
+  { code: "EC", name: "Ecuador", flag: "🇪🇨" },
+  { code: "BO", name: "Bolivia", flag: "🇧🇴" },
+  { code: "PY", name: "Paraguay", flag: "🇵🇾" },
+  { code: "UY", name: "Uruguay", flag: "🇺🇾" },
+  { code: "GY", name: "Guyana", flag: "🇬🇾" },
+  { code: "SR", name: "Suriname", flag: "🇸🇷" },
+  { code: "GF", name: "French Guiana", flag: "🇬🇫" },
+  { code: "FK", name: "Falkland Islands", flag: "🇫🇰" },
+  { code: "MX", name: "Mexico", flag: "🇲🇽" },
+  { code: "GT", name: "Guatemala", flag: "🇬🇹" },
+  { code: "BZ", name: "Belize", flag: "🇧🇿" },
+  { code: "SV", name: "El Salvador", flag: "🇸🇻" },
+  { code: "HN", name: "Honduras", flag: "🇭🇳" },
+  { code: "NI", name: "Nicaragua", flag: "🇳🇮" },
+  { code: "CR", name: "Costa Rica", flag: "🇨🇷" },
+  { code: "PA", name: "Panama", flag: "🇵🇦" },
+  { code: "CU", name: "Cuba", flag: "🇨🇺" },
+  { code: "JM", name: "Jamaica", flag: "🇯🇲" },
+  { code: "HT", name: "Haiti", flag: "🇭🇹" },
+  { code: "DO", name: "Dominican Republic", flag: "🇩🇴" },
+  { code: "PR", name: "Puerto Rico", flag: "🇵🇷" },
+  { code: "TT", name: "Trinidad and Tobago", flag: "🇹🇹" },
+  { code: "BB", name: "Barbados", flag: "🇧🇧" },
+  { code: "GD", name: "Grenada", flag: "🇬🇩" },
+  { code: "LC", name: "Saint Lucia", flag: "🇱🇨" },
+  { code: "VC", name: "Saint Vincent and the Grenadines", flag: "🇻🇨" },
+  { code: "AG", name: "Antigua and Barbuda", flag: "🇦🇬" },
+  { code: "DM", name: "Dominica", flag: "🇩🇲" },
+  { code: "KN", name: "Saint Kitts and Nevis", flag: "🇰🇳" },
+  { code: "BS", name: "Bahamas", flag: "🇧🇸" },
+  { code: "EG", name: "Egypt", flag: "🇪🇬" },
+  { code: "LY", name: "Libya", flag: "🇱🇾" },
+  { code: "TN", name: "Tunisia", flag: "🇹🇳" },
+  { code: "DZ", name: "Algeria", flag: "🇩🇿" },
+  { code: "MA", name: "Morocco", flag: "🇲🇦" },
+  { code: "SD", name: "Sudan", flag: "🇸🇩" },
+  { code: "SS", name: "South Sudan", flag: "🇸🇸" },
+  { code: "ET", name: "Ethiopia", flag: "🇪🇹" },
+  { code: "ER", name: "Eritrea", flag: "🇪🇷" },
+  { code: "DJ", name: "Djibouti", flag: "🇩🇯" },
+  { code: "SO", name: "Somalia", flag: "🇸🇴" },
+  { code: "KE", name: "Kenya", flag: "🇰🇪" },
+  { code: "UG", name: "Uganda", flag: "🇺🇬" },
+  { code: "TZ", name: "Tanzania", flag: "🇹🇿" },
+  { code: "RW", name: "Rwanda", flag: "🇷🇼" },
+  { code: "BI", name: "Burundi", flag: "🇧🇮" },
+  { code: "MW", name: "Malawi", flag: "🇲🇼" },
+  { code: "ZM", name: "Zambia", flag: "🇿🇲" },
+  { code: "ZW", name: "Zimbabwe", flag: "🇿🇼" },
+  { code: "BW", name: "Botswana", flag: "🇧🇼" },
+  { code: "NA", name: "Namibia", flag: "🇳🇦" },
+  { code: "ZA", name: "South Africa", flag: "🇿🇦" },
+  { code: "LS", name: "Lesotho", flag: "🇱🇸" },
+  { code: "SZ", name: "Eswatini", flag: "🇸🇿" },
+  { code: "MZ", name: "Mozambique", flag: "🇲🇿" },
+  { code: "MG", name: "Madagascar", flag: "🇲🇬" },
+  { code: "MU", name: "Mauritius", flag: "🇲🇺" },
+  { code: "SC", name: "Seychelles", flag: "🇸🇨" },
+  { code: "KM", name: "Comoros", flag: "🇰🇲" },
+  { code: "YT", name: "Mayotte", flag: "🇾🇹" },
+  { code: "RE", name: "Réunion", flag: "🇷🇪" },
+  { code: "AO", name: "Angola", flag: "🇦🇴" },
+  { code: "CD", name: "Democratic Republic of the Congo", flag: "🇨🇩" },
+  { code: "CG", name: "Republic of the Congo", flag: "🇨🇬" },
+  { code: "CF", name: "Central African Republic", flag: "🇨🇫" },
+  { code: "CM", name: "Cameroon", flag: "🇨🇲" },
+  { code: "GQ", name: "Equatorial Guinea", flag: "🇬🇶" },
+  { code: "GA", name: "Gabon", flag: "🇬🇦" },
+  { code: "ST", name: "São Tomé and Príncipe", flag: "🇸🇹" },
+  { code: "TD", name: "Chad", flag: "🇹🇩" },
+  { code: "NE", name: "Niger", flag: "🇳🇪" },
+  { code: "BF", name: "Burkina Faso", flag: "🇧🇫" },
+  { code: "ML", name: "Mali", flag: "🇲🇱" },
+  { code: "SN", name: "Senegal", flag: "🇸🇳" },
+  { code: "MR", name: "Mauritania", flag: "🇲🇷" },
+  { code: "GM", name: "Gambia", flag: "🇬🇲" },
+  { code: "GW", name: "Guinea-Bissau", flag: "🇬🇼" },
+  { code: "GN", name: "Guinea", flag: "🇬🇳" },
+  { code: "SL", name: "Sierra Leone", flag: "🇸🇱" },
+  { code: "LR", name: "Liberia", flag: "🇱🇷" },
+  { code: "CI", name: "Côte d'Ivoire", flag: "🇨🇮" },
+  { code: "GH", name: "Ghana", flag: "🇬🇭" },
+  { code: "TG", name: "Togo", flag: "🇹🇬" },
+  { code: "BJ", name: "Benin", flag: "🇧🇯" },
+  { code: "CV", name: "Cape Verde", flag: "🇨🇻" },
+  { code: "NZ", name: "New Zealand", flag: "🇳🇿" },
+  { code: "FJ", name: "Fiji", flag: "🇫🇯" },
+  { code: "PG", name: "Papua New Guinea", flag: "🇵🇬" },
+  { code: "SB", name: "Solomon Islands", flag: "🇸🇧" },
+  { code: "VU", name: "Vanuatu", flag: "🇻🇺" },
+  { code: "NC", name: "New Caledonia", flag: "🇳🇨" },
+  { code: "PF", name: "French Polynesia", flag: "🇵🇫" },
+  { code: "WS", name: "Samoa", flag: "🇼🇸" },
+  { code: "TO", name: "Tonga", flag: "🇹🇴" },
+  { code: "TV", name: "Tuvalu", flag: "🇹🇻" },
+  { code: "KI", name: "Kiribati", flag: "🇰🇮" },
+  { code: "NR", name: "Nauru", flag: "🇳🇷" },
+  { code: "PW", name: "Palau", flag: "🇵🇼" },
+  { code: "FM", name: "Micronesia", flag: "🇫🇲" },
+  { code: "MH", name: "Marshall Islands", flag: "🇲🇭" },
+  { code: "CK", name: "Cook Islands", flag: "🇨🇰" },
+  { code: "NU", name: "Niue", flag: "🇳🇺" },
+  { code: "TK", name: "Tokelau", flag: "🇹🇰" },
+  { code: "WF", name: "Wallis and Futuna", flag: "🇼🇫" },
+];
+
+export const banks: Bank[] = [
+  // Nigeria
+  { id: "ng-access", name: "Access Bank", countryCode: "NG" },
+  { id: "ng-gtb", name: "Guaranty Trust Bank", countryCode: "NG" },
+  { id: "ng-zenith", name: "Zenith Bank", countryCode: "NG" },
+  { id: "ng-first", name: "First Bank of Nigeria", countryCode: "NG" },
+  { id: "ng-uba", name: "United Bank for Africa", countryCode: "NG" },
+  { id: "ng-fidelity", name: "Fidelity Bank", countryCode: "NG" },
+  { id: "ng-fcmb", name: "First City Monument Bank", countryCode: "NG" },
+  { id: "ng-union", name: "Union Bank of Nigeria", countryCode: "NG" },
+  { id: "ng-sterling", name: "Sterling Bank", countryCode: "NG" },
+  { id: "ng-wema", name: "Wema Bank", countryCode: "NG" },
+  { id: "ng-polaris", name: "Polaris Bank", countryCode: "NG" },
+  { id: "ng-stanbic", name: "Stanbic IBTC Bank", countryCode: "NG" },
+  { id: "ng-ecobank", name: "Ecobank Nigeria", countryCode: "NG" },
+  { id: "ng-heritage", name: "Heritage Bank", countryCode: "NG" },
+  { id: "ng-keystone", name: "Keystone Bank", countryCode: "NG" },
+
+  // United States
+  { id: "us-chase", name: "JPMorgan Chase Bank", countryCode: "US" },
+  { id: "us-boa", name: "Bank of America", countryCode: "US" },
+  { id: "us-wells", name: "Wells Fargo", countryCode: "US" },
+  { id: "us-citi", name: "Citibank", countryCode: "US" },
+  { id: "us-goldman", name: "Goldman Sachs Bank", countryCode: "US" },
+  { id: "us-morgan", name: "Morgan Stanley Bank", countryCode: "US" },
+  { id: "us-pnc", name: "PNC Bank", countryCode: "US" },
+  { id: "us-truist", name: "Truist Bank", countryCode: "US" },
+  { id: "us-td", name: "TD Bank", countryCode: "US" },
+  { id: "us-capital", name: "Capital One Bank", countryCode: "US" },
+
+  // United Kingdom
+  { id: "gb-barclays", name: "Barclays", countryCode: "GB" },
+  { id: "gb-hsbc", name: "HSBC UK", countryCode: "GB" },
+  { id: "gb-lloyds", name: "Lloyds Bank", countryCode: "GB" },
+  { id: "gb-natwest", name: "NatWest", countryCode: "GB" },
+  { id: "gb-santander", name: "Santander UK", countryCode: "GB" },
+  { id: "gb-rbs", name: "Royal Bank of Scotland", countryCode: "GB" },
+  { id: "gb-halifax", name: "Halifax", countryCode: "GB" },
+  { id: "gb-nationwide", name: "Nationwide Building Society", countryCode: "GB" },
+  { id: "gb-tesco", name: "Tesco Bank", countryCode: "GB" },
+  { id: "gb-metro", name: "Metro Bank", countryCode: "GB" },
+
+  // Canada
+  { id: "ca-rbc", name: "Royal Bank of Canada", countryCode: "CA" },
+  { id: "ca-td", name: "TD Canada Trust", countryCode: "CA" },
+  { id: "ca-scotiabank", name: "Scotiabank", countryCode: "CA" },
+  { id: "ca-bmo", name: "Bank of Montreal", countryCode: "CA" },
+  { id: "ca-cibc", name: "Canadian Imperial Bank of Commerce", countryCode: "CA" },
+  { id: "ca-national", name: "National Bank of Canada", countryCode: "CA" },
+  { id: "ca-hsbc", name: "HSBC Bank Canada", countryCode: "CA" },
+  { id: "ca-desjardins", name: "Desjardins Group", countryCode: "CA" },
+
+  // India
+  { id: "in-sbi", name: "State Bank of India", countryCode: "IN" },
+  { id: "in-hdfc", name: "HDFC Bank", countryCode: "IN" },
+  { id: "in-icici", name: "ICICI Bank", countryCode: "IN" },
+  { id: "in-axis", name: "Axis Bank", countryCode: "IN" },
+  { id: "in-kotak", name: "Kotak Mahindra Bank", countryCode: "IN" },
+  { id: "in-pnb", name: "Punjab National Bank", countryCode: "IN" },
+  { id: "in-bob", name: "Bank of Baroda", countryCode: "IN" },
+  { id: "in-canara", name: "Canara Bank", countryCode: "IN" },
+  { id: "in-union", name: "Union Bank of India", countryCode: "IN" },
+  { id: "in-yes", name: "Yes Bank", countryCode: "IN" },
+
+  // Germany
+  { id: "de-deutsche", name: "Deutsche Bank", countryCode: "DE" },
+  { id: "de-commerzbank", name: "Commerzbank", countryCode: "DE" },
+  { id: "de-unicredit", name: "UniCredit Bank", countryCode: "DE" },
+  { id: "de-dz", name: "DZ Bank", countryCode: "DE" },
+  { id: "de-kfw", name: "KfW", countryCode: "DE" },
+  { id: "de-ing", name: "ING-DiBa", countryCode: "DE" },
+  { id: "de-postbank", name: "Deutsche Postbank", countryCode: "DE" },
+
+  // France
+  { id: "fr-bnp", name: "BNP Paribas", countryCode: "FR" },
+  { id: "fr-credit-agricole", name: "Crédit Agricole", countryCode: "FR" },
+  { id: "fr-societe-generale", name: "Société Générale", countryCode: "FR" },
+  { id: "fr-credit-mutuel", name: "Crédit Mutuel", countryCode: "FR" },
+  { id: "fr-banque-populaire", name: "Banque Populaire", countryCode: "FR" },
+  { id: "fr-caisse-epargne", name: "Caisse d'Épargne", countryCode: "FR" },
+  { id: "fr-lcl", name: "LCL", countryCode: "FR" },
+
+  // Australia
+  { id: "au-cba", name: "Commonwealth Bank", countryCode: "AU" },
+  { id: "au-westpac", name: "Westpac", countryCode: "AU" },
+  { id: "au-anz", name: "ANZ Bank", countryCode: "AU" },
+  { id: "au-nab", name: "National Australia Bank", countryCode: "AU" },
+  { id: "au-macquarie", name: "Macquarie Bank", countryCode: "AU" },
+  { id: "au-bendigo", name: "Bendigo Bank", countryCode: "AU" },
+
+  // Add more banks for other countries as needed
+];
+
+export function getCountryByCode(code: string): Country | undefined {
+  return countries.find((country) => country.code === code);
+}
+
+export function searchCountries(query: string): Country[] {
+  const lowercaseQuery = query.toLowerCase();
+  return countries.filter(
+    (country) =>
+      country.code.toLowerCase().includes(lowercaseQuery) ||
+      country.name.toLowerCase().includes(lowercaseQuery)
+  );
+}
+
+export function getBanksByCountry(countryCode: string): Bank[] {
+  return banks.filter((bank) => bank.countryCode === countryCode);
+}
+
+export function searchBanks(query: string, countryCode?: string): Bank[] {
+  const lowercaseQuery = query.toLowerCase();
+  let filteredBanks = banks;
+  
+  if (countryCode) {
+    filteredBanks = banks.filter((bank) => bank.countryCode === countryCode);
+  }
+  
+  return filteredBanks.filter(
+    (bank) =>
+      bank.name.toLowerCase().includes(lowercaseQuery) ||
+      (bank.code && bank.code.toLowerCase().includes(lowercaseQuery))
+  );
+}
