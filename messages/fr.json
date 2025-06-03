@@ -49,9 +49,35 @@
     "languages": {
       "en": "English",
       "fr": "Français",
-      "pt": "Português", 
+      "pt": "Português",
       "ar": "العربية",
-      "sw": "Kiswahili"
+      "sw": "Kiswahili",
+      "hi": "हिन्दी",
+      "zh-CN": "中文",
+      "ur": "اردو",
+      "bn": "বাংলা",
+      "id": "Bahasa Indonesia",
+      "pa": "ਪੰਜਾਬੀ",
+      "ja": "日本語",
+      "vi": "Tiếng Việt",
+      "mr": "मराठी"
+    },
+    "buttons": {
+      "back": "Retour",
+      "next": "Suivant",
+      "continue": "Continuer",
+      "cancel": "Annuler",
+      "save": "Enregistrer",
+      "submit": "Soumettre",
+      "retry": "Réessayer",
+      "close": "Fermer"
+    },
+    "form": {
+      "required": "Ce champ est obligatoire",
+      "invalidEmail": "Veuillez saisir une adresse email valide",
+      "passwordTooShort": "Le mot de passe doit contenir au moins 8 caractères",
+      "passwordsDoNotMatch": "Les mots de passe ne correspondent pas",
+      "pleaseSelect": "Veuillez sélectionner une option"
     }
   },
   "Auth": {
@@ -85,6 +111,153 @@
       "signIn": "Se connecter",
       "backToHome": "Retour à l'accueil",
       "trustIndicator": "Vos données sont protégées par un chiffrement de niveau bancaire"
+    }
+  },
+  "Dashboard": {
+    "title": "Accueil",
+    "welcome": "Bon retour",
+    "actions": {
+      "send": "Envoyer",
+      "convert": "Convertir",
+      "receive": "Recevoir"
+    },
+    "transactions": {
+      "title": "Transactions",
+      "seeAll": "Voir tout",
+      "noTransactions": "Aucune transaction pour le moment",
+      "types": {
+        "send": "Argent envoyé",
+        "receive": "Argent reçu",
+        "convert": "Devise convertie",
+        "failed": "Transaction échouée"
+      }
+    },
+    "kyc": {
+      "completeProfile": "Complétez votre profil",
+      "completeProfileDesc": "Sécurisez votre compte et débloquez l'accès complet en complétant votre KYC.",
+      "completeProfileBtn": "Compléter le profil",
+      "profileVerified": "Profil Vérifié",
+      "profileVerifiedDesc": "Votre identité a été vérifiée avec succès. Vous avez maintenant un accès complet à toutes les fonctionnalités Paystup.",
+      "verificationComplete": "✓ Vérification d'identité terminée"
+    },
+    "referral": {
+      "title": "Parrainer un ami",
+      "description": "Invitez vos amis et gagnez des récompenses lorsqu'ils effectuent leur premier transfert. C'est gagnant-gagnant !",
+      "button": "Bientôt disponible !"
+    },
+    "exchangeRate": {
+      "title": "Taux de change",
+      "today": "Aujourd'hui",
+      "viewRates": "Voir les taux"
+    }
+  },
+  "Transactions": {
+    "title": "Transactions",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "noTransactions": "Aucune transaction trouvée",
+    "tryAdjusting": "Essayez d'ajuster votre recherche ou vos filtres",
+    "willAppearHere": "Vos transactions apparaîtront ici",
+    "loading": "Chargement...",
+    "today": "Aujourd'hui",
+    "yesterday": "Hier",
+    "reference": "Réf",
+    "status": {
+      "successful": "Réussie",
+      "pending": "En attente",
+      "unsuccessful": "Échouée"
+    },
+    "types": {
+      "send": "Envoyé",
+      "receive": "Reçu",
+      "conversion": "Déplacé",
+      "transaction": "Transaction"
+    },
+    "filters": {
+      "title": "Filtrer les transactions",
+      "status": "Statut",
+      "type": "Type",
+      "currency": "Devise",
+      "dateRange": "Plage de dates",
+      "amount": "Montant",
+      "minAmount": "Montant minimum",
+      "maxAmount": "Montant maximum",
+      "clearAll": "Tout effacer",
+      "applyFilters": "Appliquer les filtres",
+      "statusOptions": {
+        "successful": "Réussie",
+        "pending": "En attente",
+        "unsuccessful": "Échouée"
+      },
+      "typeOptions": {
+        "transfers": "Virements",
+        "cardTransactions": "Transactions par carte",
+        "moneyAdded": "Argent ajouté",
+        "conversions": "Conversions",
+        "cashWithdrawals": "Retraits d'espèces"
+      },
+      "datePresets": {
+        "lastMonth": "Le mois dernier",
+        "lastQuarter": "Le trimestre dernier",
+        "lastYear": "L'année dernière"
+      }
+    }
+  },
+  "Help": {
+    "title": "Besoin d'aide ?",
+    "subtitle": "Recherchez dans notre FAQ ou obtenez un support personnel",
+    "searchPlaceholder": "Dites-nous ce que vous cherchez",
+    "liveChat": {
+      "title": "Chat en direct",
+      "description": "Obtenez un support rapide de notre équipe",
+      "button": "Démarrer un chat"
+    },
+    "email": {
+      "title": "Email",
+      "description": "Envoyez un email à notre équipe de support",
+      "button": "Envoyer un Email"
+    },
+    "categories": {
+      "sendMoney": {
+        "title": "Envoyer de l'Argent",
+        "description": "Apprenez comment envoyer de l'argent dans le monde"
+      },
+      "transferTimes": {
+        "title": "Temps de Transfert",
+        "description": "Comprenez combien de temps prennent les transferts"
+      },
+      "supportedCountries": {
+        "title": "Pays Supportés",
+        "description": "Voir quels pays nous supportons"
+      },
+      "feesAndRates": {
+        "title": "Frais et Taux",
+        "description": "Apprenez notre structure de prix"
+      },
+      "transferDelays": {
+        "title": "Retards de Transfert",
+        "description": "Que faire si votre transfert est retardé"
+      },
+      "security": {
+        "title": "Sécurité",
+        "description": "Comment nous gardons votre argent en sécurité"
+      },
+      "kyc": {
+        "title": "Vérification KYC",
+        "description": "Processus de vérification d'identité"
+      },
+      "accountInfo": {
+        "title": "Informations de Compte",
+        "description": "Gérez les paramètres de votre compte"
+      },
+      "reportProblem": {
+        "title": "Signaler un Problème",
+        "description": "Obtenez de l'aide avec les problèmes"
+      }
+    },
+    "noResults": {
+      "title": "Aucun résultat trouvé",
+      "subtitle": "Essayez d'ajuster vos termes de recherche"
     }
   }
 }

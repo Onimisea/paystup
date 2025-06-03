@@ -1,0 +1,351 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "ਦੁਨੀਆ ਭਰ ਵਿੱਚ ਪੈਸੇ ਭੇਜੋ",
+      "brand": "Paystup",
+      "subtitle": "ਸਥਾਨਕ ਭੁਗਤਾਨਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਅੰਤਰਰਾਸ਼ਟਰੀ ਪੈਸੇ ਟ੍ਰਾਂਸਫਰ ਕਰਨ ਦਾ ਸਮਾਰਟ ਤਰੀਕਾ",
+      "description": "ਮਹਿੰਗੀਆਂ ਅੰਤਰਰਾਸ਼ਟਰੀ ਬੈਂਕਿੰਗ ਫੀਸਾਂ ਤੋਂ ਬਚੋ। ਸਾਡਾ ਪੀਅਰ-ਟੂ-ਪੀਅਰ ਪਲੇਟਫਾਰਮ ਤੁਹਾਨੂੰ ਭੇਜਣ ਵਾਲੇ ਅਤੇ ਪ੍ਰਾਪਤ ਕਰਨ ਵਾਲੇ ਦੋਵਾਂ ਦੇਸ਼ਾਂ ਵਿੱਚ ਸਥਾਨਕ ਭੁਗਤਾਨ ਨੈੱਟਵਰਕਾਂ ਨਾਲ ਜੋੜਦਾ ਹੈ।",
+      "cta": {
+        "primary": "ਪੈਸੇ ਭੇਜਣਾ ਸ਼ੁਰੂ ਕਰੋ",
+        "secondary": "ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ ਜਾਣੋ"
+      }
+    },
+    "navigation": {
+      "sendMoney": "ਪੈਸੇ ਭੇਜੋ",
+      "receiveMoney": "ਪੈਸੇ ਪ੍ਰਾਪਤ ਕਰੋ",
+      "howItWorks": "ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ",
+      "pricing": "ਕੀਮਤ",
+      "support": "ਸਹਾਇਤਾ",
+      "login": "ਲਾਗਇਨ",
+      "signup": "ਸ਼ੁਰੂ ਕਰੋ"
+    },
+    "features": {
+      "title": "Paystup ਕਿਉਂ ਚੁਣੋ?",
+      "items": {
+        "lowFees": {
+          "title": "ਘੱਟ ਫੀਸ",
+          "description": "ਰਵਾਇਤੀ ਬੈਂਕਾਂ ਦੇ ਮੁਕਾਬਲੇ ਟ੍ਰਾਂਸਫਰ ਫੀਸ ਵਿੱਚ 90% ਤੱਕ ਦੀ ਬਚਤ"
+        },
+        "fastTransfers": {
+          "title": "ਤੇਜ਼ ਟ੍ਰਾਂਸਫਰ",
+          "description": "ਪੈਸਾ ਦਿਨਾਂ ਵਿੱਚ ਨਹੀਂ ਬਲਕਿ ਮਿੰਟਾਂ ਵਿੱਚ ਪਹੁੰਚਦਾ ਹੈ"
+        },
+        "secure": {
+          "title": "ਬੈਂਕ-ਪੱਧਰੀ ਸੁਰੱਖਿਆ",
+          "description": "ਤੁਹਾਡਾ ਪੈਸਾ ਅਤੇ ਡੇਟਾ ਐਂਟਰਪ੍ਰਾਈਜ਼-ਗ੍ਰੇਡ ਸੁਰੱਖਿਆ ਨਾਲ ਸੁਰੱਖਿਅਤ ਹੈ"
+        },
+        "global": {
+          "title": "ਗਲੋਬਲ ਪਹੁੰਚ",
+          "description": "ਦੁਨੀਆ ਭਰ ਦੇ 50+ ਦੇਸ਼ਾਂ ਵਿੱਚ ਪੈਸੇ ਭੇਜੋ"
+        }
+      }
+    }
+  },
+  "Common": {
+    "footer": {
+      "privacyPolicy": "ਗੁਪਤਤਾ ਨੀਤੀ",
+      "language": "ਭਾਸ਼ਾ"
+    },
+    "languages": {
+      "en": "English",
+      "fr": "Français",
+      "pt": "Português",
+      "ar": "العربية",
+      "sw": "Kiswahili",
+      "hi": "हिन्दी",
+      "zh-CN": "中文",
+      "ur": "اردو",
+      "bn": "বাংলা",
+      "id": "Bahasa Indonesia",
+      "pa": "ਪੰਜਾਬੀ",
+      "ja": "日本語",
+      "vi": "Tiếng Việt",
+      "mr": "मराठी"
+    },
+    "buttons": {
+      "back": "ਵਾਪਸ",
+      "next": "ਅਗਲਾ",
+      "continue": "ਜਾਰੀ ਰੱਖੋ",
+      "cancel": "ਰੱਦ ਕਰੋ",
+      "save": "ਸੇਵ ਕਰੋ",
+      "submit": "ਜਮ੍ਹਾਂ ਕਰੋ",
+      "retry": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+      "close": "ਬੰਦ ਕਰੋ"
+    },
+    "form": {
+      "required": "ਇਹ ਫੀਲਡ ਲਾਜ਼ਮੀ ਹੈ",
+      "invalidEmail": "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਵੈਧ ਈਮੇਲ ਪਤਾ ਦਰਜ ਕਰੋ",
+      "passwordTooShort": "ਪਾਸਵਰਡ ਘੱਟੋ ਘੱਟ 8 ਅੱਖਰਾਂ ਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ",
+      "passwordsDoNotMatch": "ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ",
+      "pleaseSelect": "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਵਿਕਲਪ ਚੁਣੋ"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "ਵਾਪਸ ਜੀ ਆਇਆਂ ਨੂੰ",
+      "subtitle": "ਆਪਣੇ Paystup ਖਾਤੇ ਵਿੱਚ ਸਾਈਨ ਇਨ ਕਰੋ",
+      "email": "ਈਮੇਲ",
+      "password": "ਪਾਸਵਰਡ",
+      "rememberMe": "ਮੈਨੂੰ ਯਾਦ ਰੱਖੋ",
+      "forgotPassword": "ਪਾਸਵਰਡ ਭੁੱਲ ਗਏ?",
+      "signIn": "ਸਾਈਨ ਇਨ",
+      "noAccount": "ਖਾਤਾ ਨਹੀਂ ਹੈ?",
+      "signUp": "ਸਾਈਨ ਅੱਪ ਕਰੋ",
+      "backToHome": "ਘਰ ਵਾਪਸ ਜਾਓ",
+      "trustIndicator": "ਬੈਂਕ-ਪੱਧਰੀ ਸੁਰੱਖਿਆ ਦੁਆਰਾ ਸੁਰੱਖਿਅਤ"
+    },
+    "signup": {
+      "title": "ਆਪਣਾ ਖਾਤਾ ਬਣਾਓ",
+      "subtitle": "ਦੁਨੀਆ ਭਰ ਵਿੱਚ ਪੈਸੇ ਭੇਜਣ ਵਾਲੇ ਹਜ਼ਾਰਾਂ ਲੋਕਾਂ ਨਾਲ ਜੁੜੋ",
+      "firstName": "ਪਹਿਲਾ ਨਾਮ",
+      "lastName": "ਆਖਰੀ ਨਾਮ",
+      "email": "ਈਮੇਲ",
+      "password": "ਪਾਸਵਰਡ",
+      "confirmPassword": "ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+      "country": "ਦੇਸ਼",
+      "agreeToTerms": "ਮੈਂ ਸਹਿਮਤ ਹਾਂ",
+      "termsOfService": "ਸੇਵਾ ਦੀਆਂ ਸ਼ਰਤਾਂ",
+      "and": "ਅਤੇ",
+      "privacyPolicy": "ਗੁਪਤਤਾ ਨੀਤੀ",
+      "createAccount": "ਖਾਤਾ ਬਣਾਓ",
+      "continueWithEmail": "ਈਮੇਲ ਨਾਲ ਜਾਰੀ ਰੱਖੋ",
+      "continueWithGoogle": "Google ਨਾਲ ਜਾਰੀ ਰੱਖੋ",
+      "continueWithApple": "Apple ਨਾਲ ਜਾਰੀ ਰੱਖੋ",
+      "orContinueWith": "ਜਾਂ ਇਸ ਨਾਲ ਜਾਰੀ ਰੱਖੋ",
+      "haveAccount": "ਪਹਿਲਾਂ ਤੋਂ ਖਾਤਾ ਹੈ?",
+      "signIn": "ਸਾਈਨ ਇਨ ਕਰੋ",
+      "backToHome": "ਘਰ ਵਾਪਸ ਜਾਓ",
+      "trustIndicator": "ਤੁਹਾਡਾ ਡੇਟਾ ਬੈਂਕ-ਪੱਧਰੀ ਐਨਕ੍ਰਿਪਸ਼ਨ ਨਾਲ ਸੁਰੱਖਿਅਤ ਹੈ",
+      "steps": {
+        "email": {
+          "title": "ਆਪਣਾ ਈਮੇਲ ਦਰਜ ਕਰੋ",
+          "subtitle": "ਅਸੀਂ ਤੁਹਾਨੂੰ ਇੱਕ ਤਸਦੀਕੀ ਕੋਡ ਭੇਜਾਂਗੇ",
+          "continue": "ਜਾਰੀ ਰੱਖੋ",
+          "emailPlaceholder": "ਆਪਣਾ ਈਮੇਲ ਪਤਾ ਦਰਜ ਕਰੋ"
+        },
+        "verification": {
+          "title": "ਆਪਣਾ ਈਮੇਲ ਤਸਦੀਕ ਕਰੋ",
+          "subtitle": "ਭੇਜਿਆ ਗਿਆ 6-ਅੰਕਾਂ ਦਾ ਕੋਡ ਦਰਜ ਕਰੋ",
+          "continue": "ਤਸਦੀਕ ਕਰੋ",
+          "resend": "ਕੋਡ ਦੁਬਾਰਾ ਭੇਜੋ",
+          "codePlaceholder": "ਤਸਦੀਕੀ ਕੋਡ ਦਰਜ ਕਰੋ"
+        },
+        "password": {
+          "title": "ਇੱਕ ਪਾਸਵਰਡ ਬਣਾਓ",
+          "subtitle": "ਆਪਣੇ ਖਾਤੇ ਲਈ ਇੱਕ ਮਜ਼ਬੂਤ ਪਾਸਵਰਡ ਚੁਣੋ",
+          "continue": "ਜਾਰੀ ਰੱਖੋ",
+          "passwordPlaceholder": "ਇੱਕ ਮਜ਼ਬੂਤ ਪਾਸਵਰਡ ਬਣਾਓ",
+          "confirmPlaceholder": "ਆਪਣੇ ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ"
+        },
+        "country": {
+          "title": "ਆਪਣਾ ਦੇਸ਼ ਚੁਣੋ",
+          "subtitle": "ਇਹ ਸਾਨੂੰ ਬਿਹਤਰ ਸੇਵਾ ਪ੍ਰਦਾਨ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ",
+          "continue": "ਸਾਈਨਅੱਪ ਪੂਰਾ ਕਰੋ",
+          "countryPlaceholder": "ਆਪਣਾ ਦੇਸ਼ ਚੁਣੋ"
+        }
+      }
+    }
+  },
+  "Dashboard": {
+    "title": "ਘਰ",
+    "welcome": "ਵਾਪਸ ਜੀ ਆਇਆਂ ਨੂੰ",
+    "actions": {
+      "send": "ਭੇਜੋ",
+      "convert": "ਬਦਲੋ",
+      "receive": "ਪ੍ਰਾਪਤ ਕਰੋ"
+    },
+    "transactions": {
+      "title": "ਲੈਣ-ਦੇਣ",
+      "seeAll": "ਸਭ ਦੇਖੋ",
+      "noTransactions": "ਅਜੇ ਤੱਕ ਕੋਈ ਲੈਣ-ਦੇਣ ਨਹੀਂ",
+      "types": {
+        "send": "ਪੈਸੇ ਭੇਜੇ ਗਏ",
+        "receive": "ਪੈਸੇ ਪ੍ਰਾਪਤ ਹੋਏ",
+        "convert": "ਮੁਦਰਾ ਬਦਲੀ",
+        "failed": "ਲੈਣ-ਦੇਣ ਅਸਫਲ"
+      }
+    },
+    "kyc": {
+      "completeProfile": "ਆਪਣੀ ਪ੍ਰੋਫਾਈਲ ਪੂਰੀ ਕਰੋ",
+      "completeProfileDesc": "ਆਪਣੇ ਖਾਤੇ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ ਅਤੇ KYC ਪੂਰਾ ਕਰਕੇ ਪੂਰੀ ਪਹੁੰਚ ਅਨਲਾਕ ਕਰੋ।",
+      "completeProfileBtn": "ਪ੍ਰੋਫਾਈਲ ਪੂਰੀ ਕਰੋ",
+      "profileVerified": "ਪ੍ਰੋਫਾਈਲ ਤਸਦੀਕ ਸ਼ੁਦਾ",
+      "profileVerifiedDesc": "ਤੁਹਾਡੀ ਪਛਾਣ ਸਫਲਤਾਪੂਰਵਕ ਤਸਦੀਕ ਹੋ ਗਈ ਹੈ। ਹੁਣ ਤੁਹਾਡੇ ਕੋਲ ਸਾਰੀਆਂ Paystup ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਤੱਕ ਪੂਰੀ ਪਹੁੰਚ ਹੈ।",
+      "verificationComplete": "✓ ਪਛਾਣ ਤਸਦੀਕ ਪੂਰੀ"
+    },
+    "referral": {
+      "title": "ਇੱਕ ਦੋਸਤ ਨੂੰ ਰੈਫਰ ਕਰੋ",
+      "description": "ਆਪਣੇ ਦੋਸਤਾਂ ਨੂੰ ਸੱਦਾ ਦਿਓ ਅਤੇ ਜਦੋਂ ਉਹ ਆਪਣਾ ਪਹਿਲਾ ਟ੍ਰਾਂਸਫਰ ਕਰਨ ਤਾਂ ਇਨਾਮ ਕਮਾਓ। ਇਹ ਦੋਵਾਂ ਲਈ ਜਿੱਤ ਹੈ!",
+      "button": "ਜਲਦੀ ਆ ਰਿਹਾ ਹੈ!"
+    },
+    "exchangeRate": {
+      "title": "ਐਕਸਚੇਂਜ ਰੇਟ",
+      "today": "ਅੱਜ",
+      "viewRates": "ਦਰਾਂ ਦੇਖੋ"
+    }
+  },
+  "Send": {
+    "title": "ਪੈਸੇ ਭੇਜੋ",
+    "steps": {
+      "recipient": "ਪ੍ਰਾਪਤਕਰਤਾ",
+      "amount": "ਰਕਮ",
+      "review": "ਸਮੀਖਿਆ",
+      "payment": "ਭੁਗਤਾਨ"
+    },
+    "recipient": {
+      "title": "ਪ੍ਰਾਪਤਕਰਤਾ ਦੇ ਵੇਰਵੇ",
+      "subtitle": "ਜਿਸ ਵਿਅਕਤੀ ਨੂੰ ਤੁਸੀਂ ਪੈਸੇ ਭੇਜਣਾ ਚਾਹੁੰਦੇ ਹੋ ਉਸਦੇ ਵੇਰਵੇ ਦਰਜ ਕਰੋ",
+      "fullName": "ਪੂਰਾ ਨਾਮ",
+      "fullNamePlaceholder": "ਪ੍ਰਾਪਤਕਰਤਾ ਦਾ ਪੂਰਾ ਨਾਮ ਦਰਜ ਕਰੋ",
+      "accountName": "ਖਾਤਾ ਨਾਮ",
+      "accountNamePlaceholder": "ਖਾਤਾ ਧਾਰਕ ਦਾ ਨਾਮ ਦਰਜ ਕਰੋ",
+      "accountNumber": "ਖਾਤਾ ਨੰਬਰ",
+      "accountNumberPlaceholder": "ਖਾਤਾ ਨੰਬਰ ਦਰਜ ਕਰੋ",
+      "bank": "ਬੈਂਕ",
+      "bankPlaceholder": "ਬੈਂਕ ਚੁਣੋ",
+      "country": "ਦੇਸ਼",
+      "countryPlaceholder": "ਦੇਸ਼ ਚੁਣੋ"
+    },
+    "amount": {
+      "title": "ਭੇਜੀ ਜਾਣ ਵਾਲੀ ਰਕਮ",
+      "sendAmount": "ਤੁਸੀਂ ਭੇਜਦੇ ਹੋ",
+      "receiveAmount": "ਪ੍ਰਾਪਤਕਰਤਾ ਨੂੰ ਮਿਲਦਾ ਹੈ",
+      "exchangeRate": "ਐਕਸਚੇਂਜ ਰੇਟ",
+      "fees": "ਫੀਸ",
+      "total": "ਕੁੱਲ"
+    },
+    "review": {
+      "title": "ਆਪਣੇ ਟ੍ਰਾਂਸਫਰ ਦੇ ਵੇਰਵਿਆਂ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+      "recipient": "ਪ੍ਰਾਪਤਕਰਤਾ",
+      "amount": "ਰਕਮ",
+      "amountSent": "ਭੇਜੀ ਗਈ ਰਕਮ",
+      "paystupCharges": "Paystup ਚਾਰਜ",
+      "recipientGets": "ਪ੍ਰਾਪਤਕਰਤਾ ਨੂੰ ਮਿਲਦਾ ਹੈ",
+      "makePayment": "ਭੁਗਤਾਨ ਕਰੋ"
+    },
+    "payment": {
+      "title": "ਆਪਣਾ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ",
+      "subtitle": "ਇਹ ਸੁਰੱਖਿਆ ਜਾਂਚ ਤੁਹਾਡੇ ਖਾਤੇ ਨੂੰ ਸੁਰੱਖਿਅਤ ਰੱਖਣ ਲਈ ਹੈ",
+      "learnMore": "ਹੋਰ ਜਾਣੋ",
+      "password": "ਪਾਸਵਰਡ",
+      "passwordPlaceholder": "ਆਪਣਾ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ",
+      "confirmPayment": "ਭੁਗਤਾਨ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+      "success": {
+        "title": "ਤੁਹਾਡਾ ਲੈਣ-ਦੇਣ ਸਫਲ ਰਿਹਾ",
+        "subtitle": "ਆਪਣਾ ਲੈਣ-ਦੇਣ ਇਤਿਹਾਸ ਦੇਖੋ",
+        "button": "ਲੈਣ-ਦੇਣ ਦੇਖੋ"
+      },
+      "error": {
+        "title": "ਤੁਹਾਡਾ ਲੈਣ-ਦੇਣ ਸਫਲ ਨਹੀਂ ਸੀ",
+        "subtitle": "ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+        "button": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ"
+      }
+    }
+  },
+  "KYC": {
+    "title": "KYC ਤਸਦੀਕ",
+    "steps": {
+      "personalDetails": "ਨਿੱਜੀ ਵੇਰਵੇ",
+      "verification": "ਤਸਦੀਕ",
+      "address": "ਪਤਾ"
+    },
+    "personalDetails": {
+      "title": "ਨਿੱਜੀ ਵੇਰਵੇ",
+      "subtitle": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਨਿੱਜੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰੋ",
+      "firstName": "ਪਹਿਲਾ ਨਾਮ",
+      "lastName": "ਆਖਰੀ ਨਾਮ",
+      "dateOfBirth": "ਜਨਮ ਮਿਤੀ",
+      "phoneNumber": "ਫੋਨ ਨੰਬਰ",
+      "gender": "ਲਿੰਗ",
+      "genderOptions": {
+        "male": "ਮਰਦ",
+        "female": "ਔਰਤ",
+        "other": "ਹੋਰ"
+      }
+    },
+    "verification": {
+      "title": "ਪਛਾਣ ਤਸਦੀਕ",
+      "subtitle": "ਆਪਣਾ ਪਛਾਣ ਦਸਤਾਵੇਜ਼ ਅੱਪਲੋਡ ਕਰੋ",
+      "documentType": "ਦਸਤਾਵੇਜ਼ ਦੀ ਕਿਸਮ",
+      "documentTypes": {
+        "passport": "ਪਾਸਪੋਰਟ",
+        "nationalId": "ਰਾਸ਼ਟਰੀ ਪਛਾਣ ਪੱਤਰ",
+        "driversLicense": "ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ"
+      },
+      "frontSide": "ਅਗਲਾ ਪਾਸਾ",
+      "backSide": "ਪਿਛਲਾ ਪਾਸਾ",
+      "uploadInstructions": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਦਸਤਾਵੇਜ਼ ਦੀਆਂ ਸਪਸ਼ਟ ਤਸਵੀਰਾਂ ਅੱਪਲੋਡ ਕਰੋ"
+    },
+    "address": {
+      "title": "ਪਤੇ ਦੀ ਜਾਣਕਾਰੀ",
+      "subtitle": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਮੌਜੂਦਾ ਪਤਾ ਪ੍ਰਦਾਨ ਕਰੋ",
+      "street": "ਸੜਕ ਦਾ ਪਤਾ",
+      "city": "ਸ਼ਹਿਰ",
+      "state": "ਰਾਜ/ਪ੍ਰਾਂਤ",
+      "postalCode": "ਪੋਸਟਲ ਕੋਡ",
+      "country": "ਦੇਸ਼"
+    },
+    "success": {
+      "title": "ਤਸਦੀਕ ਪੂਰੀ",
+      "subtitle": "ਤੁਹਾਡੀ ਪਛਾਣ ਸਫਲਤਾਪੂਰਵਕ ਤਸਦੀਕ ਹੋ ਗਈ ਹੈ",
+      "goToDashboard": "ਡੈਸ਼ਬੋਰਡ 'ਤੇ ਜਾਓ"
+    }
+  },
+  "Help": {
+    "title": "ਮਦਦ ਚਾਹੀਦੀ ਹੈ?",
+    "subtitle": "ਸਾਡੇ FAQ ਖੋਜੋ ਜਾਂ ਨਿੱਜੀ ਸਹਾਇਤਾ ਪ੍ਰਾਪਤ ਕਰੋ",
+    "searchPlaceholder": "ਸਾਨੂੰ ਦੱਸੋ ਕਿ ਤੁਸੀਂ ਕੀ ਲੱਭ ਰਹੇ ਹੋ",
+    "liveChat": {
+      "title": "ਲਾਈਵ ਚੈਟ",
+      "description": "ਸਾਡੀ ਟੀਮ ਤੋਂ ਤੁਰੰਤ ਸਹਾਇਤਾ ਪ੍ਰਾਪਤ ਕਰੋ",
+      "button": "ਚੈਟ ਸ਼ੁਰੂ ਕਰੋ"
+    },
+    "email": {
+      "title": "ਈਮੇਲ",
+      "description": "ਸਾਡੀ ਸਹਾਇਤਾ ਟੀਮ ਨੂੰ ਈਮੇਲ ਭੇਜੋ",
+      "button": "ਈਮੇਲ ਭੇਜੋ"
+    },
+    "categories": {
+      "sendMoney": {
+        "title": "ਪੈਸੇ ਭੇਜੋ",
+        "description": "ਵਿਸ਼ਵ ਭਰ ਵਿੱਚ ਪੈਸੇ ਕਿਵੇਂ ਭੇਜਣੇ ਹਨ ਸਿੱਖੋ"
+      },
+      "transferTimes": {
+        "title": "ਟ੍ਰਾਂਸਫਰ ਸਮਾਂ",
+        "description": "ਸਮਝੋ ਕਿ ਟ੍ਰਾਂਸਫਰ ਵਿੱਚ ਕਿੰਨਾ ਸਮਾਂ ਲੱਗਦਾ ਹੈ"
+      },
+      "supportedCountries": {
+        "title": "ਸਮਰਥਿਤ ਦੇਸ਼",
+        "description": "ਦੇਖੋ ਕਿ ਅਸੀਂ ਕਿਹੜੇ ਦੇਸ਼ਾਂ ਦਾ ਸਮਰਥਨ ਕਰਦੇ ਹਾਂ"
+      },
+      "feesAndRates": {
+        "title": "ਫੀਸ ਅਤੇ ਦਰਾਂ",
+        "description": "ਸਾਡੀ ਕੀਮਤ ਦੇ ਢਾਂਚੇ ਬਾਰੇ ਜਾਣੋ"
+      },
+      "transferDelays": {
+        "title": "ਟ੍ਰਾਂਸਫਰ ਦੇਰੀ",
+        "description": "ਜੇ ਤੁਹਾਡਾ ਟ੍ਰਾਂਸਫਰ ਦੇਰ ਨਾਲ ਹੋਵੇ ਤਾਂ ਕੀ ਕਰਨਾ ਹੈ"
+      },
+      "security": {
+        "title": "ਸੁਰੱਖਿਆ",
+        "description": "ਅਸੀਂ ਤੁਹਾਡੇ ਪੈਸੇ ਨੂੰ ਕਿਵੇਂ ਸੁਰੱਖਿਅਤ ਰੱਖਦੇ ਹਾਂ"
+      },
+      "kyc": {
+        "title": "KYC ਤਸਦੀਕ",
+        "description": "ਪਛਾਣ ਤਸਦੀਕ ਪ੍ਰਕਿਰਿਆ"
+      },
+      "accountInfo": {
+        "title": "ਖਾਤਾ ਜਾਣਕਾਰੀ",
+        "description": "ਆਪਣੀਆਂ ਖਾਤਾ ਸੈਟਿੰਗਾਂ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ"
+      },
+      "reportProblem": {
+        "title": "ਸਮੱਸਿਆ ਦੀ ਰਿਪੋਰਟ ਕਰੋ",
+        "description": "ਸਮੱਸਿਆਵਾਂ ਨਾਲ ਮਦਦ ਪ੍ਰਾਪਤ ਕਰੋ"
+      }
+    },
+    "noResults": {
+      "title": "ਕੋਈ ਨਤੀਜੇ ਨਹੀਂ ਮਿਲੇ",
+      "subtitle": "ਆਪਣੇ ਖੋਜ ਸ਼ਬਦਾਂ ਨੂੰ ਅਨੁਕੂਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ"
+    }
+  }
+}

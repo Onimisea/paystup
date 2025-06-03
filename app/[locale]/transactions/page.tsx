@@ -12,12 +12,15 @@ import TransactionFilters from "@/components/transactions/TransactionFilters";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useTransactionsStore } from "@/lib/stores/transactions-store";
+import { useTranslations } from "next-intl";
 
 export default function TransactionsPage() {
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);
   const { updateFilters, applyFilters } = useTransactionsStore();
+  const t = useTranslations("Transactions");
+  const tCommon = useTranslations("Common");
 
   // Handle search with debouncing
   useEffect(() => {
@@ -48,13 +51,15 @@ export default function TransactionsPage() {
                 className="flex items-center gap-2 text-[#111827] hover:text-[#0BAB7C] focus:text-[#0BAB7C] transition-colors mb-8 cursor-pointer lg:hidden"
               >
                 <ArrowLeft className="w-5 h-5" />
-                <span className="text-sm font-medium">Back</span>
+                <span className="text-sm font-medium">
+                  {tCommon("buttons.back")}
+                </span>
               </button>
 
               {/* Page Header */}
               <div className="mb-6">
                 <h1 className="text-2xl font-bold text-[#111827] mb-4">
-                  Transactions
+                  {t("title")}
                 </h1>
 
                 {/* Search and Filter Bar */}
@@ -64,7 +69,7 @@ export default function TransactionsPage() {
                     <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#4B5563]" />
                     <Input
                       type="text"
-                      placeholder="Search"
+                      placeholder={t("search")}
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       className="pl-10 bg-white border-gray-200 focus:border-[#0BAB7C] focus:ring-[#0BAB7C]"
@@ -78,7 +83,7 @@ export default function TransactionsPage() {
                     className="px-4 py-2 border-gray-200 hover:bg-gray-50 flex items-center gap-2"
                   >
                     <SlidersHorizontal className="w-4 h-4" />
-                    <span className="hidden sm:inline">Filter</span>
+                    <span className="hidden sm:inline">{t("filter")}</span>
                   </Button>
                 </div>
               </div>

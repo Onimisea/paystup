@@ -15,6 +15,7 @@ import Header from "@/components/common/Header";
 import AuthFooter from "@/components/layout/AuthFooter";
 import AuthGuard from "@/components/auth/AuthGuard";
 import { useKYCStore } from "@/lib/stores/kyc-store";
+import { useTranslations } from "next-intl";
 
 interface Transaction {
   id: string;
@@ -29,6 +30,7 @@ interface Transaction {
 export default function DashboardClient() {
   const router = useRouter();
   const kycStore = useKYCStore();
+  const t = useTranslations("Dashboard");
   const {
     isCompleted: isKYCCompleted,
     completedAt,
@@ -143,7 +145,7 @@ export default function DashboardClient() {
               {/* Page Title */}
               <div className="mb-4 sm:mb-6">
                 <h1 className="text-xl sm:text-2xl font-bold text-gray-900">
-                  Home
+                  {t("title")}
                 </h1>
               </div>
 
@@ -159,7 +161,7 @@ export default function DashboardClient() {
                       <Send className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-white" />
                     </div>
                     <span className="text-xs sm:text-sm md:text-base text-gray-600 font-medium">
-                      Send
+                      {t("actions.send")}
                     </span>
                   </div>
                   <div className="flex flex-col items-center cursor-pointer group">
@@ -167,7 +169,7 @@ export default function DashboardClient() {
                       <ArrowUpDown className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-white" />
                     </div>
                     <span className="text-xs sm:text-sm md:text-base text-gray-600 font-medium">
-                      Convert
+                      {t("actions.convert")}
                     </span>
                   </div>
                   <div className="flex flex-col items-center cursor-pointer group">
@@ -175,7 +177,7 @@ export default function DashboardClient() {
                       <ArrowDownToLine className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-primary-green" />
                     </div>
                     <span className="text-xs sm:text-sm md:text-base text-gray-600 font-medium">
-                      Receive
+                      {t("actions.receive")}
                     </span>
                   </div>
                 </div>
@@ -184,10 +186,10 @@ export default function DashboardClient() {
                 <div>
                   <div className="flex items-center justify-between mb-3 sm:mb-4">
                     <h3 className="text-sm sm:text-base md:text-lg font-medium text-gray-900">
-                      Transactions
+                      {t("transactions.title")}
                     </h3>
                     <button className="text-xs sm:text-sm text-primary-green hover:underline font-medium min-h-touch">
-                      See all
+                      {t("transactions.seeAll")}
                     </button>
                   </div>
 
@@ -240,16 +242,15 @@ export default function DashboardClient() {
                           <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                         </div>
                         <h3 className="text-base sm:text-lg font-semibold text-gray-900">
-                          Profile Verified
+                          {t("kyc.profileVerified")}
                         </h3>
                       </div>
                       <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
-                        Your identity has been verified successfully. You now
-                        have full access to all Paystup features.
+                        {t("kyc.profileVerifiedDesc")}
                       </p>
                       <div className="flex items-center justify-between">
                         <div className="text-xs text-gray-500">
-                          ✓ Identity verification complete
+                          {t("kyc.verificationComplete")}
                         </div>
                       </div>
                     </CardContent>
@@ -261,17 +262,16 @@ export default function DashboardClient() {
                   <Card className="bg-[#E1D9FC] border-0">
                     <CardContent className="p-4 sm:p-6">
                       <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
-                        Complete your profile
+                        {t("kyc.completeProfile")}
                       </h3>
                       <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
-                        Secure your account and unlock full access by completing
-                        your KYC.
+                        {t("kyc.completeProfileDesc")}
                       </p>
                       <Button
                         onClick={() => router.push("/kyc")}
                         className="bg-gray-900 hover:bg-gray-800 focus:bg-gray-800 text-white rounded-full cursor-pointer transition-colors w-full sm:w-fit min-h-touch"
                       >
-                        Complete profile
+                        {t("kyc.completeProfileBtn")}
                       </Button>
                     </CardContent>
                   </Card>
@@ -281,14 +281,13 @@ export default function DashboardClient() {
                 <Card className="bg-[#CEEEE5] border-0">
                   <CardContent className="p-4 sm:p-6">
                     <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
-                      Refer a friend
+                      {t("referral.title")}
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
-                      Invite your friends and earn rewards when they make their
-                      first transfer. It&apos;s a win-win!
+                      {t("referral.description")}
                     </p>
                     <Button className="bg-gray-900 hover:bg-gray-800 focus:bg-gray-800 text-white rounded-full cursor-pointer transition-colors w-full sm:w-fit min-h-touch">
-                      Coming soon!
+                      {t("referral.button")}
                     </Button>
                   </CardContent>
                 </Card>

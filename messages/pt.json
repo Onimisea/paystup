@@ -49,9 +49,35 @@
     "languages": {
       "en": "English",
       "fr": "Français",
-      "pt": "Português", 
+      "pt": "Português",
       "ar": "العربية",
-      "sw": "Kiswahili"
+      "sw": "Kiswahili",
+      "hi": "हिन्दी",
+      "zh-CN": "中文",
+      "ur": "اردو",
+      "bn": "বাংলা",
+      "id": "Bahasa Indonesia",
+      "pa": "ਪੰਜਾਬੀ",
+      "ja": "日本語",
+      "vi": "Tiếng Việt",
+      "mr": "मराठी"
+    },
+    "buttons": {
+      "back": "Voltar",
+      "next": "Próximo",
+      "continue": "Continuar",
+      "cancel": "Cancelar",
+      "save": "Salvar",
+      "submit": "Enviar",
+      "retry": "Tentar novamente",
+      "close": "Fechar"
+    },
+    "form": {
+      "required": "Este campo é obrigatório",
+      "invalidEmail": "Por favor, insira um endereço de email válido",
+      "passwordTooShort": "A senha deve ter pelo menos 8 caracteres",
+      "passwordsDoNotMatch": "As senhas não coincidem",
+      "pleaseSelect": "Por favor, selecione uma opção"
     }
   },
   "Auth": {
@@ -85,6 +111,153 @@
       "signIn": "Entrar",
       "backToHome": "Voltar ao início",
       "trustIndicator": "Seus dados são protegidos com criptografia de nível bancário"
+    }
+  },
+  "Dashboard": {
+    "title": "Início",
+    "welcome": "Bem-vindo de volta",
+    "actions": {
+      "send": "Enviar",
+      "convert": "Converter",
+      "receive": "Receber"
+    },
+    "transactions": {
+      "title": "Transações",
+      "seeAll": "Ver todas",
+      "noTransactions": "Nenhuma transação ainda",
+      "types": {
+        "send": "Dinheiro enviado",
+        "receive": "Dinheiro recebido",
+        "convert": "Moeda convertida",
+        "failed": "Transação falhada"
+      }
+    },
+    "kyc": {
+      "completeProfile": "Complete seu perfil",
+      "completeProfileDesc": "Proteja sua conta e desbloqueie acesso completo completando seu KYC.",
+      "completeProfileBtn": "Completar perfil",
+      "profileVerified": "Perfil Verificado",
+      "profileVerifiedDesc": "Sua identidade foi verificada com sucesso. Agora você tem acesso completo a todos os recursos do Paystup.",
+      "verificationComplete": "✓ Verificação de identidade completa"
+    },
+    "referral": {
+      "title": "Indique um amigo",
+      "description": "Convide seus amigos e ganhe recompensas quando eles fizerem sua primeira transferência. É uma situação ganha-ganha!",
+      "button": "Em breve!"
+    },
+    "exchangeRate": {
+      "title": "Taxa de câmbio",
+      "today": "Hoje",
+      "viewRates": "Ver taxas"
+    }
+  },
+  "Transactions": {
+    "title": "Transações",
+    "search": "Pesquisar",
+    "filter": "Filtrar",
+    "noTransactions": "Nenhuma transação encontrada",
+    "tryAdjusting": "Tente ajustar sua pesquisa ou filtros",
+    "willAppearHere": "Suas transações aparecerão aqui",
+    "loading": "Carregando...",
+    "today": "Hoje",
+    "yesterday": "Ontem",
+    "reference": "Ref",
+    "status": {
+      "successful": "Bem-sucedida",
+      "pending": "Pendente",
+      "unsuccessful": "Malsucedida"
+    },
+    "types": {
+      "send": "Enviado",
+      "receive": "Recebido",
+      "conversion": "Movido",
+      "transaction": "Transação"
+    },
+    "filters": {
+      "title": "Filtrar transações",
+      "status": "Status",
+      "type": "Tipo",
+      "currency": "Moeda",
+      "dateRange": "Intervalo de datas",
+      "amount": "Valor",
+      "minAmount": "Valor mínimo",
+      "maxAmount": "Valor máximo",
+      "clearAll": "Limpar tudo",
+      "applyFilters": "Aplicar filtros",
+      "statusOptions": {
+        "successful": "Bem-sucedida",
+        "pending": "Pendente",
+        "unsuccessful": "Malsucedida"
+      },
+      "typeOptions": {
+        "transfers": "Transferências",
+        "cardTransactions": "Transações de cartão",
+        "moneyAdded": "Dinheiro adicionado",
+        "conversions": "Conversões",
+        "cashWithdrawals": "Saques em dinheiro"
+      },
+      "datePresets": {
+        "lastMonth": "Mês passado",
+        "lastQuarter": "Trimestre passado",
+        "lastYear": "Ano passado"
+      }
+    }
+  },
+  "Help": {
+    "title": "Precisa de ajuda?",
+    "subtitle": "Pesquise nossas FAQs ou obtenha suporte pessoal",
+    "searchPlaceholder": "Diga-nos o que você está procurando",
+    "liveChat": {
+      "title": "Chat ao vivo",
+      "description": "Obtenha suporte rápido da nossa equipe",
+      "button": "Iniciar chat"
+    },
+    "email": {
+      "title": "Email",
+      "description": "Envie um email para nossa equipe de suporte",
+      "button": "Enviar Email"
+    },
+    "categories": {
+      "sendMoney": {
+        "title": "Enviar Dinheiro",
+        "description": "Aprenda como enviar dinheiro globalmente"
+      },
+      "transferTimes": {
+        "title": "Tempos de Transferência",
+        "description": "Entenda quanto tempo as transferências levam"
+      },
+      "supportedCountries": {
+        "title": "Países Suportados",
+        "description": "Veja quais países apoiamos"
+      },
+      "feesAndRates": {
+        "title": "Taxas e Tarifas",
+        "description": "Aprenda sobre nossa estrutura de preços"
+      },
+      "transferDelays": {
+        "title": "Atrasos de Transferência",
+        "description": "O que fazer se sua transferência estiver atrasada"
+      },
+      "security": {
+        "title": "Segurança",
+        "description": "Como mantemos seu dinheiro seguro"
+      },
+      "kyc": {
+        "title": "Verificação KYC",
+        "description": "Processo de verificação de identidade"
+      },
+      "accountInfo": {
+        "title": "Informações da Conta",
+        "description": "Gerencie as configurações da sua conta"
+      },
+      "reportProblem": {
+        "title": "Relatar um Problema",
+        "description": "Obtenha ajuda com problemas"
+      }
+    },
+    "noResults": {
+      "title": "Nenhum resultado encontrado",
+      "subtitle": "Tente ajustar seus termos de pesquisa"
     }
   }
 }

@@ -1,0 +1,351 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "世界中にお金を送金",
+      "brand": "Paystup",
+      "subtitle": "現地決済を利用した国際送金のスマートな方法",
+      "description": "高額な国際銀行手数料を回避しましょう。当社のピアツーピアプラットフォームは、送金国と受取国の両方で現地決済ネットワークに接続します。",
+      "cta": {
+        "primary": "送金を開始",
+        "secondary": "仕組みを学ぶ"
+      }
+    },
+    "navigation": {
+      "sendMoney": "送金",
+      "receiveMoney": "受取",
+      "howItWorks": "仕組み",
+      "pricing": "料金",
+      "support": "サポート",
+      "login": "ログイン",
+      "signup": "始める"
+    },
+    "features": {
+      "title": "なぜPaystupを選ぶのか？",
+      "items": {
+        "lowFees": {
+          "title": "低手数料",
+          "description": "従来の銀行と比較して送金手数料を最大90%節約"
+        },
+        "fastTransfers": {
+          "title": "高速送金",
+          "description": "お金は数日ではなく数分で到着"
+        },
+        "secure": {
+          "title": "銀行レベルのセキュリティ",
+          "description": "あなたのお金とデータはエンタープライズグレードのセキュリティで保護"
+        },
+        "global": {
+          "title": "グローバルリーチ",
+          "description": "世界50カ国以上にお金を送金"
+        }
+      }
+    }
+  },
+  "Common": {
+    "footer": {
+      "privacyPolicy": "プライバシーポリシー",
+      "language": "言語"
+    },
+    "languages": {
+      "en": "English",
+      "fr": "Français",
+      "pt": "Português",
+      "ar": "العربية",
+      "sw": "Kiswahili",
+      "hi": "हिन्दी",
+      "zh-CN": "中文",
+      "ur": "اردو",
+      "bn": "বাংলা",
+      "id": "Bahasa Indonesia",
+      "pa": "ਪੰਜਾਬੀ",
+      "ja": "日本語",
+      "vi": "Tiếng Việt",
+      "mr": "मराठी"
+    },
+    "buttons": {
+      "back": "戻る",
+      "next": "次へ",
+      "continue": "続行",
+      "cancel": "キャンセル",
+      "save": "保存",
+      "submit": "送信",
+      "retry": "再試行",
+      "close": "閉じる"
+    },
+    "form": {
+      "required": "この項目は必須です",
+      "invalidEmail": "有効なメールアドレスを入力してください",
+      "passwordTooShort": "パスワードは8文字以上である必要があります",
+      "passwordsDoNotMatch": "パスワードが一致しません",
+      "pleaseSelect": "オプションを選択してください"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "おかえりなさい",
+      "subtitle": "Paystupアカウントにサインイン",
+      "email": "メール",
+      "password": "パスワード",
+      "rememberMe": "ログイン状態を保持",
+      "forgotPassword": "パスワードを忘れましたか？",
+      "signIn": "サインイン",
+      "noAccount": "アカウントをお持ちでない方",
+      "signUp": "サインアップ",
+      "backToHome": "ホームに戻る",
+      "trustIndicator": "銀行レベルのセキュリティで保護"
+    },
+    "signup": {
+      "title": "アカウントを作成",
+      "subtitle": "世界中に送金する数千人のユーザーに参加",
+      "firstName": "名",
+      "lastName": "姓",
+      "email": "メール",
+      "password": "パスワード",
+      "confirmPassword": "パスワード確認",
+      "country": "国",
+      "agreeToTerms": "同意します",
+      "termsOfService": "利用規約",
+      "and": "および",
+      "privacyPolicy": "プライバシーポリシー",
+      "createAccount": "アカウント作成",
+      "continueWithEmail": "メールで続行",
+      "continueWithGoogle": "Googleで続行",
+      "continueWithApple": "Appleで続行",
+      "orContinueWith": "または次で続行",
+      "haveAccount": "既にアカウントをお持ちですか？",
+      "signIn": "サインイン",
+      "backToHome": "ホームに戻る",
+      "trustIndicator": "あなたのデータは銀行レベルの暗号化で保護されています",
+      "steps": {
+        "email": {
+          "title": "メールアドレスを入力",
+          "subtitle": "認証コードをお送りします",
+          "continue": "続行",
+          "emailPlaceholder": "メールアドレスを入力してください"
+        },
+        "verification": {
+          "title": "メールアドレスを認証",
+          "subtitle": "送信された6桁のコードを入力",
+          "continue": "認証",
+          "resend": "コードを再送信",
+          "codePlaceholder": "認証コードを入力"
+        },
+        "password": {
+          "title": "パスワードを作成",
+          "subtitle": "アカウント用の強力なパスワードを選択",
+          "continue": "続行",
+          "passwordPlaceholder": "強力なパスワードを作成",
+          "confirmPlaceholder": "パスワードを確認"
+        },
+        "country": {
+          "title": "国を選択",
+          "subtitle": "より良いサービス提供のために必要です",
+          "continue": "サインアップ完了",
+          "countryPlaceholder": "国を選択してください"
+        }
+      }
+    }
+  },
+  "Dashboard": {
+    "title": "ホーム",
+    "welcome": "おかえりなさい",
+    "actions": {
+      "send": "送金",
+      "convert": "両替",
+      "receive": "受取"
+    },
+    "transactions": {
+      "title": "取引履歴",
+      "seeAll": "すべて表示",
+      "noTransactions": "取引履歴がありません",
+      "types": {
+        "send": "送金済み",
+        "receive": "受取済み",
+        "convert": "両替済み",
+        "failed": "取引失敗"
+      }
+    },
+    "kyc": {
+      "completeProfile": "プロフィールを完成させる",
+      "completeProfileDesc": "アカウントを保護し、KYC認証を完了して全機能にアクセスしましょう。",
+      "completeProfileBtn": "プロフィール完成",
+      "profileVerified": "プロフィール認証済み",
+      "profileVerifiedDesc": "本人確認が正常に完了しました。すべてのPaystup機能をご利用いただけます。",
+      "verificationComplete": "✓ 本人確認完了"
+    },
+    "referral": {
+      "title": "友達を紹介",
+      "description": "友達を招待して、初回送金時に報酬を獲得しましょう。Win-Winです！",
+      "button": "近日公開！"
+    },
+    "exchangeRate": {
+      "title": "為替レート",
+      "today": "今日",
+      "viewRates": "レートを見る"
+    }
+  },
+  "Send": {
+    "title": "送金",
+    "steps": {
+      "recipient": "受取人",
+      "amount": "金額",
+      "review": "確認",
+      "payment": "支払い"
+    },
+    "recipient": {
+      "title": "受取人詳細",
+      "subtitle": "送金先の詳細を入力してください",
+      "fullName": "氏名",
+      "fullNamePlaceholder": "受取人の氏名を入力",
+      "accountName": "口座名義",
+      "accountNamePlaceholder": "口座名義人を入力",
+      "accountNumber": "口座番号",
+      "accountNumberPlaceholder": "口座番号を入力",
+      "bank": "銀行",
+      "bankPlaceholder": "銀行を選択",
+      "country": "国",
+      "countryPlaceholder": "国を選択"
+    },
+    "amount": {
+      "title": "送金額",
+      "sendAmount": "送金額",
+      "receiveAmount": "受取額",
+      "exchangeRate": "為替レート",
+      "fees": "手数料",
+      "total": "合計"
+    },
+    "review": {
+      "title": "送金詳細を確認",
+      "recipient": "受取人",
+      "amount": "金額",
+      "amountSent": "送金額",
+      "paystupCharges": "Paystup手数料",
+      "recipientGets": "受取額",
+      "makePayment": "支払い実行"
+    },
+    "payment": {
+      "title": "パスワードを入力",
+      "subtitle": "アカウント保護のためのセキュリティチェックです",
+      "learnMore": "詳細を見る",
+      "password": "パスワード",
+      "passwordPlaceholder": "パスワードを入力",
+      "confirmPayment": "支払い確認",
+      "success": {
+        "title": "取引が成功しました",
+        "subtitle": "取引履歴を確認",
+        "button": "取引を見る"
+      },
+      "error": {
+        "title": "取引が失敗しました",
+        "subtitle": "再度お試しください",
+        "button": "再試行"
+      }
+    }
+  },
+  "KYC": {
+    "title": "KYC認証",
+    "steps": {
+      "personalDetails": "個人情報",
+      "verification": "本人確認",
+      "address": "住所"
+    },
+    "personalDetails": {
+      "title": "個人情報",
+      "subtitle": "個人情報を入力してください",
+      "firstName": "名",
+      "lastName": "姓",
+      "dateOfBirth": "生年月日",
+      "phoneNumber": "電話番号",
+      "gender": "性別",
+      "genderOptions": {
+        "male": "男性",
+        "female": "女性",
+        "other": "その他"
+      }
+    },
+    "verification": {
+      "title": "本人確認",
+      "subtitle": "身分証明書をアップロード",
+      "documentType": "書類の種類",
+      "documentTypes": {
+        "passport": "パスポート",
+        "nationalId": "身分証明書",
+        "driversLicense": "運転免許証"
+      },
+      "frontSide": "表面",
+      "backSide": "裏面",
+      "uploadInstructions": "書類の鮮明な写真をアップロードしてください"
+    },
+    "address": {
+      "title": "住所情報",
+      "subtitle": "現在の住所を入力してください",
+      "street": "住所",
+      "city": "市区町村",
+      "state": "都道府県",
+      "postalCode": "郵便番号",
+      "country": "国"
+    },
+    "success": {
+      "title": "認証完了",
+      "subtitle": "本人確認が正常に完了しました",
+      "goToDashboard": "ダッシュボードへ"
+    }
+  },
+  "Help": {
+    "title": "サポートが必要ですか？",
+    "subtitle": "FAQを検索するか、個別サポートを受ける",
+    "searchPlaceholder": "お探しの内容をお聞かせください",
+    "liveChat": {
+      "title": "ライブチャット",
+      "description": "チームから迅速なサポートを受ける",
+      "button": "チャット開始"
+    },
+    "email": {
+      "title": "メール",
+      "description": "サポートチームにメールを送信",
+      "button": "メール送信"
+    },
+    "categories": {
+      "sendMoney": {
+        "title": "送金",
+        "description": "グローバル送金の方法を学ぶ"
+      },
+      "transferTimes": {
+        "title": "送金時間",
+        "description": "送金にかかる時間について"
+      },
+      "supportedCountries": {
+        "title": "対応国",
+        "description": "対応している国を確認"
+      },
+      "feesAndRates": {
+        "title": "手数料とレート",
+        "description": "料金体系について学ぶ"
+      },
+      "transferDelays": {
+        "title": "送金遅延",
+        "description": "送金が遅れた場合の対処法"
+      },
+      "security": {
+        "title": "セキュリティ",
+        "description": "資金の安全性について"
+      },
+      "kyc": {
+        "title": "KYC認証",
+        "description": "本人確認プロセス"
+      },
+      "accountInfo": {
+        "title": "アカウント情報",
+        "description": "アカウント設定の管理"
+      },
+      "reportProblem": {
+        "title": "問題を報告",
+        "description": "問題のサポートを受ける"
+      }
+    },
+    "noResults": {
+      "title": "結果が見つかりません",
+      "subtitle": "検索語句を調整してみてください"
+    }
+  }
+}

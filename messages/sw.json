@@ -49,9 +49,35 @@
     "languages": {
       "en": "English",
       "fr": "Français",
-      "pt": "Português", 
+      "pt": "Português",
       "ar": "العربية",
-      "sw": "Kiswahili"
+      "sw": "Kiswahili",
+      "hi": "हिन्दी",
+      "zh-CN": "中文",
+      "ur": "اردو",
+      "bn": "বাংলা",
+      "id": "Bahasa Indonesia",
+      "pa": "ਪੰਜਾਬੀ",
+      "ja": "日本語",
+      "vi": "Tiếng Việt",
+      "mr": "मराठी"
+    },
+    "buttons": {
+      "back": "Rudi",
+      "next": "Ifuatayo",
+      "continue": "Endelea",
+      "cancel": "Ghairi",
+      "save": "Hifadhi",
+      "submit": "Wasilisha",
+      "retry": "Jaribu tena",
+      "close": "Funga"
+    },
+    "form": {
+      "required": "Sehemu hii inahitajika",
+      "invalidEmail": "Tafadhali ingiza anwani sahihi ya barua pepe",
+      "passwordTooShort": "Nenosiri lazima liwe na angalau herufi 8",
+      "passwordsDoNotMatch": "Nenosiri hazilingani",
+      "pleaseSelect": "Tafadhali chagua chaguo"
     }
   },
   "Auth": {
@@ -85,6 +111,153 @@
       "signIn": "Ingia",
       "backToHome": "Rudi nyumbani",
       "trustIndicator": "Data yako inalindwa na usimbaji wa kiwango cha benki"
+    }
+  },
+  "Dashboard": {
+    "title": "Nyumbani",
+    "welcome": "Karibu tena",
+    "actions": {
+      "send": "Tuma",
+      "convert": "Badilisha",
+      "receive": "Pokea"
+    },
+    "transactions": {
+      "title": "Miamala",
+      "seeAll": "Ona yote",
+      "noTransactions": "Hakuna miamala bado",
+      "types": {
+        "send": "Pesa zimetumwa",
+        "receive": "Pesa zimepokelewa",
+        "convert": "Sarafu imebadilishwa",
+        "failed": "Muamala umeshindwa"
+      }
+    },
+    "kyc": {
+      "completeProfile": "Kamilisha wasifu wako",
+      "completeProfileDesc": "Linda akaunti yako na fungua ufikiaji kamili kwa kukamilisha KYC yako.",
+      "completeProfileBtn": "Kamilisha wasifu",
+      "profileVerified": "Wasifu Umethibitishwa",
+      "profileVerifiedDesc": "Utambulisho wako umethibitishwa kwa mafanikio. Sasa una ufikiaji kamili wa vipengele vyote vya Paystup.",
+      "verificationComplete": "✓ Uthibitisho wa utambulisho umekamilika"
+    },
+    "referral": {
+      "title": "Rejelea rafiki",
+      "description": "Alika marafiki zako na upate tuzo wakati wanafanya uhamisho wao wa kwanza. Ni ushindi kwa wote!",
+      "button": "Inakuja hivi karibuni!"
+    },
+    "exchangeRate": {
+      "title": "Kiwango cha ubadilishaji",
+      "today": "Leo",
+      "viewRates": "Ona viwango"
+    }
+  },
+  "Transactions": {
+    "title": "Miamala",
+    "search": "Tafuta",
+    "filter": "Chuja",
+    "noTransactions": "Hakuna miamala iliyopatikana",
+    "tryAdjusting": "Jaribu kubadilisha utafutaji au vichujio vyako",
+    "willAppearHere": "Miamala yako itaonekana hapa",
+    "loading": "Inapakia...",
+    "today": "Leo",
+    "yesterday": "Jana",
+    "reference": "Rejea",
+    "status": {
+      "successful": "Imefanikiwa",
+      "pending": "Inasubiri",
+      "unsuccessful": "Haikufanikiwa"
+    },
+    "types": {
+      "send": "Imetumwa",
+      "receive": "Imepokelewa",
+      "conversion": "Imehamishwa",
+      "transaction": "Muamala"
+    },
+    "filters": {
+      "title": "Chuja miamala",
+      "status": "Hali",
+      "type": "Aina",
+      "currency": "Sarafu",
+      "dateRange": "Muda wa tarehe",
+      "amount": "Kiasi",
+      "minAmount": "Kiasi cha chini",
+      "maxAmount": "Kiasi cha juu",
+      "clearAll": "Futa yote",
+      "applyFilters": "Tumia vichujio",
+      "statusOptions": {
+        "successful": "Imefanikiwa",
+        "pending": "Inasubiri",
+        "unsuccessful": "Haikufanikiwa"
+      },
+      "typeOptions": {
+        "transfers": "Uhamisho",
+        "cardTransactions": "Miamala ya kadi",
+        "moneyAdded": "Pesa zilizoongezwa",
+        "conversions": "Mabadiliko",
+        "cashWithdrawals": "Kutoa pesa taslimu"
+      },
+      "datePresets": {
+        "lastMonth": "Mwezi uliopita",
+        "lastQuarter": "Robo ya mwaka iliyopita",
+        "lastYear": "Mwaka uliopita"
+      }
+    }
+  },
+  "Help": {
+    "title": "Unahitaji msaada?",
+    "subtitle": "Tafuta katika maswali yanayoulizwa mara kwa mara au upate msaada wa kibinafsi",
+    "searchPlaceholder": "Tuambie unachotafuta",
+    "liveChat": {
+      "title": "Mazungumzo ya moja kwa moja",
+      "description": "Pata msaada wa haraka kutoka kwa timu yetu",
+      "button": "Anza mazungumzo"
+    },
+    "email": {
+      "title": "Barua pepe",
+      "description": "Tuma barua pepe kwa timu yetu ya msaada",
+      "button": "Tuma Barua pepe"
+    },
+    "categories": {
+      "sendMoney": {
+        "title": "Tuma Pesa",
+        "description": "Jifunze jinsi ya kutuma pesa kimataifa"
+      },
+      "transferTimes": {
+        "title": "Muda wa Uhamisho",
+        "description": "Elewa muda gani uhamisho huchukua"
+      },
+      "supportedCountries": {
+        "title": "Nchi Zinazotumika",
+        "description": "Ona nchi gani tunazitumia"
+      },
+      "feesAndRates": {
+        "title": "Ada na Viwango",
+        "description": "Jifunze kuhusu muundo wetu wa bei"
+      },
+      "transferDelays": {
+        "title": "Kuchelewa kwa Uhamisho",
+        "description": "Nini cha kufanya ikiwa uhamisho wako umechelewa"
+      },
+      "security": {
+        "title": "Usalama",
+        "description": "Jinsi tunavyohifadhi pesa zako salama"
+      },
+      "kyc": {
+        "title": "Uthibitisho wa KYC",
+        "description": "Mchakato wa kuthibitisha utambulisho"
+      },
+      "accountInfo": {
+        "title": "Maelezo ya Akaunti",
+        "description": "Simamia mipangilio ya akaunti yako"
+      },
+      "reportProblem": {
+        "title": "Ripoti Tatizo",
+        "description": "Pata msaada na matatizo"
+      }
+    },
+    "noResults": {
+      "title": "Hakuna matokeo yaliyopatikana",
+      "subtitle": "Jaribu kubadilisha maneno ya utafutaji wako"
     }
   }
 }

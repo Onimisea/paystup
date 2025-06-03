@@ -1,0 +1,351 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Kirim Uang ke Seluruh Dunia dengan",
+      "brand": "Paystup",
+      "subtitle": "Cara cerdas untuk mentransfer uang internasional menggunakan pembayaran lokal",
+      "description": "Hindari biaya perbankan internasional yang mahal. Platform peer-to-peer kami menghubungkan Anda dengan jaringan pembayaran lokal di negara pengirim dan penerima.",
+      "cta": {
+        "primary": "Mulai Kirim Uang",
+        "secondary": "Pelajari Cara Kerjanya"
+      }
+    },
+    "navigation": {
+      "sendMoney": "Kirim Uang",
+      "receiveMoney": "Terima Uang",
+      "howItWorks": "Cara Kerja",
+      "pricing": "Harga",
+      "support": "Dukungan",
+      "login": "Masuk",
+      "signup": "Mulai"
+    },
+    "features": {
+      "title": "Mengapa Memilih Paystup?",
+      "items": {
+        "lowFees": {
+          "title": "Biaya Rendah",
+          "description": "Hemat hingga 90% biaya transfer dibandingkan bank tradisional"
+        },
+        "fastTransfers": {
+          "title": "Transfer Cepat",
+          "description": "Uang tiba dalam hitungan menit, bukan hari"
+        },
+        "secure": {
+          "title": "Keamanan Tingkat Bank",
+          "description": "Uang dan data Anda dilindungi dengan keamanan tingkat enterprise"
+        },
+        "global": {
+          "title": "Jangkauan Global",
+          "description": "Kirim uang ke lebih dari 50 negara di seluruh dunia"
+        }
+      }
+    }
+  },
+  "Common": {
+    "footer": {
+      "privacyPolicy": "Kebijakan Privasi",
+      "language": "Bahasa"
+    },
+    "languages": {
+      "en": "English",
+      "fr": "Français",
+      "pt": "Português",
+      "ar": "العربية",
+      "sw": "Kiswahili",
+      "hi": "हिन्दी",
+      "zh-CN": "中文",
+      "ur": "اردو",
+      "bn": "বাংলা",
+      "id": "Bahasa Indonesia",
+      "pa": "ਪੰਜਾਬੀ",
+      "ja": "日本語",
+      "vi": "Tiếng Việt",
+      "mr": "मराठी"
+    },
+    "buttons": {
+      "back": "Kembali",
+      "next": "Selanjutnya",
+      "continue": "Lanjutkan",
+      "cancel": "Batal",
+      "save": "Simpan",
+      "submit": "Kirim",
+      "retry": "Coba Lagi",
+      "close": "Tutup"
+    },
+    "form": {
+      "required": "Bidang ini wajib diisi",
+      "invalidEmail": "Silakan masukkan alamat email yang valid",
+      "passwordTooShort": "Kata sandi harus minimal 8 karakter",
+      "passwordsDoNotMatch": "Kata sandi tidak cocok",
+      "pleaseSelect": "Silakan pilih opsi"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "Selamat datang kembali",
+      "subtitle": "Masuk ke akun Paystup Anda",
+      "email": "Email",
+      "password": "Kata Sandi",
+      "rememberMe": "Ingat saya",
+      "forgotPassword": "Lupa kata sandi?",
+      "signIn": "Masuk",
+      "noAccount": "Belum punya akun?",
+      "signUp": "Daftar",
+      "backToHome": "Kembali ke Beranda",
+      "trustIndicator": "Dilindungi dengan keamanan tingkat bank"
+    },
+    "signup": {
+      "title": "Buat akun Anda",
+      "subtitle": "Bergabunglah dengan ribuan orang yang mengirim uang secara global",
+      "firstName": "Nama Depan",
+      "lastName": "Nama Belakang",
+      "email": "Email",
+      "password": "Kata Sandi",
+      "confirmPassword": "Konfirmasi Kata Sandi",
+      "country": "Negara",
+      "agreeToTerms": "Saya setuju dengan",
+      "termsOfService": "Syarat Layanan",
+      "and": "dan",
+      "privacyPolicy": "Kebijakan Privasi",
+      "createAccount": "Buat Akun",
+      "continueWithEmail": "Lanjutkan dengan Email",
+      "continueWithGoogle": "Lanjutkan dengan Google",
+      "continueWithApple": "Lanjutkan dengan Apple",
+      "orContinueWith": "Atau lanjutkan dengan",
+      "haveAccount": "Sudah punya akun?",
+      "signIn": "Masuk",
+      "backToHome": "Kembali ke Beranda",
+      "trustIndicator": "Data Anda dilindungi dengan enkripsi tingkat bank",
+      "steps": {
+        "email": {
+          "title": "Masukkan email Anda",
+          "subtitle": "Kami akan mengirimkan kode verifikasi",
+          "continue": "Lanjutkan",
+          "emailPlaceholder": "Masukkan alamat email Anda"
+        },
+        "verification": {
+          "title": "Verifikasi email Anda",
+          "subtitle": "Masukkan kode 6 digit yang dikirim ke",
+          "continue": "Verifikasi",
+          "resend": "Kirim ulang kode",
+          "codePlaceholder": "Masukkan kode verifikasi"
+        },
+        "password": {
+          "title": "Buat kata sandi",
+          "subtitle": "Pilih kata sandi yang kuat untuk akun Anda",
+          "continue": "Lanjutkan",
+          "passwordPlaceholder": "Buat kata sandi yang kuat",
+          "confirmPlaceholder": "Konfirmasi kata sandi Anda"
+        },
+        "country": {
+          "title": "Pilih negara Anda",
+          "subtitle": "Ini membantu kami memberikan layanan yang lebih baik",
+          "continue": "Selesaikan Pendaftaran",
+          "countryPlaceholder": "Pilih negara Anda"
+        }
+      }
+    }
+  },
+  "Dashboard": {
+    "title": "Beranda",
+    "welcome": "Selamat datang kembali",
+    "actions": {
+      "send": "Kirim",
+      "convert": "Konversi",
+      "receive": "Terima"
+    },
+    "transactions": {
+      "title": "Transaksi",
+      "seeAll": "Lihat semua",
+      "noTransactions": "Belum ada transaksi",
+      "types": {
+        "send": "Uang terkirim",
+        "receive": "Uang diterima",
+        "convert": "Mata uang dikonversi",
+        "failed": "Transaksi gagal"
+      }
+    },
+    "kyc": {
+      "completeProfile": "Lengkapi profil Anda",
+      "completeProfileDesc": "Amankan akun Anda dan buka akses penuh dengan menyelesaikan KYC.",
+      "completeProfileBtn": "Lengkapi profil",
+      "profileVerified": "Profil Terverifikasi",
+      "profileVerifiedDesc": "Identitas Anda telah berhasil diverifikasi. Sekarang Anda memiliki akses penuh ke semua fitur Paystup.",
+      "verificationComplete": "✓ Verifikasi identitas selesai"
+    },
+    "referral": {
+      "title": "Ajak teman",
+      "description": "Undang teman Anda dan dapatkan hadiah ketika mereka melakukan transfer pertama. Saling menguntungkan!",
+      "button": "Segera hadir!"
+    },
+    "exchangeRate": {
+      "title": "Nilai tukar",
+      "today": "Hari ini",
+      "viewRates": "Lihat kurs"
+    }
+  },
+  "Send": {
+    "title": "Kirim Uang",
+    "steps": {
+      "recipient": "Penerima",
+      "amount": "Jumlah",
+      "review": "Tinjau",
+      "payment": "Bayar"
+    },
+    "recipient": {
+      "title": "Detail penerima",
+      "subtitle": "Masukkan detail orang yang ingin Anda kirimi uang",
+      "fullName": "Nama Lengkap",
+      "fullNamePlaceholder": "Masukkan nama lengkap penerima",
+      "accountName": "Nama Akun",
+      "accountNamePlaceholder": "Masukkan nama pemegang akun",
+      "accountNumber": "Nomor Akun",
+      "accountNumberPlaceholder": "Masukkan nomor akun",
+      "bank": "Bank",
+      "bankPlaceholder": "Pilih bank",
+      "country": "Negara",
+      "countryPlaceholder": "Pilih negara"
+    },
+    "amount": {
+      "title": "Jumlah yang akan dikirim",
+      "sendAmount": "Anda kirim",
+      "receiveAmount": "Penerima terima",
+      "exchangeRate": "Nilai tukar",
+      "fees": "Biaya",
+      "total": "Total"
+    },
+    "review": {
+      "title": "Konfirmasi detail transfer Anda",
+      "recipient": "Penerima",
+      "amount": "Jumlah",
+      "amountSent": "Jumlah dikirim",
+      "paystupCharges": "Biaya Paystup",
+      "recipientGets": "Penerima terima",
+      "makePayment": "Lakukan pembayaran"
+    },
+    "payment": {
+      "title": "Masukkan kata sandi Anda",
+      "subtitle": "Pemeriksaan keamanan ini untuk menjaga akun Anda tetap aman",
+      "learnMore": "Pelajari lebih lanjut",
+      "password": "Kata Sandi",
+      "passwordPlaceholder": "Masukkan kata sandi Anda",
+      "confirmPayment": "Konfirmasi pembayaran",
+      "success": {
+        "title": "Transaksi Anda berhasil",
+        "subtitle": "Lihat riwayat transaksi Anda",
+        "button": "Lihat transaksi"
+      },
+      "error": {
+        "title": "Transaksi Anda tidak berhasil",
+        "subtitle": "Silakan coba lagi",
+        "button": "Coba lagi"
+      }
+    }
+  },
+  "KYC": {
+    "title": "Verifikasi KYC",
+    "steps": {
+      "personalDetails": "Detail pribadi",
+      "verification": "Verifikasi",
+      "address": "Alamat"
+    },
+    "personalDetails": {
+      "title": "Detail Pribadi",
+      "subtitle": "Silakan berikan informasi pribadi Anda",
+      "firstName": "Nama Depan",
+      "lastName": "Nama Belakang",
+      "dateOfBirth": "Tanggal Lahir",
+      "phoneNumber": "Nomor Telepon",
+      "gender": "Jenis Kelamin",
+      "genderOptions": {
+        "male": "Laki-laki",
+        "female": "Perempuan",
+        "other": "Lainnya"
+      }
+    },
+    "verification": {
+      "title": "Verifikasi Identitas",
+      "subtitle": "Unggah dokumen identitas Anda",
+      "documentType": "Jenis Dokumen",
+      "documentTypes": {
+        "passport": "Paspor",
+        "nationalId": "KTP",
+        "driversLicense": "SIM"
+      },
+      "frontSide": "Sisi Depan",
+      "backSide": "Sisi Belakang",
+      "uploadInstructions": "Silakan unggah foto dokumen yang jelas"
+    },
+    "address": {
+      "title": "Informasi Alamat",
+      "subtitle": "Silakan berikan alamat Anda saat ini",
+      "street": "Alamat Jalan",
+      "city": "Kota",
+      "state": "Provinsi",
+      "postalCode": "Kode Pos",
+      "country": "Negara"
+    },
+    "success": {
+      "title": "Verifikasi Selesai",
+      "subtitle": "Identitas Anda telah berhasil diverifikasi",
+      "goToDashboard": "Ke Dashboard"
+    }
+  },
+  "Help": {
+    "title": "Butuh bantuan?",
+    "subtitle": "Cari FAQ kami atau dapatkan dukungan personal",
+    "searchPlaceholder": "Beri tahu kami apa yang Anda cari",
+    "liveChat": {
+      "title": "Live chat",
+      "description": "Dapatkan dukungan cepat dari tim kami",
+      "button": "Mulai chat"
+    },
+    "email": {
+      "title": "Email",
+      "description": "Kirim email ke tim dukungan kami",
+      "button": "Kirim Email"
+    },
+    "categories": {
+      "sendMoney": {
+        "title": "Kirim Uang",
+        "description": "Pelajari cara mengirim uang secara global"
+      },
+      "transferTimes": {
+        "title": "Waktu Transfer",
+        "description": "Pahami berapa lama transfer berlangsung"
+      },
+      "supportedCountries": {
+        "title": "Negara yang Didukung",
+        "description": "Lihat negara mana yang kami dukung"
+      },
+      "feesAndRates": {
+        "title": "Biaya dan Kurs",
+        "description": "Pelajari struktur harga kami"
+      },
+      "transferDelays": {
+        "title": "Keterlambatan Transfer",
+        "description": "Apa yang harus dilakukan jika transfer Anda tertunda"
+      },
+      "security": {
+        "title": "Keamanan",
+        "description": "Bagaimana kami menjaga uang Anda tetap aman"
+      },
+      "kyc": {
+        "title": "Verifikasi KYC",
+        "description": "Proses verifikasi identitas"
+      },
+      "accountInfo": {
+        "title": "Informasi Akun",
+        "description": "Kelola pengaturan akun Anda"
+      },
+      "reportProblem": {
+        "title": "Laporkan Masalah",
+        "description": "Dapatkan bantuan dengan masalah"
+      }
+    },
+    "noResults": {
+      "title": "Tidak ada hasil ditemukan",
+      "subtitle": "Coba sesuaikan kata pencarian Anda"
+    }
+  }
+}

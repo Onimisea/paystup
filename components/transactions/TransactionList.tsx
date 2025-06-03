@@ -6,6 +6,7 @@ import {
   useTransactionsStore,
   Transaction,
 } from "@/lib/stores/transactions-store";
+import { useTranslations } from "next-intl";
 
 interface TransactionListProps {
   searchQuery: string;
@@ -13,6 +14,7 @@ interface TransactionListProps {
 
 export default function TransactionList({ searchQuery }: TransactionListProps) {
   const { filteredTransactions, isLoading } = useTransactionsStore();
+  const t = useTranslations("Transactions");
 
   // Group transactions by date
   const groupedTransactions = useMemo(() => {
@@ -27,9 +29,9 @@ export default function TransactionList({ searchQuery }: TransactionListProps) {
       let groupKey: string;
 
       if (date.toDateString() === today.toDateString()) {
-        groupKey = "Today";
+        groupKey = t("today");
       } else if (date.toDateString() === yesterday.toDateString()) {
-        groupKey = "Yesterday";
+        groupKey = t("yesterday");
       } else {
         groupKey = date.toLocaleDateString("en-US", {
           month: "long",
@@ -73,7 +75,7 @@ export default function TransactionList({ searchQuery }: TransactionListProps) {
       <div className="flex items-center justify-center py-12">
         <div className="text-center">
           <div className="w-8 h-8 border-4 border-[#0BAB7C] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-[#4B5563]">Loading transactions...</p>
+          <p className="text-[#4B5563]">{t("loading")}</p>
         </div>
       </div>
     );
@@ -87,14 +89,14 @@ export default function TransactionList({ searchQuery }: TransactionListProps) {
             <ArrowLeftRight className="w-8 h-8 text-gray-400" />
           </div>
           <h3 className="text-lg font-medium text-[#111827] mb-2">
-            No transactions found
+            {t("noTransactions")}
           </h3>
           <p className="text-[#4B5563]">
             {searchQuery ||
             filteredTransactions.length !==
               useTransactionsStore.getState().transactions.length
-              ? "Try adjusting your search or filters"
-              : "Your transactions will appear here"}
+              ? t("tryAdjusting")
+              : t("willAppearHere")}
           </p>
         </div>
       </div>
@@ -137,13 +139,13 @@ export default function TransactionList({ searchQuery }: TransactionListProps) {
                     <div className="flex items-center gap-2 mt-1">
                       <span className="text-xs text-[#4B5563]">
                         {transaction.type === "send"
-                          ? "Sent"
+                          ? t("types.send")
                           : transaction.type === "receive"
-                          ? "Received"
+                          ? t("types.receive")
                           : transaction.type === "conversion"
-                          ? "Moved"
-                          : "Transaction"}{" "}
-                        • Today
+                          ? t("types.conversion")
+                          : t("types.transaction")}{" "}
+                        • {t("today")}
                       </span>
                       <span
                         className={`text-xs font-medium ${getStatusColor(
@@ -164,7 +166,7 @@ export default function TransactionList({ searchQuery }: TransactionListProps) {
                   </p>
                   {transaction.reference && (
                     <p className="text-xs text-[#4B5563] mt-1">
-                      Ref: {transaction.reference}
+                      {t("reference")}: {transaction.reference}
                     </p>
                   )}
                 </div>

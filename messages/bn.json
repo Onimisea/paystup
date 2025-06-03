@@ -1,0 +1,351 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "বিশ্বব্যাপী টাকা পাঠান",
+      "brand": "Paystup",
+      "subtitle": "স্থানীয় পেমেন্ট ব্যবহার করে আন্তর্জাতিক অর্থ স্থানান্তরের স্মার্ট উপায়",
+      "description": "ব্যয়বহুল আন্তর্জাতিক ব্যাংকিং ফি এড়িয়ে চলুন। আমাদের পিয়ার-টু-পিয়ার প্ল্যাটফর্ম আপনাকে প্রেরক এবং প্রাপক উভয় দেশে স্থানীয় পেমেন্ট নেটওয়ার্কের সাথে সংযুক্ত করে।",
+      "cta": {
+        "primary": "টাকা পাঠানো শুরু করুন",
+        "secondary": "এটি কীভাবে কাজ করে জানুন"
+      }
+    },
+    "navigation": {
+      "sendMoney": "টাকা পাঠান",
+      "receiveMoney": "টাকা গ্রহণ করুন",
+      "howItWorks": "এটি কীভাবে কাজ করে",
+      "pricing": "মূল্য",
+      "support": "সহায়তা",
+      "login": "লগইন",
+      "signup": "শুরু করুন"
+    },
+    "features": {
+      "title": "কেন Paystup বেছে নেবেন?",
+      "items": {
+        "lowFees": {
+          "title": "কম ফি",
+          "description": "ঐতিহ্যবাহী ব্যাংকের তুলনায় স্থানান্তর ফিতে ৯০% পর্যন্ত সাশ্রয়"
+        },
+        "fastTransfers": {
+          "title": "দ্রুত স্থানান্তর",
+          "description": "টাকা দিনের পরিবর্তে মিনিটেই পৌঁছায়"
+        },
+        "secure": {
+          "title": "ব্যাংক-স্তরের নিরাপত্তা",
+          "description": "আপনার অর্থ এবং ডেটা এন্টারপ্রাইজ-গ্রেড নিরাপত্তায় সুরক্ষিত"
+        },
+        "global": {
+          "title": "বিশ্বব্যাপী পৌঁছানো",
+          "description": "বিশ্বের ৫০+ দেশে টাকা পাঠান"
+        }
+      }
+    }
+  },
+  "Common": {
+    "footer": {
+      "privacyPolicy": "গোপনীয়তা নীতি",
+      "language": "ভাষা"
+    },
+    "languages": {
+      "en": "English",
+      "fr": "Français",
+      "pt": "Português",
+      "ar": "العربية",
+      "sw": "Kiswahili",
+      "hi": "हिन्दी",
+      "zh-CN": "中文",
+      "ur": "اردو",
+      "bn": "বাংলা",
+      "id": "Bahasa Indonesia",
+      "pa": "ਪੰਜਾਬੀ",
+      "ja": "日本語",
+      "vi": "Tiếng Việt",
+      "mr": "मराठी"
+    },
+    "buttons": {
+      "back": "পিছনে",
+      "next": "পরবর্তী",
+      "continue": "চালিয়ে যান",
+      "cancel": "বাতিল",
+      "save": "সংরক্ষণ করুন",
+      "submit": "জমা দিন",
+      "retry": "আবার চেষ্টা করুন",
+      "close": "বন্ধ করুন"
+    },
+    "form": {
+      "required": "এই ক্ষেত্রটি আবশ্যক",
+      "invalidEmail": "অনুগ্রহ করে একটি বৈধ ইমেইল ঠিকানা লিখুন",
+      "passwordTooShort": "পাসওয়ার্ড কমপক্ষে ৮টি অক্ষরের হতে হবে",
+      "passwordsDoNotMatch": "পাসওয়ার্ড মিলছে না",
+      "pleaseSelect": "অনুগ্রহ করে একটি বিকল্প নির্বাচন করুন"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "স্বাগতম",
+      "subtitle": "আপনার Paystup অ্যাকাউন্টে সাইন ইন করুন",
+      "email": "ইমেইল",
+      "password": "পাসওয়ার্ড",
+      "rememberMe": "আমাকে মনে রাখুন",
+      "forgotPassword": "পাসওয়ার্ড ভুলে গেছেন?",
+      "signIn": "সাইন ইন",
+      "noAccount": "অ্যাকাউন্ট নেই?",
+      "signUp": "সাইন আপ করুন",
+      "backToHome": "হোমে ফিরে যান",
+      "trustIndicator": "ব্যাংক-স্তরের নিরাপত্তায় সুরক্ষিত"
+    },
+    "signup": {
+      "title": "আপনার অ্যাকাউন্ট তৈরি করুন",
+      "subtitle": "বিশ্বব্যাপী অর্থ প্রেরণকারী হাজারো মানুষের সাথে যোগ দিন",
+      "firstName": "প্রথম নাম",
+      "lastName": "শেষ নাম",
+      "email": "ইমেইল",
+      "password": "পাসওয়ার্ড",
+      "confirmPassword": "পাসওয়ার্ড নিশ্চিত করুন",
+      "country": "দেশ",
+      "agreeToTerms": "আমি সম্মত",
+      "termsOfService": "সেবার শর্তাবলী",
+      "and": "এবং",
+      "privacyPolicy": "গোপনীয়তা নীতি",
+      "createAccount": "অ্যাকাউন্ট তৈরি করুন",
+      "continueWithEmail": "ইমেইল দিয়ে চালিয়ে যান",
+      "continueWithGoogle": "Google দিয়ে চালিয়ে যান",
+      "continueWithApple": "Apple দিয়ে চালিয়ে যান",
+      "orContinueWith": "অথবা এর সাথে চালিয়ে যান",
+      "haveAccount": "ইতিমধ্যে অ্যাকাউন্ট আছে?",
+      "signIn": "সাইন ইন করুন",
+      "backToHome": "হোমে ফিরে যান",
+      "trustIndicator": "আপনার ডেটা ব্যাংক-স্তরের এনক্রিপশনে সুরক্ষিত",
+      "steps": {
+        "email": {
+          "title": "আপনার ইমেইল লিখুন",
+          "subtitle": "আমরা আপনাকে একটি যাচাইকরণ কোড পাঠাব",
+          "continue": "চালিয়ে যান",
+          "emailPlaceholder": "আপনার ইমেইল ঠিকানা লিখুন"
+        },
+        "verification": {
+          "title": "আপনার ইমেইল যাচাই করুন",
+          "subtitle": "পাঠানো ৬-সংখ্যার কোড লিখুন",
+          "continue": "যাচাই করুন",
+          "resend": "কোড আবার পাঠান",
+          "codePlaceholder": "যাচাইকরণ কোড লিখুন"
+        },
+        "password": {
+          "title": "একটি পাসওয়ার্ড তৈরি করুন",
+          "subtitle": "আপনার অ্যাকাউন্টের জন্য একটি শক্তিশালী পাসওয়ার্ড বেছে নিন",
+          "continue": "চালিয়ে যান",
+          "passwordPlaceholder": "একটি শক্তিশালী পাসওয়ার্ড তৈরি করুন",
+          "confirmPlaceholder": "আপনার পাসওয়ার্ড নিশ্চিত করুন"
+        },
+        "country": {
+          "title": "আপনার দেশ নির্বাচন করুন",
+          "subtitle": "এটি আমাদের আরও ভাল সেবা প্রদান করতে সাহায্য করে",
+          "continue": "সাইনআপ সম্পূর্ণ করুন",
+          "countryPlaceholder": "আপনার দেশ নির্বাচন করুন"
+        }
+      }
+    }
+  },
+  "Dashboard": {
+    "title": "হোম",
+    "welcome": "স্বাগতম",
+    "actions": {
+      "send": "পাঠান",
+      "convert": "রূপান্তর করুন",
+      "receive": "গ্রহণ করুন"
+    },
+    "transactions": {
+      "title": "লেনদেন",
+      "seeAll": "সব দেখুন",
+      "noTransactions": "এখনও কোনো লেনদেন নেই",
+      "types": {
+        "send": "টাকা পাঠানো হয়েছে",
+        "receive": "টাকা পাওয়া গেছে",
+        "convert": "মুদ্রা রূপান্তরিত",
+        "failed": "লেনদেন ব্যর্থ"
+      }
+    },
+    "kyc": {
+      "completeProfile": "আপনার প্রোফাইল সম্পূর্ণ করুন",
+      "completeProfileDesc": "আপনার অ্যাকাউন্ট সুরক্ষিত করুন এবং KYC সম্পূর্ণ করে সম্পূর্ণ অ্যাক্সেস আনলক করুন।",
+      "completeProfileBtn": "প্রোফাইল সম্পূর্ণ করুন",
+      "profileVerified": "প্রোফাইল যাচাইকৃত",
+      "profileVerifiedDesc": "আপনার পরিচয় সফলভাবে যাচাই করা হয়েছে। এখন আপনার সমস্ত Paystup বৈশিষ্ট্যে সম্পূর্ণ অ্যাক্সেস রয়েছে।",
+      "verificationComplete": "✓ পরিচয় যাচাইকরণ সম্পূর্ণ"
+    },
+    "referral": {
+      "title": "একজন বন্ধুকে রেফার করুন",
+      "description": "আপনার বন্ধুদের আমন্ত্রণ জানান এবং যখন তারা তাদের প্রথম স্থানান্তর করবে তখন পুরস্কার অর্জন করুন। এটি উভয়ের জন্য জয়!",
+      "button": "শীঘ্রই আসছে!"
+    },
+    "exchangeRate": {
+      "title": "বিনিময় হার",
+      "today": "আজ",
+      "viewRates": "হার দেখুন"
+    }
+  },
+  "Send": {
+    "title": "টাকা পাঠান",
+    "steps": {
+      "recipient": "প্রাপক",
+      "amount": "পরিমাণ",
+      "review": "পর্যালোচনা",
+      "payment": "পেমেন্ট"
+    },
+    "recipient": {
+      "title": "প্রাপকের বিবরণ",
+      "subtitle": "যার কাছে আপনি টাকা পাঠাতে চান তার বিবরণ লিখুন",
+      "fullName": "পূর্ণ নাম",
+      "fullNamePlaceholder": "প্রাপকের পূর্ণ নাম লিখুন",
+      "accountName": "অ্যাকাউন্টের নাম",
+      "accountNamePlaceholder": "অ্যাকাউন্ট ধারকের নাম লিখুন",
+      "accountNumber": "অ্যাকাউন্ট নম্বর",
+      "accountNumberPlaceholder": "অ্যাকাউন্ট নম্বর লিখুন",
+      "bank": "ব্যাংক",
+      "bankPlaceholder": "ব্যাংক নির্বাচন করুন",
+      "country": "দেশ",
+      "countryPlaceholder": "দেশ নির্বাচন করুন"
+    },
+    "amount": {
+      "title": "পাঠানোর পরিমাণ",
+      "sendAmount": "আপনি পাঠান",
+      "receiveAmount": "প্রাপক পাবেন",
+      "exchangeRate": "বিনিময় হার",
+      "fees": "ফি",
+      "total": "মোট"
+    },
+    "review": {
+      "title": "আপনার স্থানান্তরের বিবরণ নিশ্চিত করুন",
+      "recipient": "প্রাপক",
+      "amount": "পরিমাণ",
+      "amountSent": "পাঠানো পরিমাণ",
+      "paystupCharges": "Paystup চার্জ",
+      "recipientGets": "প্রাপক পাবেন",
+      "makePayment": "পেমেন্ট করুন"
+    },
+    "payment": {
+      "title": "আপনার পাসওয়ার্ড লিখুন",
+      "subtitle": "এই নিরাপত্তা পরীক্ষা আপনার অ্যাকাউন্ট নিরাপদ রাখার জন্য",
+      "learnMore": "আরও জানুন",
+      "password": "পাসওয়ার্ড",
+      "passwordPlaceholder": "আপনার পাসওয়ার্ড লিখুন",
+      "confirmPayment": "পেমেন্ট নিশ্চিত করুন",
+      "success": {
+        "title": "আপনার লেনদেন সফল হয়েছে",
+        "subtitle": "আপনার লেনদেনের ইতিহাস দেখুন",
+        "button": "লেনদেন দেখুন"
+      },
+      "error": {
+        "title": "আপনার লেনদেন সফল হয়নি",
+        "subtitle": "অনুগ্রহ করে আবার চেষ্টা করুন",
+        "button": "আবার চেষ্টা করুন"
+      }
+    }
+  },
+  "KYC": {
+    "title": "KYC যাচাইকরণ",
+    "steps": {
+      "personalDetails": "ব্যক্তিগত বিবরণ",
+      "verification": "যাচাইকরণ",
+      "address": "ঠিকানা"
+    },
+    "personalDetails": {
+      "title": "ব্যক্তিগত বিবরণ",
+      "subtitle": "অনুগ্রহ করে আপনার ব্যক্তিগত তথ্য প্রদান করুন",
+      "firstName": "প্রথম নাম",
+      "lastName": "শেষ নাম",
+      "dateOfBirth": "জন্ম তারিখ",
+      "phoneNumber": "ফোন নম্বর",
+      "gender": "লিঙ্গ",
+      "genderOptions": {
+        "male": "পুরুষ",
+        "female": "মহিলা",
+        "other": "অন্যান্য"
+      }
+    },
+    "verification": {
+      "title": "পরিচয় যাচাইকরণ",
+      "subtitle": "আপনার পরিচয়পত্র আপলোড করুন",
+      "documentType": "নথির ধরন",
+      "documentTypes": {
+        "passport": "পাসপোর্ট",
+        "nationalId": "জাতীয় পরিচয়পত্র",
+        "driversLicense": "ড্রাইভিং লাইসেন্স"
+      },
+      "frontSide": "সামনের দিক",
+      "backSide": "পিছনের দিক",
+      "uploadInstructions": "অনুগ্রহ করে আপনার নথির স্পষ্ট ছবি আপলোড করুন"
+    },
+    "address": {
+      "title": "ঠিকানার তথ্য",
+      "subtitle": "অনুগ্রহ করে আপনার বর্তমান ঠিকানা প্রদান করুন",
+      "street": "রাস্তার ঠিকানা",
+      "city": "শহর",
+      "state": "রাজ্য/প্রদেশ",
+      "postalCode": "পোস্টাল কোড",
+      "country": "দেশ"
+    },
+    "success": {
+      "title": "যাচাইকরণ সম্পূর্ণ",
+      "subtitle": "আপনার পরিচয় সফলভাবে যাচাই করা হয়েছে",
+      "goToDashboard": "ড্যাশবোর্ডে যান"
+    }
+  },
+  "Help": {
+    "title": "সাহায্য প্রয়োজন?",
+    "subtitle": "আমাদের FAQ খোঁজ করুন বা ব্যক্তিগত সহায়তা পান",
+    "searchPlaceholder": "আপনি কী খুঁজছেন তা আমাদের বলুন",
+    "liveChat": {
+      "title": "লাইভ চ্যাট",
+      "description": "আমাদের দল থেকে দ্রুত সহায়তা পান",
+      "button": "চ্যাট শুরু করুন"
+    },
+    "email": {
+      "title": "ইমেইল",
+      "description": "আমাদের সহায়তা দলকে ইমেইল পাঠান",
+      "button": "ইমেইল পাঠান"
+    },
+    "categories": {
+      "sendMoney": {
+        "title": "টাকা পাঠান",
+        "description": "বিশ্বব্যাপী টাকা কীভাবে পাঠাতে হয় তা শিখুন"
+      },
+      "transferTimes": {
+        "title": "স্থানান্তরের সময়",
+        "description": "স্থানান্তরে কতক্ষণ সময় লাগে তা বুঝুন"
+      },
+      "supportedCountries": {
+        "title": "সমর্থিত দেশসমূহ",
+        "description": "আমরা কোন দেশগুলি সমর্থন করি তা দেখুন"
+      },
+      "feesAndRates": {
+        "title": "ফি এবং হার",
+        "description": "আমাদের মূল্য কাঠামো সম্পর্কে জানুন"
+      },
+      "transferDelays": {
+        "title": "স্থানান্তর বিলম্ব",
+        "description": "আপনার স্থানান্তর বিলম্বিত হলে কী করবেন"
+      },
+      "security": {
+        "title": "নিরাপত্তা",
+        "description": "আমরা কীভাবে আপনার অর্থ নিরাপদ রাখি"
+      },
+      "kyc": {
+        "title": "KYC যাচাইকরণ",
+        "description": "পরিচয় যাচাইকরণ প্রক্রিয়া"
+      },
+      "accountInfo": {
+        "title": "অ্যাকাউন্টের তথ্য",
+        "description": "আপনার অ্যাকাউন্ট সেটিংস পরিচালনা করুন"
+      },
+      "reportProblem": {
+        "title": "সমস্যার রিপোর্ট করুন",
+        "description": "সমস্যার সাথে সাহায্য পান"
+      }
+    },
+    "noResults": {
+      "title": "কোনো ফলাফল পাওয়া যায়নি",
+      "subtitle": "আপনার অনুসন্ধান শব্দগুলি সামঞ্জস্য করার চেষ্টা করুন"
+    }
+  }
+}

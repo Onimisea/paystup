@@ -17,6 +17,7 @@ import {
 import CountrySelector from "./CountrySelector";
 import BankSelector from "./BankSelector";
 import { getCountryByCode } from "@/lib/countries-banks";
+import { useTranslations } from "next-intl";
 
 // Zod validation schema
 const recipientSchema = z.object({
@@ -31,6 +32,8 @@ type RecipientFormData = z.infer<typeof recipientSchema>;
 
 export default function RecipientStep() {
   const { recipient, updateRecipient, setCurrentStep } = useSendStore();
+  const t = useTranslations("Send");
+  const tCommon = useTranslations("Common");
 
   const form = useForm<RecipientFormData>({
     resolver: zodResolver(recipientSchema),
@@ -71,10 +74,10 @@ export default function RecipientStep() {
     <div className="max-w-sm sm:max-w-md mx-auto px-4 sm:px-0">
       <div className="text-center mb-6 sm:mb-8">
         <h1 className="text-xl sm:text-2xl font-semibold text-[#111827] mb-2">
-          Recipient details
+          {t("recipient.title")}
         </h1>
         <p className="text-sm sm:text-base text-[#4B5563]">
-          Enter the recipient&apos;s information to send money
+          {t("recipient.subtitle")}
         </p>
       </div>
 
@@ -87,11 +90,11 @@ export default function RecipientStep() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel className="text-[#4B5563] font-medium">
-                  Account name
+                  {t("recipient.accountName")}
                 </FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Amanda Joseph"
+                    placeholder={t("recipient.accountNamePlaceholder")}
                     {...field}
                     className="border-gray-300"
                   />
@@ -108,11 +111,11 @@ export default function RecipientStep() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel className="text-[#4B5563] font-medium">
-                  Account number
+                  {t("recipient.accountNumber")}
                 </FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="0123456789"
+                    placeholder={t("recipient.accountNumberPlaceholder")}
                     {...field}
                     className="border-gray-300"
                   />
@@ -129,7 +132,7 @@ export default function RecipientStep() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel className="text-[#4B5563] font-medium">
-                  Country
+                  {t("recipient.country")}
                 </FormLabel>
                 <FormControl>
                   <CountrySelector
@@ -150,7 +153,7 @@ export default function RecipientStep() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel className="text-[#4B5563] font-medium">
-                  Bank
+                  {t("recipient.bank")}
                 </FormLabel>
                 <FormControl>
                   <BankSelector
@@ -170,7 +173,7 @@ export default function RecipientStep() {
             type="submit"
             className="w-full sm:w-fit bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 focus:bg-[#0BAB7C]/90 text-white font-medium py-3 px-6 sm:px-8 rounded-full cursor-pointer transition-colors min-h-touch"
           >
-            Next
+            {tCommon("buttons.next")}
           </Button>
         </form>
       </Form>

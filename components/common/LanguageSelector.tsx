@@ -15,10 +15,19 @@ import { Globe } from "lucide-react";
 // Language flag emojis for better UX
 const languageFlags: Record<string, string> = {
   en: "🇺🇸",
-  fr: "🇫🇷", 
+  fr: "🇫🇷",
   pt: "🇧🇷",
   ar: "🇸🇦",
   sw: "🇹🇿",
+  hi: "🇮🇳",
+  "zh-CN": "🇨🇳",
+  ur: "🇵🇰",
+  bn: "🇧🇩",
+  id: "🇮🇩",
+  pa: "🇮🇳",
+  ja: "🇯🇵",
+  vi: "🇻🇳",
+  mr: "🇮🇳",
 };
 
 export default function LanguageSelector() {

@@ -11,86 +11,116 @@ import Sidebar from "@/components/common/Sidebar";
 import AuthFooter from "@/components/layout/AuthFooter";
 import EmailSupportModal from "./EmailSupportModal";
 import LiveChatWidget from "./LiveChatWidget";
-
-const helpCategories = [
-  {
-    title: "How do I send money?",
-    description:
-      "Learn how to complete a successful transfer from your dashboard.",
-    slug: "send-money",
-    topics: [
-      "Step-by-step sending process",
-      "Required recipient information",
-      "Payment methods",
-      "Transfer limits",
-    ],
-  },
-  {
-    title: "How long does a transfer take?",
-    description:
-      "Most transfers are instant, but here's what you should know about processing times.",
-    slug: "transfer-times",
-    topics: [
-      "Instant transfers",
-      "Bank processing times",
-      "Weekend and holiday delays",
-      "International transfer times",
-    ],
-  },
-  {
-    title: "What countries can I send money to?",
-    description:
-      "View the list of supported countries and regions for sending funds.",
-    slug: "supported-countries",
-    topics: [
-      "Supported countries",
-      "Regional restrictions",
-      "Currency availability",
-      "Local payment methods",
-    ],
-  },
-  {
-    title: "What are the fees and exchange rates?",
-    description:
-      "Get details on how we calculate your fees and exchange rates.",
-    slug: "fees-and-rates",
-    topics: [
-      "Transfer fees",
-      "Exchange rate margins",
-      "Fee calculator",
-      "Premium rates",
-    ],
-  },
-  {
-    title: "Why was my transfer delayed?",
-    description:
-      "Find out the common reasons for transaction delays and how to fix them.",
-    slug: "transfer-delays",
-    topics: [
-      "Verification requirements",
-      "Bank processing delays",
-      "Compliance checks",
-      "Technical issues",
-    ],
-  },
-  {
-    title: "How secure is my information?",
-    description:
-      "Learn about the safety measures we take to protect your data and funds.",
-    slug: "security",
-    topics: [
-      "Data encryption",
-      "Account security",
-      "Fraud protection",
-      "Privacy policy",
-    ],
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function HelpCenterClient() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
+
+  const t = useTranslations("Help");
+
+  const helpCategories = [
+    {
+      title: t("categories.sendMoney.title"),
+      description: t("categories.sendMoney.description"),
+      slug: "send-money",
+      topics: [
+        "Step-by-step sending process",
+        "Required recipient information",
+        "Payment methods",
+        "Transfer limits",
+      ],
+    },
+    {
+      title: t("categories.transferTimes.title"),
+      description: t("categories.transferTimes.description"),
+      slug: "transfer-times",
+      topics: [
+        "Instant transfers",
+        "Bank processing times",
+        "Weekend and holiday delays",
+        "International transfer times",
+      ],
+    },
+    {
+      title: t("categories.supportedCountries.title"),
+      description: t("categories.supportedCountries.description"),
+      slug: "supported-countries",
+      topics: [
+        "Supported countries",
+        "Regional restrictions",
+        "Currency availability",
+        "Local payment methods",
+      ],
+    },
+    {
+      title: t("categories.feesAndRates.title"),
+      description: t("categories.feesAndRates.description"),
+      slug: "fees-and-rates",
+      topics: [
+        "Transfer fees",
+        "Exchange rate margins",
+        "Fee calculator",
+        "Premium rates",
+      ],
+    },
+    {
+      title: t("categories.transferDelays.title"),
+      description: t("categories.transferDelays.description"),
+      slug: "transfer-delays",
+      topics: [
+        "Verification requirements",
+        "Bank processing delays",
+        "Compliance checks",
+        "Technical issues",
+      ],
+    },
+    {
+      title: t("categories.security.title"),
+      description: t("categories.security.description"),
+      slug: "security",
+      topics: [
+        "Data encryption",
+        "Account security",
+        "Fraud protection",
+        "Privacy policy",
+      ],
+    },
+    {
+      title: t("categories.kyc.title"),
+      description: t("categories.kyc.description"),
+      slug: "kyc",
+      topics: [
+        "Identity verification",
+        "Document requirements",
+        "Verification process",
+        "Account limits",
+      ],
+    },
+    {
+      title: t("categories.accountInfo.title"),
+      description: t("categories.accountInfo.description"),
+      slug: "account-info",
+      topics: [
+        "Profile settings",
+        "Password management",
+        "Notification preferences",
+        "Account closure",
+      ],
+    },
+    {
+      title: t("categories.reportProblem.title"),
+      description: t("categories.reportProblem.description"),
+      slug: "report-problem",
+      topics: [
+        "Transaction issues",
+        "Technical problems",
+        "Account access",
+        "Dispute resolution",
+      ],
+    },
+  ];
 
   const filteredCategories = helpCategories.filter(
     (category) =>
@@ -119,10 +149,10 @@ export default function HelpCenterClient() {
               {/* Page Header */}
               <div className="mb-6 sm:mb-8">
                 <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#111827] mb-2">
-                  Need a hand?
+                  {t("title")}
                 </h1>
                 <p className="text-sm sm:text-base text-[#4B5563] mb-4 sm:mb-6">
-                  Search our FAQs or get personal support
+                  {t("subtitle")}
                 </p>
 
                 {/* Search Bar */}
@@ -130,7 +160,7 @@ export default function HelpCenterClient() {
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-[#4B5563]" />
                   <Input
                     type="text"
-                    placeholder="Tell us what you are looking for"
+                    placeholder={t("searchPlaceholder")}
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="pl-10 sm:pl-12 py-2 sm:py-3 bg-white border-gray-200 focus:border-[#0BAB7C] focus:ring-[#0BAB7C] text-sm sm:text-base min-h-touch"
@@ -150,17 +180,17 @@ export default function HelpCenterClient() {
                     <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
                       <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" />
                       <h3 className="text-sm sm:text-base font-semibold text-[#111827]">
-                        Live chat
+                        {t("liveChat.title")}
                       </h3>
                     </div>
                     <p className="text-[#4B5563] text-xs sm:text-sm mb-3 sm:mb-4">
-                      Get a quick support from our team
+                      {t("liveChat.description")}
                     </p>
                     <Button
                       onClick={() => setIsChatOpen(true)}
                       className="bg-purple-600 hover:bg-purple-700 text-white px-4 sm:px-6 py-2 rounded-lg text-xs sm:text-sm min-h-touch w-full sm:w-auto"
                     >
-                      Start a chat
+                      {t("liveChat.button")}
                     </Button>
                   </div>
 
@@ -169,17 +199,17 @@ export default function HelpCenterClient() {
                     <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
                       <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
                       <h3 className="text-sm sm:text-base font-semibold text-[#111827]">
-                        Email
+                        {t("email.title")}
                       </h3>
                     </div>
                     <p className="text-[#4B5563] text-xs sm:text-sm mb-3 sm:mb-4">
-                      Send an email to our support team
+                      {t("email.description")}
                     </p>
                     <Button
                       onClick={() => setIsEmailModalOpen(true)}
                       className="bg-green-600 hover:bg-green-700 text-white px-4 sm:px-6 py-2 rounded-lg text-xs sm:text-sm min-h-touch w-full sm:w-auto"
                     >
-                      Send Email
+                      {t("email.button")}
                     </Button>
                   </div>
                 </div>
@@ -216,12 +246,9 @@ export default function HelpCenterClient() {
                     <Search className="w-8 h-8 text-gray-400" />
                   </div>
                   <h3 className="text-lg font-medium text-[#111827] mb-2">
-                    No results found
+                    {t("noResults.title")}
                   </h3>
-                  <p className="text-[#4B5563]">
-                    Try adjusting your search terms or browse our categories
-                    above
-                  </p>
+                  <p className="text-[#4B5563]">{t("noResults.subtitle")}</p>
                 </div>
               )}
             </div>

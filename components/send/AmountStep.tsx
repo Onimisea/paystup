@@ -12,6 +12,7 @@ import {
   getCurrencyByCountry,
 } from "@/lib/currencies";
 import { convertCurrencyLive } from "@/lib/services/exchange-rate-service";
+import { useTranslations } from "next-intl";
 
 export default function AmountStep() {
   const {
@@ -23,6 +24,9 @@ export default function AmountStep() {
     errors,
     clearError,
   } = useSendStore();
+
+  const t = useTranslations("Send");
+  const tCommon = useTranslations("Common");
 
   const [sendAmount, setSendAmount] = useState(amount.sendAmount);
   const [sendCurrency, setSendCurrency] = useState(amount.sendCurrency);
@@ -151,15 +155,17 @@ export default function AmountStep() {
     <div className="max-w-sm sm:max-w-md mx-auto px-4 sm:px-0">
       <div className="text-center mb-6 sm:mb-8">
         <h1 className="text-xl sm:text-2xl font-semibold text-[#111827] mb-2">
-          Amount to be sent
+          {t("amount.title")}
         </h1>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-6 overflow-visible">
         {/* Send Amount */}
-        <div>
-          <Label className="text-[#4B5563] font-medium">You send exactly</Label>
-          <div className="relative mt-1">
+        <div className="relative" style={{ zIndex: 10 }}>
+          <Label className="text-[#4B5563] font-medium">
+            {t("amount.sendAmount")}
+          </Label>
+          <div className="relative mt-1 overflow-visible">
             <Input
               type="text"
               value={sendAmount}
@@ -183,11 +189,11 @@ export default function AmountStep() {
         </div>
 
         {/* Receive Amount */}
-        <div>
+        <div className="relative" style={{ zIndex: 1 }}>
           <Label className="text-[#4B5563] font-medium">
-            Recipient receives
+            {t("amount.receiveAmount")}
           </Label>
-          <div className="relative mt-1">
+          <div className="relative mt-1 overflow-visible ">
             <Input
               type="text"
               value={isConverting ? "Converting..." : amount.receiveAmount}
@@ -220,35 +226,38 @@ export default function AmountStep() {
               <span className="text-[#111827] font-medium">3 hours</span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-[#4B5563]">
+              <span className="text-[#4B5563]">{t("amount.fees")}</span>
+              <span className="text-[#111827] font-medium">
                 {formatCurrency(amount.fees, sendCurrency)}
               </span>
-              <span className="text-[#111827] font-medium">Charges</span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-[#4B5563]">
+              <span className="text-[#4B5563]">{t("amount.total")}</span>
+              <span className="text-[#111827] font-medium">
                 {formatCurrency(amount.totalAmount, sendCurrency)}
               </span>
-              <span className="text-[#111827] font-medium">Total amount</span>
             </div>
           </div>
         )}
 
         {/* Navigation Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 sm:pt-6">
+        <div
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 sm:pt-6"
+          style={{ zIndex: 1 }}
+        >
           <Button
             onClick={handleBack}
             variant="outline"
             className="w-full sm:flex-1 py-3 rounded-lg cursor-pointer min-h-touch"
           >
-            Back
+            {tCommon("buttons.back")}
           </Button>
           <Button
             onClick={handleNext}
             className="w-full sm:flex-1 bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white font-medium py-3 rounded-lg cursor-pointer min-h-touch"
             disabled={!sendAmount || parseFloat(sendAmount) <= 0}
           >
-            Next
+            {tCommon("buttons.next")}
           </Button>
         </div>
       </div>

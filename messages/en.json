@@ -51,7 +51,33 @@
       "fr": "Français",
       "pt": "Português",
       "ar": "العربية",
-      "sw": "Kiswahili"
+      "sw": "Kiswahili",
+      "hi": "हिन्दी",
+      "zh-CN": "中文",
+      "ur": "اردو",
+      "bn": "বাংলা",
+      "id": "Bahasa Indonesia",
+      "pa": "ਪੰਜਾਬੀ",
+      "ja": "日本語",
+      "vi": "Tiếng Việt",
+      "mr": "मराठी"
+    },
+    "buttons": {
+      "back": "Back",
+      "next": "Next",
+      "continue": "Continue",
+      "cancel": "Cancel",
+      "save": "Save",
+      "submit": "Submit",
+      "retry": "Retry",
+      "close": "Close"
+    },
+    "form": {
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email address",
+      "passwordTooShort": "Password must be at least 8 characters",
+      "passwordsDoNotMatch": "Passwords do not match",
+      "pleaseSelect": "Please select an option"
     }
   },
   "Auth": {
@@ -118,6 +144,260 @@
           "countryPlaceholder": "Select your country"
         }
       }
+    }
+  },
+  "Dashboard": {
+    "title": "Home",
+    "welcome": "Welcome back",
+    "actions": {
+      "send": "Send",
+      "convert": "Convert",
+      "receive": "Receive"
+    },
+    "transactions": {
+      "title": "Transactions",
+      "seeAll": "See all",
+      "noTransactions": "No transactions yet",
+      "types": {
+        "send": "Money sent",
+        "receive": "Money received",
+        "convert": "Currency converted",
+        "failed": "Transaction failed"
+      }
+    },
+    "kyc": {
+      "completeProfile": "Complete your profile",
+      "completeProfileDesc": "Secure your account and unlock full access by completing your KYC.",
+      "completeProfileBtn": "Complete profile",
+      "profileVerified": "Profile Verified",
+      "profileVerifiedDesc": "Your identity has been verified successfully. You now have full access to all Paystup features.",
+      "verificationComplete": "✓ Identity verification complete"
+    },
+    "referral": {
+      "title": "Refer a friend",
+      "description": "Invite your friends and earn rewards when they make their first transfer. It's a win-win!",
+      "button": "Coming soon!"
+    },
+    "exchangeRate": {
+      "title": "Exchange rate",
+      "today": "Today",
+      "viewRates": "View rates"
+    }
+  },
+  "Send": {
+    "title": "Send Money",
+    "steps": {
+      "recipient": "Recipient",
+      "amount": "Amount",
+      "review": "Review",
+      "payment": "Pay"
+    },
+    "recipient": {
+      "title": "Recipient details",
+      "subtitle": "Enter the details of the person you want to send money to",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter recipient's full name",
+      "accountName": "Account Name",
+      "accountNamePlaceholder": "Enter account holder name",
+      "accountNumber": "Account Number",
+      "accountNumberPlaceholder": "Enter account number",
+      "bank": "Bank",
+      "bankPlaceholder": "Select bank",
+      "country": "Country",
+      "countryPlaceholder": "Select country"
+    },
+    "amount": {
+      "title": "Amount to be sent",
+      "sendAmount": "You send",
+      "receiveAmount": "Recipient gets",
+      "exchangeRate": "Exchange rate",
+      "fees": "Fees",
+      "total": "Total"
+    },
+    "review": {
+      "title": "Confirm your transfer details",
+      "recipient": "Recipient",
+      "amount": "Amount",
+      "amountSent": "Amount sent",
+      "paystupCharges": "Paystup charges",
+      "recipientGets": "Recipient gets",
+      "makePayment": "Make payment"
+    },
+    "payment": {
+      "title": "Enter your password",
+      "subtitle": "This security check is to keep your account safe",
+      "learnMore": "Learn more",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "confirmPayment": "Confirm payment",
+      "success": {
+        "title": "Your transaction was successful",
+        "subtitle": "View your transaction history",
+        "button": "View transactions"
+      },
+      "error": {
+        "title": "Your transaction was not successful",
+        "subtitle": "Please try again",
+        "button": "Retry"
+      }
+    }
+  },
+  "KYC": {
+    "title": "KYC Verification",
+    "steps": {
+      "personalDetails": "Personal details",
+      "verification": "Verification",
+      "address": "Address"
+    },
+    "personalDetails": {
+      "title": "Personal Details",
+      "subtitle": "Please provide your personal information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "dateOfBirth": "Date of Birth",
+      "phoneNumber": "Phone Number",
+      "gender": "Gender",
+      "genderOptions": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other"
+      }
+    },
+    "verification": {
+      "title": "Identity Verification",
+      "subtitle": "Upload your identity document",
+      "documentType": "Document Type",
+      "documentTypes": {
+        "passport": "Passport",
+        "nationalId": "National ID",
+        "driversLicense": "Driver's License"
+      },
+      "frontSide": "Front Side",
+      "backSide": "Back Side",
+      "uploadInstructions": "Please upload clear photos of your document"
+    },
+    "address": {
+      "title": "Address Information",
+      "subtitle": "Please provide your current address",
+      "street": "Street Address",
+      "city": "City",
+      "state": "State/Province",
+      "postalCode": "Postal Code",
+      "country": "Country"
+    },
+    "success": {
+      "title": "Verification Complete",
+      "subtitle": "Your identity has been verified successfully",
+      "goToDashboard": "Go to Dashboard"
+    }
+  },
+  "Transactions": {
+    "title": "Transactions",
+    "search": "Search",
+    "filter": "Filter",
+    "noTransactions": "No transactions found",
+    "tryAdjusting": "Try adjusting your search or filters",
+    "willAppearHere": "Your transactions will appear here",
+    "loading": "Loading...",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "reference": "Ref",
+    "status": {
+      "successful": "Successful",
+      "pending": "Pending",
+      "unsuccessful": "Unsuccessful"
+    },
+    "types": {
+      "send": "Sent",
+      "receive": "Received",
+      "conversion": "Moved",
+      "transaction": "Transaction"
+    },
+    "filters": {
+      "title": "Filter transactions",
+      "status": "Status",
+      "type": "Type",
+      "currency": "Currency",
+      "dateRange": "Date range",
+      "amount": "Amount",
+      "minAmount": "Min amount",
+      "maxAmount": "Max amount",
+      "clearAll": "Clear all",
+      "applyFilters": "Apply filters",
+      "statusOptions": {
+        "successful": "Successful",
+        "pending": "Pending",
+        "unsuccessful": "Unsuccessful"
+      },
+      "typeOptions": {
+        "transfers": "Transfers",
+        "cardTransactions": "Card transactions",
+        "moneyAdded": "Money added",
+        "conversions": "Conversions",
+        "cashWithdrawals": "Cash withdrawals"
+      },
+      "datePresets": {
+        "lastMonth": "Last month",
+        "lastQuarter": "Last quarter",
+        "lastYear": "Last year"
+      }
+    }
+  },
+  "Help": {
+    "title": "Need a hand?",
+    "subtitle": "Search our FAQs or get personal support",
+    "searchPlaceholder": "Tell us what you are looking for",
+    "liveChat": {
+      "title": "Live chat",
+      "description": "Get a quick support from our team",
+      "button": "Start a chat"
+    },
+    "email": {
+      "title": "Email",
+      "description": "Send an email to our support team",
+      "button": "Send Email"
+    },
+    "categories": {
+      "sendMoney": {
+        "title": "Send Money",
+        "description": "Learn how to send money globally"
+      },
+      "transferTimes": {
+        "title": "Transfer Times",
+        "description": "Understand how long transfers take"
+      },
+      "supportedCountries": {
+        "title": "Supported Countries",
+        "description": "See which countries we support"
+      },
+      "feesAndRates": {
+        "title": "Fees and Rates",
+        "description": "Learn about our pricing structure"
+      },
+      "transferDelays": {
+        "title": "Transfer Delays",
+        "description": "What to do if your transfer is delayed"
+      },
+      "security": {
+        "title": "Security",
+        "description": "How we keep your money safe"
+      },
+      "kyc": {
+        "title": "KYC Verification",
+        "description": "Identity verification process"
+      },
+      "accountInfo": {
+        "title": "Account Information",
+        "description": "Manage your account settings"
+      },
+      "reportProblem": {
+        "title": "Report a Problem",
+        "description": "Get help with issues"
+      }
+    },
+    "noResults": {
+      "title": "No results found",
+      "subtitle": "Try adjusting your search terms"
     }
   }
 }

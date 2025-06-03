@@ -1,16 +1,18 @@
 "use client";
 
 import { useSendStore, SendStep } from "@/lib/stores/send-store";
-
-const steps: { key: SendStep; label: string }[] = [
-  { key: "recipient", label: "Recipient" },
-  { key: "amount", label: "Amount" },
-  { key: "review", label: "Review" },
-  { key: "payment", label: "Pay" },
-];
+import { useTranslations } from "next-intl";
 
 export default function SendProgressHeader() {
   const { currentStep } = useSendStore();
+  const t = useTranslations("Send");
+
+  const steps: { key: SendStep; label: string }[] = [
+    { key: "recipient", label: t("steps.recipient") },
+    { key: "amount", label: t("steps.amount") },
+    { key: "review", label: t("steps.review") },
+    { key: "payment", label: t("steps.payment") },
+  ];
 
   const currentStepIndex = steps.findIndex((step) => step.key === currentStep);
   const progressPercentage = ((currentStepIndex + 1) / steps.length) * 100;

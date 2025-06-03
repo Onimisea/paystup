@@ -1,0 +1,351 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Gửi tiền toàn cầu với",
+      "brand": "Paystup",
+      "subtitle": "Cách thông minh để chuyển tiền quốc tế bằng thanh toán địa phương",
+      "description": "Tránh các khoản phí ngân hàng quốc tế đắt đỏ. Nền tảng ngang hàng của chúng tôi kết nối bạn với mạng lưới thanh toán địa phương ở cả nước gửi và nước nhận.",
+      "cta": {
+        "primary": "Bắt đầu gửi tiền",
+        "secondary": "Tìm hiểu cách hoạt động"
+      }
+    },
+    "navigation": {
+      "sendMoney": "Gửi tiền",
+      "receiveMoney": "Nhận tiền",
+      "howItWorks": "Cách hoạt động",
+      "pricing": "Giá cả",
+      "support": "Hỗ trợ",
+      "login": "Đăng nhập",
+      "signup": "Bắt đầu"
+    },
+    "features": {
+      "title": "Tại sao chọn Paystup?",
+      "items": {
+        "lowFees": {
+          "title": "Phí thấp",
+          "description": "Tiết kiệm tới 90% phí chuyển tiền so với ngân hàng truyền thống"
+        },
+        "fastTransfers": {
+          "title": "Chuyển tiền nhanh",
+          "description": "Tiền đến trong vài phút, không phải vài ngày"
+        },
+        "secure": {
+          "title": "Bảo mật cấp ngân hàng",
+          "description": "Tiền và dữ liệu của bạn được bảo vệ bằng bảo mật cấp doanh nghiệp"
+        },
+        "global": {
+          "title": "Phạm vi toàn cầu",
+          "description": "Gửi tiền đến hơn 50 quốc gia trên thế giới"
+        }
+      }
+    }
+  },
+  "Common": {
+    "footer": {
+      "privacyPolicy": "Chính sách bảo mật",
+      "language": "Ngôn ngữ"
+    },
+    "languages": {
+      "en": "English",
+      "fr": "Français",
+      "pt": "Português",
+      "ar": "العربية",
+      "sw": "Kiswahili",
+      "hi": "हिन्दी",
+      "zh-CN": "中文",
+      "ur": "اردو",
+      "bn": "বাংলা",
+      "id": "Bahasa Indonesia",
+      "pa": "ਪੰਜਾਬੀ",
+      "ja": "日本語",
+      "vi": "Tiếng Việt",
+      "mr": "मराठी"
+    },
+    "buttons": {
+      "back": "Quay lại",
+      "next": "Tiếp theo",
+      "continue": "Tiếp tục",
+      "cancel": "Hủy",
+      "save": "Lưu",
+      "submit": "Gửi",
+      "retry": "Thử lại",
+      "close": "Đóng"
+    },
+    "form": {
+      "required": "Trường này là bắt buộc",
+      "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ",
+      "passwordTooShort": "Mật khẩu phải có ít nhất 8 ký tự",
+      "passwordsDoNotMatch": "Mật khẩu không khớp",
+      "pleaseSelect": "Vui lòng chọn một tùy chọn"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "Chào mừng trở lại",
+      "subtitle": "Đăng nhập vào tài khoản Paystup của bạn",
+      "email": "Email",
+      "password": "Mật khẩu",
+      "rememberMe": "Ghi nhớ tôi",
+      "forgotPassword": "Quên mật khẩu?",
+      "signIn": "Đăng nhập",
+      "noAccount": "Chưa có tài khoản?",
+      "signUp": "Đăng ký",
+      "backToHome": "Về trang chủ",
+      "trustIndicator": "Được bảo vệ bởi bảo mật cấp ngân hàng"
+    },
+    "signup": {
+      "title": "Tạo tài khoản của bạn",
+      "subtitle": "Tham gia cùng hàng nghìn người gửi tiền toàn cầu",
+      "firstName": "Tên",
+      "lastName": "Họ",
+      "email": "Email",
+      "password": "Mật khẩu",
+      "confirmPassword": "Xác nhận mật khẩu",
+      "country": "Quốc gia",
+      "agreeToTerms": "Tôi đồng ý với",
+      "termsOfService": "Điều khoản dịch vụ",
+      "and": "và",
+      "privacyPolicy": "Chính sách bảo mật",
+      "createAccount": "Tạo tài khoản",
+      "continueWithEmail": "Tiếp tục với Email",
+      "continueWithGoogle": "Tiếp tục với Google",
+      "continueWithApple": "Tiếp tục với Apple",
+      "orContinueWith": "Hoặc tiếp tục với",
+      "haveAccount": "Đã có tài khoản?",
+      "signIn": "Đăng nhập",
+      "backToHome": "Về trang chủ",
+      "trustIndicator": "Dữ liệu của bạn được bảo vệ bằng mã hóa cấp ngân hàng",
+      "steps": {
+        "email": {
+          "title": "Nhập email của bạn",
+          "subtitle": "Chúng tôi sẽ gửi cho bạn mã xác minh",
+          "continue": "Tiếp tục",
+          "emailPlaceholder": "Nhập địa chỉ email của bạn"
+        },
+        "verification": {
+          "title": "Xác minh email của bạn",
+          "subtitle": "Nhập mã 6 chữ số được gửi đến",
+          "continue": "Xác minh",
+          "resend": "Gửi lại mã",
+          "codePlaceholder": "Nhập mã xác minh"
+        },
+        "password": {
+          "title": "Tạo mật khẩu",
+          "subtitle": "Chọn mật khẩu mạnh cho tài khoản của bạn",
+          "continue": "Tiếp tục",
+          "passwordPlaceholder": "Tạo mật khẩu mạnh",
+          "confirmPlaceholder": "Xác nhận mật khẩu của bạn"
+        },
+        "country": {
+          "title": "Chọn quốc gia của bạn",
+          "subtitle": "Điều này giúp chúng tôi cung cấp dịch vụ tốt hơn",
+          "continue": "Hoàn tất đăng ký",
+          "countryPlaceholder": "Chọn quốc gia của bạn"
+        }
+      }
+    }
+  },
+  "Dashboard": {
+    "title": "Trang chủ",
+    "welcome": "Chào mừng trở lại",
+    "actions": {
+      "send": "Gửi",
+      "convert": "Chuyển đổi",
+      "receive": "Nhận"
+    },
+    "transactions": {
+      "title": "Giao dịch",
+      "seeAll": "Xem tất cả",
+      "noTransactions": "Chưa có giao dịch nào",
+      "types": {
+        "send": "Tiền đã gửi",
+        "receive": "Tiền đã nhận",
+        "convert": "Tiền tệ đã chuyển đổi",
+        "failed": "Giao dịch thất bại"
+      }
+    },
+    "kyc": {
+      "completeProfile": "Hoàn thiện hồ sơ của bạn",
+      "completeProfileDesc": "Bảo mật tài khoản của bạn và mở khóa quyền truy cập đầy đủ bằng cách hoàn thành KYC.",
+      "completeProfileBtn": "Hoàn thiện hồ sơ",
+      "profileVerified": "Hồ sơ đã được xác minh",
+      "profileVerifiedDesc": "Danh tính của bạn đã được xác minh thành công. Bây giờ bạn có quyền truy cập đầy đủ vào tất cả các tính năng của Paystup.",
+      "verificationComplete": "✓ Xác minh danh tính hoàn tất"
+    },
+    "referral": {
+      "title": "Giới thiệu bạn bè",
+      "description": "Mời bạn bè của bạn và nhận phần thưởng khi họ thực hiện chuyển tiền đầu tiên. Đôi bên cùng có lợi!",
+      "button": "Sắp ra mắt!"
+    },
+    "exchangeRate": {
+      "title": "Tỷ giá hối đoái",
+      "today": "Hôm nay",
+      "viewRates": "Xem tỷ giá"
+    }
+  },
+  "Send": {
+    "title": "Gửi tiền",
+    "steps": {
+      "recipient": "Người nhận",
+      "amount": "Số tiền",
+      "review": "Xem lại",
+      "payment": "Thanh toán"
+    },
+    "recipient": {
+      "title": "Chi tiết người nhận",
+      "subtitle": "Nhập chi tiết của người bạn muốn gửi tiền",
+      "fullName": "Họ và tên",
+      "fullNamePlaceholder": "Nhập họ tên đầy đủ của người nhận",
+      "accountName": "Tên tài khoản",
+      "accountNamePlaceholder": "Nhập tên chủ tài khoản",
+      "accountNumber": "Số tài khoản",
+      "accountNumberPlaceholder": "Nhập số tài khoản",
+      "bank": "Ngân hàng",
+      "bankPlaceholder": "Chọn ngân hàng",
+      "country": "Quốc gia",
+      "countryPlaceholder": "Chọn quốc gia"
+    },
+    "amount": {
+      "title": "Số tiền sẽ gửi",
+      "sendAmount": "Bạn gửi",
+      "receiveAmount": "Người nhận được",
+      "exchangeRate": "Tỷ giá hối đoái",
+      "fees": "Phí",
+      "total": "Tổng cộng"
+    },
+    "review": {
+      "title": "Xác nhận chi tiết chuyển tiền của bạn",
+      "recipient": "Người nhận",
+      "amount": "Số tiền",
+      "amountSent": "Số tiền gửi",
+      "paystupCharges": "Phí Paystup",
+      "recipientGets": "Người nhận được",
+      "makePayment": "Thực hiện thanh toán"
+    },
+    "payment": {
+      "title": "Nhập mật khẩu của bạn",
+      "subtitle": "Kiểm tra bảo mật này để giữ tài khoản của bạn an toàn",
+      "learnMore": "Tìm hiểu thêm",
+      "password": "Mật khẩu",
+      "passwordPlaceholder": "Nhập mật khẩu của bạn",
+      "confirmPayment": "Xác nhận thanh toán",
+      "success": {
+        "title": "Giao dịch của bạn đã thành công",
+        "subtitle": "Xem lịch sử giao dịch của bạn",
+        "button": "Xem giao dịch"
+      },
+      "error": {
+        "title": "Giao dịch của bạn không thành công",
+        "subtitle": "Vui lòng thử lại",
+        "button": "Thử lại"
+      }
+    }
+  },
+  "KYC": {
+    "title": "Xác minh KYC",
+    "steps": {
+      "personalDetails": "Chi tiết cá nhân",
+      "verification": "Xác minh",
+      "address": "Địa chỉ"
+    },
+    "personalDetails": {
+      "title": "Chi tiết cá nhân",
+      "subtitle": "Vui lòng cung cấp thông tin cá nhân của bạn",
+      "firstName": "Tên",
+      "lastName": "Họ",
+      "dateOfBirth": "Ngày sinh",
+      "phoneNumber": "Số điện thoại",
+      "gender": "Giới tính",
+      "genderOptions": {
+        "male": "Nam",
+        "female": "Nữ",
+        "other": "Khác"
+      }
+    },
+    "verification": {
+      "title": "Xác minh danh tính",
+      "subtitle": "Tải lên tài liệu danh tính của bạn",
+      "documentType": "Loại tài liệu",
+      "documentTypes": {
+        "passport": "Hộ chiếu",
+        "nationalId": "CMND/CCCD",
+        "driversLicense": "Bằng lái xe"
+      },
+      "frontSide": "Mặt trước",
+      "backSide": "Mặt sau",
+      "uploadInstructions": "Vui lòng tải lên ảnh rõ nét của tài liệu"
+    },
+    "address": {
+      "title": "Thông tin địa chỉ",
+      "subtitle": "Vui lòng cung cấp địa chỉ hiện tại của bạn",
+      "street": "Địa chỉ đường phố",
+      "city": "Thành phố",
+      "state": "Tỉnh/Thành phố",
+      "postalCode": "Mã bưu điện",
+      "country": "Quốc gia"
+    },
+    "success": {
+      "title": "Xác minh hoàn tất",
+      "subtitle": "Danh tính của bạn đã được xác minh thành công",
+      "goToDashboard": "Đi đến Dashboard"
+    }
+  },
+  "Help": {
+    "title": "Cần trợ giúp?",
+    "subtitle": "Tìm kiếm FAQ của chúng tôi hoặc nhận hỗ trợ cá nhân",
+    "searchPlaceholder": "Cho chúng tôi biết bạn đang tìm kiếm gì",
+    "liveChat": {
+      "title": "Chat trực tiếp",
+      "description": "Nhận hỗ trợ nhanh chóng từ đội ngũ của chúng tôi",
+      "button": "Bắt đầu chat"
+    },
+    "email": {
+      "title": "Email",
+      "description": "Gửi email cho đội ngũ hỗ trợ của chúng tôi",
+      "button": "Gửi Email"
+    },
+    "categories": {
+      "sendMoney": {
+        "title": "Gửi tiền",
+        "description": "Tìm hiểu cách gửi tiền toàn cầu"
+      },
+      "transferTimes": {
+        "title": "Thời gian chuyển tiền",
+        "description": "Hiểu về thời gian chuyển tiền mất bao lâu"
+      },
+      "supportedCountries": {
+        "title": "Các quốc gia được hỗ trợ",
+        "description": "Xem những quốc gia chúng tôi hỗ trợ"
+      },
+      "feesAndRates": {
+        "title": "Phí và tỷ giá",
+        "description": "Tìm hiểu về cấu trúc giá của chúng tôi"
+      },
+      "transferDelays": {
+        "title": "Chậm trễ chuyển tiền",
+        "description": "Phải làm gì nếu chuyển tiền của bạn bị chậm trễ"
+      },
+      "security": {
+        "title": "Bảo mật",
+        "description": "Cách chúng tôi giữ tiền của bạn an toàn"
+      },
+      "kyc": {
+        "title": "Xác minh KYC",
+        "description": "Quy trình xác minh danh tính"
+      },
+      "accountInfo": {
+        "title": "Thông tin tài khoản",
+        "description": "Quản lý cài đặt tài khoản của bạn"
+      },
+      "reportProblem": {
+        "title": "Báo cáo vấn đề",
+        "description": "Nhận trợ giúp với các vấn đề"
+      }
+    },
+    "noResults": {
+      "title": "Không tìm thấy kết quả",
+      "subtitle": "Thử điều chỉnh từ khóa tìm kiếm của bạn"
+    }
+  }
+}

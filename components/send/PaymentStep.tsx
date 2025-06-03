@@ -24,6 +24,7 @@ import {
   PasswordValidationResult,
   validatePassword,
 } from "@/lib/password-validation";
+import { useTranslations } from "next-intl";
 
 // Zod schema for payment password validation
 const paymentPasswordSchema = z.object({
@@ -48,6 +49,9 @@ export default function PaymentStep() {
 
   const { addTransaction } = useTransactionsStore();
   const router = useRouter();
+
+  const t = useTranslations("Send");
+  const tCommon = useTranslations("Common");
 
   const [showPassword, setShowPassword] = useState(false);
   const [showModal, setShowModal] = useState<"error" | "success" | null>(null);
@@ -182,16 +186,16 @@ export default function PaymentStep() {
       <div className="max-w-sm sm:max-w-md mx-auto px-4 sm:px-0">
         <div className="text-center mb-6 sm:mb-8">
           <h1 className="text-xl sm:text-2xl font-semibold text-[#111827] mb-2">
-            Enter your password
+            {t("payment.title")}
           </h1>
           <p className="text-sm sm:text-base text-[#4B5563] mb-2">
-            This security check is to keep your account safe
+            {t("payment.subtitle")}
           </p>
           <a
             href="#"
             className="text-[#0BAB7C] text-xs sm:text-sm hover:underline"
           >
-            Learn more
+            {t("payment.learnMore")}
           </a>
         </div>
 
@@ -204,13 +208,13 @@ export default function PaymentStep() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="text-[#4B5563] font-medium">
-                    Enter Password
+                    {t("payment.password")}
                   </FormLabel>
                   <FormControl>
                     <div className="relative">
                       <Input
                         type={showPassword ? "text" : "password"}
-                        placeholder="••••••••"
+                        placeholder={t("payment.passwordPlaceholder")}
                         className="pr-12"
                         {...field}
                       />
@@ -252,14 +256,14 @@ export default function PaymentStep() {
                 className="flex-1 py-3 rounded-lg cursor-pointer"
                 disabled={isProcessing}
               >
-                Back
+                {tCommon("buttons.back")}
               </Button>
               <Button
                 type="submit"
                 className="flex-1 bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white font-medium py-3 rounded-lg cursor-pointer"
                 disabled={isProcessing}
               >
-                {isProcessing ? "Processing..." : "Submit"}
+                {isProcessing ? "Processing..." : t("payment.confirmPayment")}
               </Button>
             </div>
           </form>
@@ -274,16 +278,16 @@ export default function PaymentStep() {
               <X className="w-6 h-6 sm:w-8 sm:h-8 text-red-500" />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold text-[#111827] mb-2">
-              Your transaction was not successful
+              {t("payment.error.title")}
             </h3>
             <p className="text-sm sm:text-base text-[#4B5563] mb-6 sm:mb-8">
-              Please try again
+              {t("payment.error.subtitle")}
             </p>
             <Button
               onClick={handleRetry}
               className="w-full bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white font-medium py-3 rounded-xl cursor-pointer min-h-touch"
             >
-              Retry
+              {t("payment.error.button")}
             </Button>
           </div>
         </div>
@@ -297,16 +301,16 @@ export default function PaymentStep() {
               <Check className="w-6 h-6 sm:w-8 sm:h-8 text-[#0BAB7C]" />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold text-[#111827] mb-2">
-              Your transaction was successful
+              {t("payment.success.title")}
             </h3>
             <p className="text-sm sm:text-base text-[#4B5563] mb-6 sm:mb-8">
-              View your transaction history
+              {t("payment.success.subtitle")}
             </p>
             <Button
               onClick={handleGoToTransactions}
               className="w-full bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white font-medium py-3 rounded-xl cursor-pointer min-h-touch"
             >
-              View transactions
+              {t("payment.success.button")}
             </Button>
           </div>
         </div>

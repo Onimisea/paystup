@@ -49,9 +49,35 @@
     "languages": {
       "en": "English",
       "fr": "Français",
-      "pt": "Português", 
+      "pt": "Português",
       "ar": "العربية",
-      "sw": "Kiswahili"
+      "sw": "Kiswahili",
+      "hi": "हिन्दी",
+      "zh-CN": "中文",
+      "ur": "اردو",
+      "bn": "বাংলা",
+      "id": "Bahasa Indonesia",
+      "pa": "ਪੰਜਾਬੀ",
+      "ja": "日本語",
+      "vi": "Tiếng Việt",
+      "mr": "मराठी"
+    },
+    "buttons": {
+      "back": "رجوع",
+      "next": "التالي",
+      "continue": "متابعة",
+      "cancel": "إلغاء",
+      "save": "حفظ",
+      "submit": "إرسال",
+      "retry": "إعادة المحاولة",
+      "close": "إغلاق"
+    },
+    "form": {
+      "required": "هذا الحقل مطلوب",
+      "invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+      "passwordTooShort": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
+      "passwordsDoNotMatch": "كلمات المرور غير متطابقة",
+      "pleaseSelect": "يرجى اختيار خيار"
     }
   },
   "Auth": {
@@ -85,6 +111,153 @@
       "signIn": "تسجيل الدخول",
       "backToHome": "العودة للرئيسية",
       "trustIndicator": "بياناتك محمية بتشفير على مستوى البنوك"
+    }
+  },
+  "Dashboard": {
+    "title": "الرئيسية",
+    "welcome": "مرحباً بعودتك",
+    "actions": {
+      "send": "إرسال",
+      "convert": "تحويل",
+      "receive": "استقبال"
+    },
+    "transactions": {
+      "title": "المعاملات",
+      "seeAll": "عرض الكل",
+      "noTransactions": "لا توجد معاملات حتى الآن",
+      "types": {
+        "send": "أموال مُرسلة",
+        "receive": "أموال مُستلمة",
+        "convert": "عملة محولة",
+        "failed": "معاملة فاشلة"
+      }
+    },
+    "kyc": {
+      "completeProfile": "أكمل ملفك الشخصي",
+      "completeProfileDesc": "أمّن حسابك واحصل على وصول كامل من خلال إكمال التحقق من الهوية.",
+      "completeProfileBtn": "إكمال الملف الشخصي",
+      "profileVerified": "الملف الشخصي مُتحقق منه",
+      "profileVerifiedDesc": "تم التحقق من هويتك بنجاح. لديك الآن وصول كامل لجميع ميزات Paystup.",
+      "verificationComplete": "✓ اكتمل التحقق من الهوية"
+    },
+    "referral": {
+      "title": "أحل صديقاً",
+      "description": "ادع أصدقاءك واحصل على مكافآت عندما يقومون بأول تحويل لهم. إنها مربحة للجميع!",
+      "button": "قريباً!"
+    },
+    "exchangeRate": {
+      "title": "سعر الصرف",
+      "today": "اليوم",
+      "viewRates": "عرض الأسعار"
+    }
+  },
+  "Transactions": {
+    "title": "المعاملات",
+    "search": "بحث",
+    "filter": "تصفية",
+    "noTransactions": "لم يتم العثور على معاملات",
+    "tryAdjusting": "حاول تعديل البحث أو المرشحات",
+    "willAppearHere": "ستظهر معاملاتك هنا",
+    "loading": "جاري التحميل...",
+    "today": "اليوم",
+    "yesterday": "أمس",
+    "reference": "مرجع",
+    "status": {
+      "successful": "ناجحة",
+      "pending": "قيد الانتظار",
+      "unsuccessful": "فاشلة"
+    },
+    "types": {
+      "send": "مُرسل",
+      "receive": "مُستلم",
+      "conversion": "منقول",
+      "transaction": "معاملة"
+    },
+    "filters": {
+      "title": "تصفية المعاملات",
+      "status": "الحالة",
+      "type": "النوع",
+      "currency": "العملة",
+      "dateRange": "نطاق التاريخ",
+      "amount": "المبلغ",
+      "minAmount": "الحد الأدنى للمبلغ",
+      "maxAmount": "الحد الأقصى للمبلغ",
+      "clearAll": "مسح الكل",
+      "applyFilters": "تطبيق المرشحات",
+      "statusOptions": {
+        "successful": "ناجحة",
+        "pending": "قيد الانتظار",
+        "unsuccessful": "فاشلة"
+      },
+      "typeOptions": {
+        "transfers": "التحويلات",
+        "cardTransactions": "معاملات البطاقة",
+        "moneyAdded": "أموال مضافة",
+        "conversions": "التحويلات",
+        "cashWithdrawals": "سحب نقدي"
+      },
+      "datePresets": {
+        "lastMonth": "الشهر الماضي",
+        "lastQuarter": "الربع الماضي",
+        "lastYear": "العام الماضي"
+      }
+    }
+  },
+  "Help": {
+    "title": "تحتاج مساعدة؟",
+    "subtitle": "ابحث في الأسئلة الشائعة أو احصل على دعم شخصي",
+    "searchPlaceholder": "أخبرنا عما تبحث عنه",
+    "liveChat": {
+      "title": "دردشة مباشرة",
+      "description": "احصل على دعم سريع من فريقنا",
+      "button": "بدء دردشة"
+    },
+    "email": {
+      "title": "البريد الإلكتروني",
+      "description": "أرسل بريد إلكتروني لفريق الدعم",
+      "button": "إرسال بريد إلكتروني"
+    },
+    "categories": {
+      "sendMoney": {
+        "title": "إرسال الأموال",
+        "description": "تعلم كيفية إرسال الأموال عالمياً"
+      },
+      "transferTimes": {
+        "title": "أوقات التحويل",
+        "description": "فهم كم تستغرق التحويلات"
+      },
+      "supportedCountries": {
+        "title": "البلدان المدعومة",
+        "description": "انظر أي البلدان ندعمها"
+      },
+      "feesAndRates": {
+        "title": "الرسوم والأسعار",
+        "description": "تعلم عن هيكل التسعير لدينا"
+      },
+      "transferDelays": {
+        "title": "تأخير التحويلات",
+        "description": "ماذا تفعل إذا تأخر تحويلك"
+      },
+      "security": {
+        "title": "الأمان",
+        "description": "كيف نحافظ على أموالك آمنة"
+      },
+      "kyc": {
+        "title": "التحقق من الهوية",
+        "description": "عملية التحقق من الهوية"
+      },
+      "accountInfo": {
+        "title": "معلومات الحساب",
+        "description": "إدارة إعدادات حسابك"
+      },
+      "reportProblem": {
+        "title": "الإبلاغ عن مشكلة",
+        "description": "احصل على مساعدة في المشاكل"
+      }
+    },
+    "noResults": {
+      "title": "لم يتم العثور على نتائج",
+      "subtitle": "حاول تعديل مصطلحات البحث"
     }
   }
 }

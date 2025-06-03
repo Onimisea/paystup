@@ -1,0 +1,351 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "全球汇款",
+      "brand": "Paystup",
+      "subtitle": "使用本地支付进行国际汇款的智能方式",
+      "description": "避免昂贵的国际银行费用。我们的点对点平台将您与汇款国和收款国的本地支付网络连接起来。",
+      "cta": {
+        "primary": "开始汇款",
+        "secondary": "了解工作原理"
+      }
+    },
+    "navigation": {
+      "sendMoney": "汇款",
+      "receiveMoney": "收款",
+      "howItWorks": "工作原理",
+      "pricing": "价格",
+      "support": "支持",
+      "login": "登录",
+      "signup": "开始使用"
+    },
+    "features": {
+      "title": "为什么选择 Paystup？",
+      "items": {
+        "lowFees": {
+          "title": "低费用",
+          "description": "与传统银行相比，转账费用节省高达90%"
+        },
+        "fastTransfers": {
+          "title": "快速转账",
+          "description": "资金在几分钟内到达，而不是几天"
+        },
+        "secure": {
+          "title": "银行级安全",
+          "description": "您的资金和数据受到企业级安全保护"
+        },
+        "global": {
+          "title": "全球覆盖",
+          "description": "向全球50多个国家汇款"
+        }
+      }
+    }
+  },
+  "Common": {
+    "footer": {
+      "privacyPolicy": "隐私政策",
+      "language": "语言"
+    },
+    "languages": {
+      "en": "English",
+      "fr": "Français",
+      "pt": "Português",
+      "ar": "العربية",
+      "sw": "Kiswahili",
+      "hi": "हिन्दी",
+      "zh-CN": "中文",
+      "ur": "اردو",
+      "bn": "বাংলা",
+      "id": "Bahasa Indonesia",
+      "pa": "ਪੰਜਾਬੀ",
+      "ja": "日本語",
+      "vi": "Tiếng Việt",
+      "mr": "मराठी"
+    },
+    "buttons": {
+      "back": "返回",
+      "next": "下一步",
+      "continue": "继续",
+      "cancel": "取消",
+      "save": "保存",
+      "submit": "提交",
+      "retry": "重试",
+      "close": "关闭"
+    },
+    "form": {
+      "required": "此字段为必填项",
+      "invalidEmail": "请输入有效的电子邮件地址",
+      "passwordTooShort": "密码至少需要8个字符",
+      "passwordsDoNotMatch": "密码不匹配",
+      "pleaseSelect": "请选择一个选项"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "欢迎回来",
+      "subtitle": "登录您的 Paystup 账户",
+      "email": "电子邮件",
+      "password": "密码",
+      "rememberMe": "记住我",
+      "forgotPassword": "忘记密码？",
+      "signIn": "登录",
+      "noAccount": "没有账户？",
+      "signUp": "注册",
+      "backToHome": "返回首页",
+      "trustIndicator": "受银行级安全保护"
+    },
+    "signup": {
+      "title": "创建您的账户",
+      "subtitle": "加入数千名全球汇款用户",
+      "firstName": "名字",
+      "lastName": "姓氏",
+      "email": "电子邮件",
+      "password": "密码",
+      "confirmPassword": "确认密码",
+      "country": "国家",
+      "agreeToTerms": "我同意",
+      "termsOfService": "服务条款",
+      "and": "和",
+      "privacyPolicy": "隐私政策",
+      "createAccount": "创建账户",
+      "continueWithEmail": "使用电子邮件继续",
+      "continueWithGoogle": "使用 Google 继续",
+      "continueWithApple": "使用 Apple 继续",
+      "orContinueWith": "或继续使用",
+      "haveAccount": "已有账户？",
+      "signIn": "登录",
+      "backToHome": "返回首页",
+      "trustIndicator": "您的数据受银行级加密保护",
+      "steps": {
+        "email": {
+          "title": "输入您的电子邮件",
+          "subtitle": "我们将向您发送验证码",
+          "continue": "继续",
+          "emailPlaceholder": "输入您的电子邮件地址"
+        },
+        "verification": {
+          "title": "验证您的电子邮件",
+          "subtitle": "输入发送到的6位数字代码",
+          "continue": "验证",
+          "resend": "重新发送代码",
+          "codePlaceholder": "输入验证码"
+        },
+        "password": {
+          "title": "创建密码",
+          "subtitle": "为您的账户选择一个强密码",
+          "continue": "继续",
+          "passwordPlaceholder": "创建强密码",
+          "confirmPlaceholder": "确认您的密码"
+        },
+        "country": {
+          "title": "选择您的国家",
+          "subtitle": "这有助于我们提供更好的服务",
+          "continue": "完成注册",
+          "countryPlaceholder": "选择您的国家"
+        }
+      }
+    }
+  },
+  "Dashboard": {
+    "title": "首页",
+    "welcome": "欢迎回来",
+    "actions": {
+      "send": "汇款",
+      "convert": "兑换",
+      "receive": "收款"
+    },
+    "transactions": {
+      "title": "交易记录",
+      "seeAll": "查看全部",
+      "noTransactions": "暂无交易记录",
+      "types": {
+        "send": "已汇出",
+        "receive": "已收到",
+        "convert": "已兑换",
+        "failed": "交易失败"
+      }
+    },
+    "kyc": {
+      "completeProfile": "完善您的资料",
+      "completeProfileDesc": "保护您的账户并完成KYC验证以解锁完整功能。",
+      "completeProfileBtn": "完善资料",
+      "profileVerified": "资料已验证",
+      "profileVerifiedDesc": "您的身份已成功验证。现在您可以使用所有Paystup功能。",
+      "verificationComplete": "✓ 身份验证完成"
+    },
+    "referral": {
+      "title": "推荐朋友",
+      "description": "邀请您的朋友，当他们完成首次转账时获得奖励。双赢！",
+      "button": "即将推出！"
+    },
+    "exchangeRate": {
+      "title": "汇率",
+      "today": "今日",
+      "viewRates": "查看汇率"
+    }
+  },
+  "Send": {
+    "title": "汇款",
+    "steps": {
+      "recipient": "收款人",
+      "amount": "金额",
+      "review": "确认",
+      "payment": "支付"
+    },
+    "recipient": {
+      "title": "收款人详情",
+      "subtitle": "输入您要汇款的收款人详细信息",
+      "fullName": "全名",
+      "fullNamePlaceholder": "输入收款人全名",
+      "accountName": "账户名",
+      "accountNamePlaceholder": "输入账户持有人姓名",
+      "accountNumber": "账户号码",
+      "accountNumberPlaceholder": "输入账户号码",
+      "bank": "银行",
+      "bankPlaceholder": "选择银行",
+      "country": "国家",
+      "countryPlaceholder": "选择国家"
+    },
+    "amount": {
+      "title": "汇款金额",
+      "sendAmount": "您汇出",
+      "receiveAmount": "收款人收到",
+      "exchangeRate": "汇率",
+      "fees": "手续费",
+      "total": "总计"
+    },
+    "review": {
+      "title": "确认您的转账详情",
+      "recipient": "收款人",
+      "amount": "金额",
+      "amountSent": "汇出金额",
+      "paystupCharges": "Paystup手续费",
+      "recipientGets": "收款人收到",
+      "makePayment": "确认支付"
+    },
+    "payment": {
+      "title": "输入您的密码",
+      "subtitle": "此安全检查是为了保护您的账户安全",
+      "learnMore": "了解更多",
+      "password": "密码",
+      "passwordPlaceholder": "输入您的密码",
+      "confirmPayment": "确认支付",
+      "success": {
+        "title": "您的交易成功",
+        "subtitle": "查看您的交易历史",
+        "button": "查看交易"
+      },
+      "error": {
+        "title": "您的交易未成功",
+        "subtitle": "请重试",
+        "button": "重试"
+      }
+    }
+  },
+  "KYC": {
+    "title": "KYC验证",
+    "steps": {
+      "personalDetails": "个人详情",
+      "verification": "身份验证",
+      "address": "地址"
+    },
+    "personalDetails": {
+      "title": "个人详情",
+      "subtitle": "请提供您的个人信息",
+      "firstName": "名字",
+      "lastName": "姓氏",
+      "dateOfBirth": "出生日期",
+      "phoneNumber": "电话号码",
+      "gender": "性别",
+      "genderOptions": {
+        "male": "男",
+        "female": "女",
+        "other": "其他"
+      }
+    },
+    "verification": {
+      "title": "身份验证",
+      "subtitle": "上传您的身份证件",
+      "documentType": "证件类型",
+      "documentTypes": {
+        "passport": "护照",
+        "nationalId": "身份证",
+        "driversLicense": "驾驶证"
+      },
+      "frontSide": "正面",
+      "backSide": "背面",
+      "uploadInstructions": "请上传清晰的证件照片"
+    },
+    "address": {
+      "title": "地址信息",
+      "subtitle": "请提供您的当前地址",
+      "street": "街道地址",
+      "city": "城市",
+      "state": "省/州",
+      "postalCode": "邮政编码",
+      "country": "国家"
+    },
+    "success": {
+      "title": "验证完成",
+      "subtitle": "您的身份已成功验证",
+      "goToDashboard": "前往控制台"
+    }
+  },
+  "Help": {
+    "title": "需要帮助？",
+    "subtitle": "搜索我们的常见问题或获取个人支持",
+    "searchPlaceholder": "告诉我们您在寻找什么",
+    "liveChat": {
+      "title": "在线客服",
+      "description": "从我们的团队获得快速支持",
+      "button": "开始聊天"
+    },
+    "email": {
+      "title": "电子邮件",
+      "description": "向我们的支持团队发送电子邮件",
+      "button": "发送邮件"
+    },
+    "categories": {
+      "sendMoney": {
+        "title": "汇款",
+        "description": "了解如何全球汇款"
+      },
+      "transferTimes": {
+        "title": "转账时间",
+        "description": "了解转账需要多长时间"
+      },
+      "supportedCountries": {
+        "title": "支持的国家",
+        "description": "查看我们支持的国家"
+      },
+      "feesAndRates": {
+        "title": "费用和汇率",
+        "description": "了解我们的定价结构"
+      },
+      "transferDelays": {
+        "title": "转账延迟",
+        "description": "如果您的转账延迟该怎么办"
+      },
+      "security": {
+        "title": "安全",
+        "description": "我们如何保护您的资金安全"
+      },
+      "kyc": {
+        "title": "KYC验证",
+        "description": "身份验证流程"
+      },
+      "accountInfo": {
+        "title": "账户信息",
+        "description": "管理您的账户设置"
+      },
+      "reportProblem": {
+        "title": "报告问题",
+        "description": "获取问题帮助"
+      }
+    },
+    "noResults": {
+      "title": "未找到结果",
+      "subtitle": "尝试调整您的搜索词"
+    }
+  }
+}
