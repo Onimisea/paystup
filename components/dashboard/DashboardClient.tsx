@@ -3,9 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
-  Send,
   ArrowUpDown,
-  ArrowDownToLine,
   ArrowUp,
   CheckCircle,
 } from "lucide-react";
@@ -152,7 +150,7 @@ export default function DashboardClient() {
               {/* Account Section - White Container */}
               <div className="bg-white rounded-lg p-4 sm:p-6 mb-6 sm:mb-8">
                 {/* Action Buttons */}
-                <div className="grid grid-cols-3 sm:flex sm:flex-wrap gap-4 sm:gap-6 md:gap-8 mb-4 sm:mb-6">
+                {/* <div className="grid grid-cols-3 sm:flex sm:flex-wrap gap-4 sm:gap-6 md:gap-8 mb-4 sm:mb-6">
                   <div
                     className="flex flex-col items-center cursor-pointer group"
                     onClick={() => router.push("/send")}
@@ -180,7 +178,7 @@ export default function DashboardClient() {
                       {t("actions.receive")}
                     </span>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Transactions */}
                 <div>

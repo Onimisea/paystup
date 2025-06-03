@@ -16,12 +16,14 @@ export interface AuthState {
   isAuthenticated: boolean;
   user: User | null;
   authMethod: AuthMethod | null;
+  authToken: string | null;
   isLoading: boolean;
   lastActivity: number | null;
 
   // Actions
-  setUser: (user: User, authMethod: AuthMethod) => void;
+  setUser: (user: User, authMethod: AuthMethod, authToken?: string) => void;
   updateUser: (userData: Partial<User>) => void;
+  setAuthToken: (token: string) => void;
   logout: () => void;
   setLoading: (loading: boolean) => void;
   clearAuth: () => void;
@@ -33,6 +35,7 @@ const initialState = {
   isAuthenticated: false,
   user: null,
   authMethod: null,
+  authToken: null,
   isLoading: false,
   lastActivity: null,
 };
@@ -43,13 +46,14 @@ export const useAuthStore = create<AuthState>()(
       ...initialState,
 
       // Set user data and mark as authenticated
-      setUser: (user: User, authMethod: AuthMethod) => {
+      setUser: (user: User, authMethod: AuthMethod, authToken?: string) => {
         const now = Date.now();
 
         console.log("🔐 Auth Store - Setting User:", {
           email: user.email,
           name: user.name,
           authMethod,
+          hasToken: !!authToken,
           timestamp: new Date().toISOString(),
         });
 
@@ -57,6 +61,7 @@ export const useAuthStore = create<AuthState>()(
           isAuthenticated: true,
           user,
           authMethod,
+          authToken: authToken || null,
           isLoading: false,
           lastActivity: now,
         });
@@ -77,6 +82,16 @@ export const useAuthStore = create<AuthState>()(
         set({
           user: updatedUser,
         });
+      },
+
+      // Set auth token
+      setAuthToken: (token: string) => {
+        console.log("🔑 Auth Store - Setting Auth Token:", {
+          hasToken: !!token,
+          timestamp: new Date().toISOString(),
+        });
+
+        set({ authToken: token });
       },
 
       // Set loading state
@@ -145,6 +160,7 @@ export const useAuthStore = create<AuthState>()(
         isAuthenticated: state.isAuthenticated,
         user: state.user,
         authMethod: state.authMethod,
+        authToken: state.authToken,
         lastActivity: state.lastActivity,
       }),
       onRehydrateStorage: () => (state) => {
