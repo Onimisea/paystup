@@ -1,7 +1,7 @@
 "use client";
 
 import { Link, usePathname } from "@/i18n/navigation";
-import { Home, Send, Headphones, Receipt } from "lucide-react";
+import { Home, Send, Wallet, Headphones, Receipt } from "lucide-react";
 
 interface SidebarItem {
   href: string;
@@ -31,13 +31,18 @@ export default function Sidebar({ className = "" }: SidebarProps) {
       isActive: pathname === "/send" || pathname.includes("/send"),
     },
     {
+      href: "/receive",
+      icon: Wallet,
+      label: "Receive",
+      isActive: pathname === "/receive" || pathname.includes("/receive"),
+    },
+    {
       href: "/transactions",
       icon: Receipt,
       label: "Transactions",
       isActive:
         pathname === "/transactions" || pathname.includes("/transactions"),
     },
-
     {
       href: "/help",
       icon: Headphones,
@@ -68,7 +73,9 @@ export default function Sidebar({ className = "" }: SidebarProps) {
   };
 
   return (
-    <div className={`w-12 sm:w-14 lg:w-64 flex-shrink-0 ${className}`}>
+    <div
+      className={`w-12 sm:w-14 lg:w-64 flex-shrink-0 hidden md:block ${className}`}
+    >
       <nav className="flex flex-col gap-1 sm:gap-2">
         {sidebarItems.map(renderSidebarItem)}
       </nav>

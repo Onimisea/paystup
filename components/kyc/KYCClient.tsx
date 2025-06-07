@@ -10,6 +10,7 @@ import AddressStep from "./steps/AddressStep";
 import { ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Sidebar from "@/components/common/Sidebar";
+import MobileMenu from "@/components/common/MobileMenu";
 
 export default function KYCClient() {
   const router = useRouter();
@@ -40,7 +41,7 @@ export default function KYCClient() {
 
   return (
     <AuthGuard>
-      <div className="min-h-screen bg-[#F9FAFB] flex flex-col">
+      <div className="min-h-screen bg-[#F9FAFB] flex flex-col pb-6 md:pb-0">
         <Header />
 
         {/* Progress Header */}
@@ -52,13 +53,13 @@ export default function KYCClient() {
         <div className="flex-1">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
             <div className="flex flex-row gap-4 sm:gap-6 lg:gap-8">
-              {/* Sidebar */}
+              {/* Sidebar - Hidden on mobile */}
               <div className="flex-shrink-0">
                 <Sidebar />
               </div>
 
               {/* Main Content */}
-              <div className="flex-1 min-w-0">
+              <div className="flex-1 min-w-0 w-full md:w-auto">
                 {/* Back Button */}
                 <button
                   onClick={handleBack}
@@ -74,6 +75,9 @@ export default function KYCClient() {
             </div>
           </div>
         </div>
+
+        {/* Mobile Menu - Only visible on mobile */}
+        <MobileMenu />
       </div>
     </AuthGuard>
   );

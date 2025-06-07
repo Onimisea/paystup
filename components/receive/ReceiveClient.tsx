@@ -1,32 +1,32 @@
 "use client";
 
-import { useSendStore } from "@/lib/stores/send-store";
+import { useReceiveStore } from "@/lib/stores/receive-store";
 import Header from "@/components/common/Header";
 import AuthGuard from "@/components/auth/AuthGuard";
 import Sidebar from "@/components/common/Sidebar";
 import MobileMenu from "@/components/common/MobileMenu";
 import AuthFooter from "@/components/layout/AuthFooter";
-import SendProgressHeader from "./SendProgressHeader";
-import RecipientStep from "./RecipientStep";
-import AmountStep from "./AmountStep";
-import ReviewStep from "./ReviewStep";
-import PaymentStep from "./PaymentStep";
+import ReceiveProgressHeader from "./ReceiveProgressHeader";
+import RequestDetailsStep from "./RequestDetailsStep";
+import SharingOptionsStep from "./SharingOptionsStep";
+import TrackingStep from "./TrackingStep";
+import CompletionStep from "./CompletionStep";
 
-export default function SendClient() {
-  const { currentStep } = useSendStore();
+export default function ReceiveClient() {
+  const { currentStep } = useReceiveStore();
 
   const renderStep = () => {
     switch (currentStep) {
-      case "recipient":
-        return <RecipientStep />;
-      case "amount":
-        return <AmountStep />;
-      case "review":
-        return <ReviewStep />;
-      case "payment":
-        return <PaymentStep />;
+      case "details":
+        return <RequestDetailsStep />;
+      case "sharing":
+        return <SharingOptionsStep />;
+      case "tracking":
+        return <TrackingStep />;
+      case "completed":
+        return <CompletionStep />;
       default:
-        return <RecipientStep />;
+        return <RequestDetailsStep />;
     }
   };
 
@@ -47,10 +47,10 @@ export default function SendClient() {
             <div className="flex-1 min-w-0 overflow-visible w-full md:w-auto">
               {/* Progress Header */}
               <div className="mb-4 sm:mb-6">
-                <SendProgressHeader />
+                <ReceiveProgressHeader />
               </div>
 
-              {/* Send Form Content */}
+              {/* Receive Form Content */}
               <div className="bg-white rounded-lg p-4 sm:p-6 lg:p-8 overflow-visible">
                 {renderStep()}
               </div>

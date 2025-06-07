@@ -2,13 +2,10 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  ArrowUpDown,
-  ArrowUp,
-  CheckCircle,
-} from "lucide-react";
+import { ArrowUpDown, ArrowUp, CheckCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Sidebar from "@/components/common/Sidebar";
+import MobileMenu from "@/components/common/MobileMenu";
 import Header from "@/components/common/Header";
 import AuthFooter from "@/components/layout/AuthFooter";
 import AuthGuard from "@/components/auth/AuthGuard";
@@ -127,19 +124,19 @@ export default function DashboardClient() {
 
   return (
     <AuthGuard>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-gray-50 pb-6 md:pb-0">
         {/* Header */}
         <Header />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
           <div className="flex flex-row gap-4 sm:gap-6 lg:gap-8">
-            {/* Sidebar */}
+            {/* Sidebar - Hidden on mobile */}
             <div className="flex-shrink-0">
               <Sidebar />
             </div>
 
             {/* Main Content */}
-            <div className="flex-1 min-w-0">
+            <div className="flex-1 min-w-0 w-full md:w-auto">
               {/* Page Title */}
               <div className="mb-4 sm:mb-6">
                 <h1 className="text-xl sm:text-2xl font-bold text-gray-900">
@@ -317,6 +314,9 @@ export default function DashboardClient() {
 
         {/* Footer */}
         <AuthFooter />
+
+        {/* Mobile Menu - Only visible on mobile */}
+        <MobileMenu />
       </div>
     </AuthGuard>
   );

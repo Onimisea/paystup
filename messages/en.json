@@ -41,6 +41,107 @@
       }
     }
   },
+  "Receive": {
+    "title": "Request Money",
+    "steps": {
+      "details": "Details",
+      "sharing": "Sharing",
+      "tracking": "Tracking",
+      "completed": "Completed"
+    },
+    "details": {
+      "title": "Payment Request Details",
+      "subtitle": "Set up your payment request with amount and description",
+      "amount": "Amount",
+      "amountPlaceholder": "Enter amount",
+      "currency": "Currency",
+      "description": "Description",
+      "descriptionPlaceholder": "What is this payment for?",
+      "dueDate": "Due Date",
+      "dueDatePlaceholder": "Select due date",
+      "continue": "Continue"
+    },
+    "sharing": {
+      "title": "Share Payment Request",
+      "subtitle": "Choose how to share your payment request",
+      "creating": "Creating...",
+      "createRequest": "Create Request",
+      "qrCode": {
+        "title": "QR Code",
+        "description": "Generate a QR code for easy scanning"
+      },
+      "paymentLink": {
+        "title": "Payment Link",
+        "description": "Share a direct payment link",
+        "copy": "Copy Link",
+        "copied": "Copied!"
+      },
+      "email": {
+        "title": "Email Invitations",
+        "description": "Send payment requests via email",
+        "placeholder": "Enter email addresses",
+        "add": "Add Email",
+        "remove": "Remove"
+      },
+      "social": {
+        "title": "Social Sharing",
+        "whatsapp": "Share on WhatsApp",
+        "telegram": "Share on Telegram",
+        "twitter": "Share on Twitter"
+      }
+    },
+    "tracking": {
+      "title": "Payment Request Status",
+      "subtitle": "Monitor your payment request and received payments",
+      "status": {
+        "pending": "Pending Payment",
+        "partially_paid": "Partially Paid",
+        "completed": "Payment Completed",
+        "expired": "Request Expired",
+        "cancelled": "Request Cancelled"
+      },
+      "summary": {
+        "requested": "Amount Requested",
+        "received": "Amount Received",
+        "remaining": "Amount Remaining",
+        "dueDate": "Due Date",
+        "createdAt": "Created"
+      },
+      "payments": {
+        "title": "Received Payments",
+        "empty": "No payments received yet",
+        "paidBy": "Paid by",
+        "amount": "Amount",
+        "date": "Date",
+        "reference": "Reference"
+      },
+      "actions": {
+        "shareAgain": "Share Again",
+        "cancelRequest": "Cancel Request",
+        "extendDueDate": "Extend Due Date",
+        "downloadReceipt": "Download Receipt"
+      }
+    },
+    "completed": {
+      "title": "Payment Received!",
+      "subtitle": "Your payment request has been completed successfully",
+      "summary": "Payment Summary",
+      "newRequest": "Create New Request",
+      "viewTransactions": "View Transactions"
+    },
+    "history": {
+      "title": "Payment Requests",
+      "subtitle": "Manage your payment requests and track their status",
+      "filter": {
+        "all": "All Requests",
+        "pending": "Pending",
+        "completed": "Completed",
+        "expired": "Expired"
+      },
+      "empty": "No payment requests found",
+      "createFirst": "Create your first payment request"
+    }
+  },
   "Common": {
     "footer": {
       "privacyPolicy": "Privacy Policy",
@@ -62,6 +163,7 @@
       "vi": "Tiếng Việt",
       "mr": "मराठी"
     },
+    "optional": "(optional)",
     "buttons": {
       "back": "Back",
       "next": "Next",

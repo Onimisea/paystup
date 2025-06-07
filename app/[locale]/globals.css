@@ -255,4 +255,22 @@
   .hover\:bg-red-50:hover {
     background-color: #fef2f2 !important;
   }
+
+  /* Minimum touch target size for accessibility */
+  .min-h-touch {
+    min-height: 44px;
+  }
+
+  .min-w-touch {
+    min-width: 44px;
+  }
+
+  /* Safe area padding for mobile devices with home indicators */
+  .h-safe-area-inset-bottom {
+    height: env(safe-area-inset-bottom);
+  }
+
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }

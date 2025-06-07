@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import AuthGuard from "@/components/auth/AuthGuard";
 import Header from "@/components/common/Header";
 import Sidebar from "@/components/common/Sidebar";
+import MobileMenu from "@/components/common/MobileMenu";
 import AuthFooter from "@/components/layout/AuthFooter";
 import TransactionList from "@/components/transactions/TransactionList";
 import TransactionFilters from "@/components/transactions/TransactionFilters";
@@ -34,17 +35,17 @@ export default function TransactionsPage() {
 
   return (
     <AuthGuard>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-gray-50 pb-6 md:pb-0">
         {/* Header */}
         <Header />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex gap-8">
-            {/* Sidebar */}
+            {/* Sidebar - Hidden on mobile */}
             <Sidebar />
 
             {/* Main Content */}
-            <div className="flex-1">
+            <div className="flex-1 w-full md:w-auto">
               {/* Back Button - Mobile Only */}
               <button
                 onClick={() => router.back()}
@@ -98,6 +99,9 @@ export default function TransactionsPage() {
 
         {/* Footer */}
         <AuthFooter />
+
+        {/* Mobile Menu - Only visible on mobile */}
+        <MobileMenu />
 
         {/* Filter Modal */}
         <TransactionFilters
