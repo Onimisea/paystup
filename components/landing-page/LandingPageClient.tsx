@@ -22,7 +22,7 @@ export default function LandingPageClient() {
           </header>
 
           {/* Main Content */}
-          <section className="flex-1 flex items-center justify-between w-full pb-[400px] sm:pb-[360px] lg:items-center lg:pb-0">
+          <section className="flex-1 flex items-center justify-between w-full pb-[400px] lg:items-center lg:pb-0">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-12 lg:gap-16 xl:gap-20 w-full">
               {/* Left Column: Text and Button */}
               <div className="w-full lg:w-[47%] flex flex-col items-start justify-center text-white max-w-xl gap-6 sm:gap-8 text-center lg:text-left sm:justify-start sm:items-center sm:pt-8 lg:justify-center lg:items-start lg:pt-0">
@@ -139,7 +139,7 @@ export default function LandingPageClient() {
       <div className="bg-white w-full">
         <section className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] lg3:w-[50%] xl:w-[40%] max-w-[1400px] mx-auto relative flex flex-col items-center justify-center py-28 text-center gap-6">
           <div className="relative">
-            <h3 className="text-[min(10vw,38px)] font-brico capitalize text-[#0BAB7C] font-bold relative">
+            <h3 className="text-[21px] sm:text-[27px] sm2:text-[32px] md:text-[38px] font-brico capitalize text-[#0BAB7C] font-bold relative">
               Send money without borders
             </h3>
 
@@ -224,17 +224,70 @@ export default function LandingPageClient() {
       </div>
 
       <div className="bg-[#F9FAFB] w-full">
-        <section className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] lg3:w-[50%] xl:w-[40%] max-w-[1400px] mx-auto relative flex flex-col items-center justify-center py-28 text-center gap-6">
-          <div className="relative">
-            <h3 className="text-[min(10vw,38px)] font-brico capitalize text-black font-bold relative">
-              Money Sent Without Complications
-            </h3>
-          </div>
+        <section className="w-[90%] sm:w-[85%] max-w-[1400px] mx-auto relative flex flex-col items-center justify-center py-20 text-center gap-6">
+          <div className="relative flex flex-col items-center justify-center gap-6">
+            <span className="bg-[#CEEEE5] border-[#0BAB7C] border font-brico text-[14px] px-8 py-3 rounded-lg w-fit">
+              How it works
+            </span>
 
-          <p className="text-[min(10vw,24px)]">
-            Built for the people moving money between Africa and Asia. Finally a
-            smarter way to send and receive funds
-          </p>
+            <div className="flex items-center justify-center gap-4 relative">
+              <div className="absolute left-[-70px] sm2:left-[-100px]">
+                <div className="relative w-[80px] h-[80px] sm2:w-[100px] sm2:h-[100px]">
+                  <Image
+                    src="/lpimgs/lp-star.svg"
+                    alt="Star 1"
+                    width={20}
+                    height={20}
+                    className="absolute top-0 left-[50px] w-[20px] h-[20px]"
+                  />
+                  <Image
+                    src="/lpimgs/lp-star.svg"
+                    alt="Star 2"
+                    width={32}
+                    height={32}
+                    className="absolute bottom-[20px] left-0 w-8 h-8"
+                  />
+                  <Image
+                    src="/lpimgs/lp-star.svg"
+                    alt="Star 3"
+                    width={27}
+                    height={27}
+                    className="absolute bottom-[-10px] right-[-30px] w-7 h-7"
+                  />
+                </div>
+              </div>
+              <h3 className="text-[21px] sm:text-[27px] sm2:text-[32px] md:text-[38px] font-brico capitalize text-black font-bold relative">
+                Money Sent Without
+                <br />
+                Complications
+              </h3>
+              <div className="absolute right-[-70px] sm2:right-[-100px]">
+                <div className="relative w-[80px] h-[80px] sm2:w-[100px] sm2:h-[100px]">
+                  <Image
+                    src="/lpimgs/lp-star.svg"
+                    alt="Star 1"
+                    width={20}
+                    height={20}
+                    className="absolute top-0 right-[50px] w-[20px] h-[20px]"
+                  />
+                  <Image
+                    src="/lpimgs/lp-star.svg"
+                    alt="Star 2"
+                    width={32}
+                    height={32}
+                    className="absolute bottom-[20px] right-0 w-8 h-8"
+                  />
+                  <Image
+                    src="/lpimgs/lp-star.svg"
+                    alt="Star 3"
+                    width={27}
+                    height={27}
+                    className="absolute bottom-[-10px] left-[-30px] w-7 h-7"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
