@@ -28,7 +28,7 @@ export default function ReviewStep() {
 
       <div className="space-y-6">
         {/* Transfer Details Card */}
-        <div className="border border-gray-200 rounded-lg p-6">
+        <div className="md:bg-white rounded-lg p-6">
           <h3 className="text-lg font-medium text-[#111827] mb-4">
             Transfer details
           </h3>

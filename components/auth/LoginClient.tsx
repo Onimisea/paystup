@@ -196,7 +196,7 @@ export default function LoginClient() {
         </div>
 
         {/* Login Card */}
-        <div className="bg-white rounded-lg p-4 sm:p-6 md:p-8 shadow-sm">
+        <div className="md:bg-white rounded-lg p-4 sm:p-6 md:p-8">
           <div className="text-center mb-4 sm:mb-6">
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-green rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4">
               <span className="text-white font-bold text-lg sm:text-xl">P</span>

@@ -3,25 +3,21 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Inter, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import { Bounce, ToastContainer } from "react-toastify";
 import { QueryProvider } from "@/lib/api";
-
-const geistSans = Geist({
-  variable: "--geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--geist-mono",
-  subsets: ["latin"],
-});
 
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--inter",
+});
+
+const brico = Bricolage_Grotesque({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--brico",
 });
 
 export const metadata: Metadata = {
@@ -47,7 +43,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased font-inter`}
+        className={`${inter.variable} ${brico.variable} antialiased font-inter`}
       >
         <QueryProvider>
           <NextIntlClientProvider>

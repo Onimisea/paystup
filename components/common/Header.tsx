@@ -59,14 +59,14 @@ export default function Header({ className = "" }: HeaderProps) {
   };
 
   return (
-    <div className={`bg-transparent py-3 sm:py-5 ${className}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-12 sm:h-16">
+    <div className={`bg-transparent py-3 sm:py-4 lg:py-5 ${className}`}>
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-12 sm:h-14 lg:h-16">
           {/* Logo - Same as signin page */}
           <div className="flex items-center">
             <Link href="/" className="cursor-pointer">
-              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-[#0BAB7C] rounded-lg flex items-center justify-center hover:bg-[#0BAB7C]/90 transition-colors min-h-touch min-w-touch">
-                <span className="text-white font-bold text-xs sm:text-sm">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 bg-[#0BAB7C] rounded-lg flex items-center justify-center hover:bg-[#0BAB7C]/90 transition-colors">
+                <span className="text-white font-bold text-sm sm:text-base lg:text-lg">
                   P
                 </span>
               </div>
@@ -76,20 +76,22 @@ export default function Header({ className = "" }: HeaderProps) {
           {/* Right side - Notifications and Profile */}
           <div className="flex items-center gap-2 sm:gap-4">
             {/* Notifications */}
-            <Bell className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 cursor-pointer hover:text-gray-700 transition-colors min-h-touch min-w-touch" />
+            <div className="p-2 hover:bg-gray-50 rounded-lg transition-colors cursor-pointer min-h-touch min-w-touch flex items-center justify-center">
+              <Bell className="w-5 h-5 text-gray-500 hover:text-gray-700 transition-colors" />
+            </div>
 
             {/* Profile Dropdown */}
             <DropdownMenu modal={false}>
               <DropdownMenuTrigger asChild>
-                <div className="flex items-center gap-1 sm:gap-2 cursor-pointer hover:bg-gray-50 focus:bg-gray-50 rounded-lg px-1 sm:px-2 py-1 transition-colors min-h-touch">
-                  <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white text-xs sm:text-sm font-medium">
+                <div className="flex items-center gap-1 sm:gap-2 cursor-pointer hover:bg-gray-50 focus:bg-gray-50 rounded-lg px-2 py-2 transition-colors min-h-touch">
+                  <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white text-sm font-medium">
                     {displayUser.avatar ||
                       displayUser.name.charAt(0).toUpperCase()}
                   </div>
-                  <span className="hidden sm:block text-sm font-medium text-gray-700">
+                  <span className="hidden sm:block text-sm font-medium text-gray-700 max-w-[120px] truncate">
                     {displayUser.name}
                   </span>
-                  <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 text-gray-500" />
+                  <ChevronDown className="w-4 h-4 text-gray-500 flex-shrink-0" />
                 </div>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-56">

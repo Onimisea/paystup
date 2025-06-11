@@ -40,7 +40,7 @@ export default function TransactionsPage() {
         <Header />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex gap-8">
+          <div className="flex md:gap-8">
             {/* Sidebar - Hidden on mobile */}
             <Sidebar />
 
@@ -90,7 +90,7 @@ export default function TransactionsPage() {
               </div>
 
               {/* Transaction List */}
-              <div className="bg-white rounded-lg border border-gray-100 p-6">
+              <div className="md:bg-white rounded-lg p-6">
                 <TransactionList searchQuery={searchQuery} />
               </div>
             </div>

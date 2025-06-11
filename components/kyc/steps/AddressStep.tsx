@@ -107,7 +107,7 @@ export default function AddressStep() {
         </p>
       </div>
 
-      <div className="bg-white rounded-lg p-8 shadow-sm">
+      <div className="md:bg-white rounded-lg p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Country */}
           <div className="space-y-2">

@@ -100,10 +100,7 @@ export default function SupportPage() {
         {/* Support options */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {supportOptions.map((option, index) => (
-            <Card
-              key={index}
-              className="text-center hover:shadow-lg transition-shadow"
-            >
+            <Card key={index} className="text-center">
               <CardContent className="p-6">
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <option.icon className="w-8 h-8 text-blue-600" />

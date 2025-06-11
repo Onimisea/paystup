@@ -6,9 +6,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
   --font-inter: var(--inter);
+  --font-brico: var(--brico);
 
   --breakpoint-*: initial;
   --breakpoint-sm: 480px;
@@ -18,7 +18,8 @@
   --breakpoint-md2: 840px;
   --breakpoint-md3: 960px;
   --breakpoint-lg: 1024px;
-  --breakpoint-lg2: 1280px;
+  --breakpoint-lg2: 1180px;
+  --breakpoint-lg3: 1280px;
   --breakpoint-xl: 1440px;
   --breakpoint-2xl: 1600px;
 
@@ -147,7 +148,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
   body {
     @apply bg-background text-foreground;

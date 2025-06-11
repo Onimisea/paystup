@@ -192,7 +192,7 @@ export default function TrackingStep() {
     currentRequest.amountRequested - currentRequest.amountReceived;
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto w-full px-4 sm:px-0">
       <div className="text-center mb-6 sm:mb-8">
         <h1 className="text-xl sm:text-2xl font-semibold text-[#111827] mb-2">
           {t("tracking.title")}
@@ -340,7 +340,7 @@ export default function TrackingStep() {
                   .map((payment) => (
                     <div
                       key={payment.id}
-                      className="flex items-center justify-between p-3 bg-[#F9FAFB] rounded-lg border"
+                      className="flex items-center justify-between p-3 bg-[#F9FAFB] rounded-lg"
                     >
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
@@ -374,11 +374,11 @@ export default function TrackingStep() {
         </Card>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full">
           <Button
             onClick={handleCopyLink}
             variant="outline"
-            className="flex-1 flex items-center justify-center gap-2"
+            className="w-full sm:w-auto sm:flex-1 flex items-center justify-center gap-2 py-3 min-h-touch"
           >
             <Copy className="w-4 h-4" />
             {linkCopied ? "Link Copied!" : "Copy Link"}
@@ -389,7 +389,7 @@ export default function TrackingStep() {
               <Button
                 onClick={handleShare}
                 variant="outline"
-                className="flex-1 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto sm:flex-1 flex items-center justify-center gap-2 py-3 min-h-touch"
               >
                 <Share2 className="w-4 h-4" />
                 {t("tracking.actions.shareAgain")}
@@ -398,7 +398,7 @@ export default function TrackingStep() {
 
           <Button
             onClick={() => setCurrentStep("details")}
-            className="flex-1 bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white"
+            className="w-full sm:w-auto sm:flex-1 bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white py-3 min-h-touch"
           >
             Create New Request
           </Button>

@@ -139,7 +139,7 @@ export default function EmailSupportModal({
 
   return (
     <div className="fixed inset-0 bg-black/70 z-50 flex justify-center items-start pt-8 pb-8 overflow-y-auto">
-      <div className="w-full max-w-2xl bg-white rounded-lg shadow-xl mx-4">
+      <div className="w-full max-w-2xl bg-white rounded-lg mx-4">
         <div className="p-6">
           {/* Header */}
           <div className="flex items-center justify-between mb-6">

@@ -2,13 +2,13 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Clock, 
-  CheckCircle, 
-  XCircle, 
-  AlertCircle, 
+import {
+  Clock,
+  CheckCircle,
+  XCircle,
+  AlertCircle,
   TrendingUp,
-  Calendar
+  Calendar,
 } from "lucide-react";
 import { PaymentRequestStatus } from "@/lib/stores/receive-store";
 import { formatCurrency } from "@/lib/currencies";
@@ -19,23 +19,23 @@ interface PaymentStatusCardProps {
   className?: string;
 }
 
-export default function PaymentStatusCard({ 
-  request, 
-  className = "" 
+export default function PaymentStatusCard({
+  request,
+  className = "",
 }: PaymentStatusCardProps) {
   const t = useTranslations("Receive");
 
   const getStatusIcon = (status: string) => {
     switch (status) {
-      case 'pending':
+      case "pending":
         return <Clock className="w-6 h-6 text-yellow-500" />;
-      case 'partially_paid':
+      case "partially_paid":
         return <AlertCircle className="w-6 h-6 text-blue-500" />;
-      case 'completed':
+      case "completed":
         return <CheckCircle className="w-6 h-6 text-green-500" />;
-      case 'expired':
+      case "expired":
         return <XCircle className="w-6 h-6 text-red-500" />;
-      case 'cancelled':
+      case "cancelled":
         return <XCircle className="w-6 h-6 text-gray-500" />;
       default:
         return <Clock className="w-6 h-6 text-gray-500" />;
@@ -52,9 +52,11 @@ export default function PaymentStatusCard({
     };
 
     return (
-      <Badge 
-        variant="outline" 
-        className={variants[status as keyof typeof variants] || variants.pending}
+      <Badge
+        variant="outline"
+        className={
+          variants[status as keyof typeof variants] || variants.pending
+        }
       >
         {t(`tracking.status.${status}`)}
       </Badge>
@@ -63,44 +65,29 @@ export default function PaymentStatusCard({
 
   const getStatusMessage = (status: string) => {
     switch (status) {
-      case 'pending':
+      case "pending":
         return "Waiting for payment from recipients";
-      case 'partially_paid':
+      case "partially_paid":
         return "Partial payment received, waiting for remaining amount";
-      case 'completed':
+      case "completed":
         return "Payment request completed successfully";
-      case 'expired':
+      case "expired":
         return "Payment request has expired";
-      case 'cancelled':
+      case "cancelled":
         return "Payment request was cancelled";
       default:
         return "Payment request status unknown";
     }
   };
 
-  const getCardBorderColor = (status: string) => {
-    switch (status) {
-      case 'pending':
-        return "border-l-yellow-500";
-      case 'partially_paid':
-        return "border-l-blue-500";
-      case 'completed':
-        return "border-l-green-500";
-      case 'expired':
-        return "border-l-red-500";
-      case 'cancelled':
-        return "border-l-gray-500";
-      default:
-        return "border-l-gray-300";
-    }
-  };
-
-  const progressPercentage = (request.amountReceived / request.amountRequested) * 100;
-  const isExpiringSoon = request.expiresAt && 
+  const progressPercentage =
+    (request.amountReceived / request.amountRequested) * 100;
+  const isExpiringSoon =
+    request.expiresAt &&
     new Date(request.expiresAt).getTime() - Date.now() < 24 * 60 * 60 * 1000; // 24 hours
 
   return (
-    <Card className={`border-l-4 ${getCardBorderColor(request.status)} ${className}`}>
+    <Card className={className}>
       <CardHeader className="pb-3">
         <div className="flex items-center justify-between">
           <CardTitle className="flex items-center gap-3">
@@ -117,7 +104,7 @@ export default function PaymentStatusCard({
           {getStatusBadge(request.status)}
         </div>
       </CardHeader>
-      
+
       <CardContent>
         <div className="space-y-4">
           {/* Amount Display */}
@@ -127,7 +114,8 @@ export default function PaymentStatusCard({
                 {formatCurrency(request.amountReceived, request.currency)}
               </p>
               <p className="text-sm text-[#4B5563]">
-                of {formatCurrency(request.amountRequested, request.currency)} requested
+                of {formatCurrency(request.amountRequested, request.currency)}{" "}
+                requested
               </p>
             </div>
             <div className="text-right">
@@ -138,7 +126,8 @@ export default function PaymentStatusCard({
                 </span>
               </div>
               <p className="text-xs text-[#4B5563]">
-                {request.payments.length} payment{request.payments.length !== 1 ? 's' : ''}
+                {request.payments.length} payment
+                {request.payments.length !== 1 ? "s" : ""}
               </p>
             </div>
           </div>
@@ -148,11 +137,11 @@ export default function PaymentStatusCard({
             <div className="w-full bg-gray-200 rounded-full h-2">
               <div
                 className={`h-2 rounded-full transition-all duration-300 ${
-                  request.status === 'completed' 
-                    ? 'bg-green-500' 
-                    : request.status === 'partially_paid'
-                    ? 'bg-blue-500'
-                    : 'bg-[#0BAB7C]'
+                  request.status === "completed"
+                    ? "bg-green-500"
+                    : request.status === "partially_paid"
+                    ? "bg-blue-500"
+                    : "bg-[#0BAB7C]"
                 }`}
                 style={{ width: `${Math.min(progressPercentage, 100)}%` }}
               />
@@ -160,7 +149,7 @@ export default function PaymentStatusCard({
           </div>
 
           {/* Expiry Warning */}
-          {isExpiringSoon && request.status === 'pending' && (
+          {isExpiringSoon && request.status === "pending" && (
             <div className="flex items-center gap-2 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
               <AlertCircle className="w-4 h-4 text-yellow-600 flex-shrink-0" />
               <div>
@@ -168,7 +157,8 @@ export default function PaymentStatusCard({
                   Expires Soon
                 </p>
                 <p className="text-xs text-yellow-700">
-                  This request expires on {new Date(request.expiresAt!).toLocaleDateString()}
+                  This request expires on{" "}
+                  {new Date(request.expiresAt!).toLocaleDateString()}
                 </p>
               </div>
             </div>

@@ -129,7 +129,7 @@ export default function DashboardClient() {
         <Header />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
-          <div className="flex flex-row gap-4 sm:gap-6 lg:gap-8">
+          <div className="flex flex-row md:gap-4 lg:gap-6 xl:gap-8">
             {/* Sidebar - Hidden on mobile */}
             <div className="flex-shrink-0">
               <Sidebar />
@@ -144,8 +144,8 @@ export default function DashboardClient() {
                 </h1>
               </div>
 
-              {/* Account Section - White Container */}
-              <div className="bg-white rounded-lg p-4 sm:p-6 mb-6 sm:mb-8">
+              {/* Account Section - White Container on Desktop */}
+              <div className="md:bg-white rounded-lg p-4 sm:p-6 mb-6 sm:mb-8">
                 {/* Action Buttons */}
                 {/* <div className="grid grid-cols-3 sm:flex sm:flex-wrap gap-4 sm:gap-6 md:gap-8 mb-4 sm:mb-6">
                   <div
@@ -230,7 +230,7 @@ export default function DashboardClient() {
               >
                 {/* KYC Completed Card - Only show if KYC is completed */}
                 {isKYCCompleted && (
-                  <Card className="bg-[#D1FAE5] border-0">
+                  <Card className="bg-[#D1FAE5]">
                     <CardContent className="p-4 sm:p-6">
                       <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
                         <div className="w-7 h-7 sm:w-8 sm:h-8 bg-[#0BAB7C] rounded-full flex items-center justify-center flex-shrink-0">

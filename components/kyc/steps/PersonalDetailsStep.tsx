@@ -93,7 +93,7 @@ export default function PersonalDetailsStep() {
         </p>
       </div>
 
-      <div className="bg-white rounded-lg p-8 shadow-sm">
+      <div className="md:bg-white rounded-lg p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* First and Middle Names */}
           <div className="space-y-2">

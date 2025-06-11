@@ -4,17 +4,17 @@ import { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Clock, 
-  CheckCircle, 
-  XCircle, 
-  AlertCircle, 
-  User, 
+import {
+  Clock,
+  CheckCircle,
+  XCircle,
+  AlertCircle,
+  User,
   Calendar,
   CreditCard,
   Building2,
   Copy,
-  Check
+  Check,
 } from "lucide-react";
 import { formatCurrency } from "@/lib/currencies";
 import CountdownTimer from "./CountdownTimer";
@@ -26,7 +26,7 @@ interface PaymentRequest {
   amount: number;
   currency: string;
   description: string;
-  status: 'pending' | 'partially_paid' | 'completed' | 'expired' | 'cancelled';
+  status: "pending" | "partially_paid" | "completed" | "expired" | "cancelled";
   amountReceived: number;
   createdAt: string;
   expiresAt?: string;
@@ -43,8 +43,12 @@ interface PaymentLinkClientProps {
   requestId: string;
 }
 
-export default function PaymentLinkClient({ requestId }: PaymentLinkClientProps) {
-  const [paymentRequest, setPaymentRequest] = useState<PaymentRequest | null>(null);
+export default function PaymentLinkClient({
+  requestId,
+}: PaymentLinkClientProps) {
+  const [paymentRequest, setPaymentRequest] = useState<PaymentRequest | null>(
+    null
+  );
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [copiedField, setCopiedField] = useState<string | null>(null);
@@ -54,20 +58,24 @@ export default function PaymentLinkClient({ requestId }: PaymentLinkClientProps)
     const fetchPaymentRequest = async () => {
       try {
         // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise((resolve) => setTimeout(resolve, 1000));
 
         // Mock payment request data
         const mockRequest: PaymentRequest = {
           id: requestId,
           requestorName: "John Smith",
           requestorEmail: "john.smith@example.com",
-          amount: 250.00,
+          amount: 250.0,
           currency: "USD",
           description: "Freelance web development work - Project Alpha",
           status: "pending",
           amountReceived: 0,
-          createdAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(), // 2 days ago
-          expiresAt: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000).toISOString(), // 5 days from now
+          createdAt: new Date(
+            Date.now() - 2 * 24 * 60 * 60 * 1000
+          ).toISOString(), // 2 days ago
+          expiresAt: new Date(
+            Date.now() + 5 * 24 * 60 * 60 * 1000
+          ).toISOString(), // 5 days from now
           bankDetails: {
             accountName: "John Smith",
             accountNumber: "1234567890",
@@ -100,15 +108,15 @@ export default function PaymentLinkClient({ requestId }: PaymentLinkClientProps)
 
   const getStatusIcon = (status: string) => {
     switch (status) {
-      case 'pending':
+      case "pending":
         return <Clock className="w-5 h-5 text-yellow-500" />;
-      case 'partially_paid':
+      case "partially_paid":
         return <AlertCircle className="w-5 h-5 text-blue-500" />;
-      case 'completed':
+      case "completed":
         return <CheckCircle className="w-5 h-5 text-green-500" />;
-      case 'expired':
+      case "expired":
         return <XCircle className="w-5 h-5 text-red-500" />;
-      case 'cancelled':
+      case "cancelled":
         return <XCircle className="w-5 h-5 text-gray-500" />;
       default:
         return <Clock className="w-5 h-5 text-gray-500" />;
@@ -133,9 +141,11 @@ export default function PaymentLinkClient({ requestId }: PaymentLinkClientProps)
     };
 
     return (
-      <Badge 
-        variant="outline" 
-        className={variants[status as keyof typeof variants] || variants.pending}
+      <Badge
+        variant="outline"
+        className={
+          variants[status as keyof typeof variants] || variants.pending
+        }
       >
         {labels[status as keyof typeof labels] || "Unknown"}
       </Badge>
@@ -162,10 +172,11 @@ export default function PaymentLinkClient({ requestId }: PaymentLinkClientProps)
             Payment Request Not Found
           </h1>
           <p className="text-[#4B5563] mb-6">
-            {error || "The payment request you're looking for doesn't exist or has been removed."}
+            {error ||
+              "The payment request you're looking for doesn't exist or has been removed."}
           </p>
           <Button
-            onClick={() => window.location.href = "/"}
+            onClick={() => (window.location.href = "/")}
             className="bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white"
           >
             Go to Homepage
@@ -175,18 +186,23 @@ export default function PaymentLinkClient({ requestId }: PaymentLinkClientProps)
     );
   }
 
-  const isExpired = paymentRequest.expiresAt && new Date(paymentRequest.expiresAt) < new Date();
+  const isExpired =
+    paymentRequest.expiresAt && new Date(paymentRequest.expiresAt) < new Date();
   const remainingAmount = paymentRequest.amount - paymentRequest.amountReceived;
 
   return (
     <div className="min-h-screen bg-[#F9FAFB]">
       {/* Header */}
-      <div className="bg-white border-b border-gray-200">
+      <div className="bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-2xl font-bold text-[#111827]">Payment Request</h1>
-              <p className="text-[#4B5563] mt-1">Complete your payment securely</p>
+              <h1 className="text-2xl font-bold text-[#111827]">
+                Payment Request
+              </h1>
+              <p className="text-[#4B5563] mt-1">
+                Complete your payment securely
+              </p>
             </div>
             <div className="flex items-center gap-2">
               {getStatusIcon(paymentRequest.status)}
@@ -202,7 +218,7 @@ export default function PaymentLinkClient({ requestId }: PaymentLinkClientProps)
           {/* Left Column - Payment Details */}
           <div className="space-y-6">
             {/* Amount Card */}
-            <Card className="border-l-4 border-l-[#0BAB7C]">
+            <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <CreditCard className="w-5 h-5 text-[#0BAB7C]" />
@@ -216,7 +232,11 @@ export default function PaymentLinkClient({ requestId }: PaymentLinkClientProps)
                   </p>
                   {paymentRequest.amountReceived > 0 && (
                     <p className="text-sm text-[#4B5563]">
-                      {formatCurrency(paymentRequest.amountReceived, paymentRequest.currency)} already received
+                      {formatCurrency(
+                        paymentRequest.amountReceived,
+                        paymentRequest.currency
+                      )}{" "}
+                      already received
                     </p>
                   )}
                 </div>
@@ -231,43 +251,62 @@ export default function PaymentLinkClient({ requestId }: PaymentLinkClientProps)
               <CardContent>
                 <div className="space-y-4">
                   <div>
-                    <label className="text-sm font-medium text-[#4B5563]">Description</label>
-                    <p className="text-[#111827] mt-1">{paymentRequest.description}</p>
+                    <label className="text-sm font-medium text-[#4B5563]">
+                      Description
+                    </label>
+                    <p className="text-[#111827] mt-1">
+                      {paymentRequest.description}
+                    </p>
                   </div>
-                  
+
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <label className="text-sm font-medium text-[#4B5563]">Request ID</label>
-                      <p className="text-[#111827] font-mono text-sm mt-1">{paymentRequest.id}</p>
+                      <label className="text-sm font-medium text-[#4B5563]">
+                        Request ID
+                      </label>
+                      <p className="text-[#111827] font-mono text-sm mt-1">
+                        {paymentRequest.id}
+                      </p>
                     </div>
                     <div>
-                      <label className="text-sm font-medium text-[#4B5563]">Created</label>
+                      <label className="text-sm font-medium text-[#4B5563]">
+                        Created
+                      </label>
                       <p className="text-[#111827] mt-1 flex items-center gap-1">
                         <Calendar className="w-4 h-4" />
-                        {new Date(paymentRequest.createdAt).toLocaleDateString()}
+                        {new Date(
+                          paymentRequest.createdAt
+                        ).toLocaleDateString()}
                       </p>
                     </div>
                   </div>
 
                   {/* Countdown Timer */}
                   {paymentRequest.expiresAt && !isExpired && (
-                    <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                    <div className="bg-yellow-50 rounded-lg p-4">
                       <div className="flex items-center gap-2 mb-2">
                         <Clock className="w-4 h-4 text-yellow-600" />
-                        <span className="font-medium text-yellow-800">Time Remaining</span>
+                        <span className="font-medium text-yellow-800">
+                          Time Remaining
+                        </span>
                       </div>
                       <CountdownTimer expiresAt={paymentRequest.expiresAt} />
                     </div>
                   )}
 
                   {isExpired && (
-                    <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                    <div className="bg-red-50 rounded-lg p-4">
                       <div className="flex items-center gap-2">
                         <XCircle className="w-4 h-4 text-red-600" />
-                        <span className="font-medium text-red-800">Request Expired</span>
+                        <span className="font-medium text-red-800">
+                          Request Expired
+                        </span>
                       </div>
                       <p className="text-red-700 text-sm mt-1">
-                        This payment request expired on {new Date(paymentRequest.expiresAt!).toLocaleDateString()}
+                        This payment request expired on{" "}
+                        {new Date(
+                          paymentRequest.expiresAt!
+                        ).toLocaleDateString()}
                       </p>
                     </div>
                   )}
@@ -289,8 +328,12 @@ export default function PaymentLinkClient({ requestId }: PaymentLinkClientProps)
                     <User className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="font-medium text-[#111827]">{paymentRequest.requestorName}</p>
-                    <p className="text-sm text-[#4B5563]">{paymentRequest.requestorEmail}</p>
+                    <p className="font-medium text-[#111827]">
+                      {paymentRequest.requestorName}
+                    </p>
+                    <p className="text-sm text-[#4B5563]">
+                      {paymentRequest.requestorEmail}
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -308,24 +351,54 @@ export default function PaymentLinkClient({ requestId }: PaymentLinkClientProps)
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-[#4B5563] mb-6">
-                  Use the following bank details to complete your payment via bank transfer.
+                  Use the following bank details to complete your payment via
+                  bank transfer.
                 </p>
-                
+
                 <div className="space-y-4">
                   {[
-                    { label: "Account Name", value: paymentRequest.bankDetails.accountName, field: "accountName" },
-                    { label: "Account Number", value: paymentRequest.bankDetails.accountNumber, field: "accountNumber" },
-                    { label: "Bank Name", value: paymentRequest.bankDetails.bankName, field: "bankName" },
-                    { label: "Routing Number", value: paymentRequest.bankDetails.routingNumber, field: "routingNumber" },
-                    { label: "SWIFT Code", value: paymentRequest.bankDetails.swiftCode, field: "swiftCode" },
+                    {
+                      label: "Account Name",
+                      value: paymentRequest.bankDetails.accountName,
+                      field: "accountName",
+                    },
+                    {
+                      label: "Account Number",
+                      value: paymentRequest.bankDetails.accountNumber,
+                      field: "accountNumber",
+                    },
+                    {
+                      label: "Bank Name",
+                      value: paymentRequest.bankDetails.bankName,
+                      field: "bankName",
+                    },
+                    {
+                      label: "Routing Number",
+                      value: paymentRequest.bankDetails.routingNumber,
+                      field: "routingNumber",
+                    },
+                    {
+                      label: "SWIFT Code",
+                      value: paymentRequest.bankDetails.swiftCode,
+                      field: "swiftCode",
+                    },
                   ].map((detail) => (
-                    <div key={detail.field} className="flex items-center justify-between p-3 bg-[#F9FAFB] rounded-lg border">
+                    <div
+                      key={detail.field}
+                      className="flex items-center justify-between p-3 bg-[#F9FAFB] rounded-lg"
+                    >
                       <div>
-                        <label className="text-sm font-medium text-[#4B5563]">{detail.label}</label>
-                        <p className="text-[#111827] font-mono">{detail.value}</p>
+                        <label className="text-sm font-medium text-[#4B5563]">
+                          {detail.label}
+                        </label>
+                        <p className="text-[#111827] font-mono">
+                          {detail.value}
+                        </p>
                       </div>
                       <Button
-                        onClick={() => handleCopyToClipboard(detail.value, detail.field)}
+                        onClick={() =>
+                          handleCopyToClipboard(detail.value, detail.field)
+                        }
                         variant="outline"
                         size="sm"
                         className="ml-2"
@@ -346,27 +419,40 @@ export default function PaymentLinkClient({ requestId }: PaymentLinkClientProps)
                   ))}
                 </div>
 
-                <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                  <h4 className="font-medium text-blue-800 mb-2">Payment Instructions</h4>
+                <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+                  <h4 className="font-medium text-blue-800 mb-2">
+                    Payment Instructions
+                  </h4>
                   <ul className="text-sm text-blue-700 space-y-1">
-                    <li>• Include the Request ID ({paymentRequest.id}) in your transfer reference</li>
-                    <li>• Transfer the exact amount: {formatCurrency(remainingAmount, paymentRequest.currency)}</li>
+                    <li>
+                      • Include the Request ID ({paymentRequest.id}) in your
+                      transfer reference
+                    </li>
+                    <li>
+                      • Transfer the exact amount:{" "}
+                      {formatCurrency(remainingAmount, paymentRequest.currency)}
+                    </li>
                     <li>• Allow 1-3 business days for processing</li>
-                    <li>• You will receive a confirmation once payment is received</li>
+                    <li>
+                      • You will receive a confirmation once payment is received
+                    </li>
                   </ul>
                 </div>
               </CardContent>
             </Card>
 
             {/* Security Notice */}
-            <Card className="border-green-200 bg-green-50">
+            <Card className="bg-green-50">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
                   <div>
-                    <h4 className="font-medium text-green-800 mb-1">Secure Payment</h4>
+                    <h4 className="font-medium text-green-800 mb-1">
+                      Secure Payment
+                    </h4>
                     <p className="text-sm text-green-700">
-                      This payment request is secured by Paystup. Your bank details are protected and never shared.
+                      This payment request is secured by Paystup. Your bank
+                      details are protected and never shared.
                     </p>
                   </div>
                 </div>

@@ -136,8 +136,8 @@ export default function SignupClient() {
             </div>
           )}
 
-          {/* Signup Card - White background, no borders */}
-          <div className="bg-white rounded-lg p-4 sm:p-6 md:p-8 shadow-sm">
+          {/* Signup Card - White background on desktop, transparent on mobile */}
+          <div className="md:bg-white rounded-lg p-4 sm:p-6 md:p-8">
             {currentFlow === "initial" && renderInitialFlow()}
             {currentFlow === "email" && (
               <MultiStepSignup

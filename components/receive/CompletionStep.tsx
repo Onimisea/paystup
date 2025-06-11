@@ -128,7 +128,7 @@ Thank you for using Paystup!
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto w-full px-4 sm:px-0">
       {/* Success Header */}
       <div className="text-center mb-8">
         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -142,7 +142,7 @@ Thank you for using Paystup!
 
       <div className="space-y-6">
         {/* Payment Summary */}
-        <Card className="border-l-4 border-l-green-500">
+        <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <CreditCard className="w-5 h-5 text-green-600" />
@@ -220,7 +220,7 @@ Thank you for using Paystup!
                 .map((payment, index) => (
                   <div
                     key={payment.id}
-                    className="flex items-center justify-between p-4 bg-[#F9FAFB] rounded-lg border"
+                    className="flex items-center justify-between p-4 bg-[#F9FAFB] rounded-lg"
                   >
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
@@ -256,11 +256,11 @@ Thank you for using Paystup!
         </Card>
 
         {/* Action Buttons */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full">
           <Button
             onClick={handleDownloadReceipt}
             variant="outline"
-            className="flex items-center justify-center gap-2 py-3 min-h-touch"
+            className="w-full flex items-center justify-center gap-2 py-3 min-h-touch"
           >
             <Download className="w-4 h-4" />
             {t("tracking.actions.downloadReceipt")}
@@ -269,7 +269,7 @@ Thank you for using Paystup!
           <Button
             onClick={handleViewTransactions}
             variant="outline"
-            className="flex items-center justify-center gap-2 py-3 min-h-touch"
+            className="w-full flex items-center justify-center gap-2 py-3 min-h-touch"
           >
             <Receipt className="w-4 h-4" />
             {t("completed.viewTransactions")}
@@ -278,7 +278,7 @@ Thank you for using Paystup!
 
           <Button
             onClick={handleNewRequest}
-            className="bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white flex items-center justify-center gap-2 py-3 min-h-touch"
+            className="w-full bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white flex items-center justify-center gap-2 py-3 min-h-touch"
           >
             <Plus className="w-4 h-4" />
             {t("completed.newRequest")}
@@ -286,7 +286,7 @@ Thank you for using Paystup!
         </div>
 
         {/* Success Message */}
-        <div className="text-center py-6 bg-green-50 border border-green-200 rounded-lg">
+        <div className="text-center py-6 bg-green-50 rounded-lg">
           <CheckCircle className="w-8 h-8 mx-auto text-green-600 mb-3" />
           <h3 className="font-semibold text-green-800 mb-2">
             Payment Request Completed Successfully!

@@ -46,7 +46,14 @@ export default function SharingOptionsStep() {
     try {
       // Generate mock data
       const requestId = `req_${Date.now()}`;
-      const mockPaymentLink = `https://paystup.com/pay/${requestId}`;
+
+      // Get current site origin dynamically
+      const origin =
+        typeof window !== "undefined"
+          ? window.location.origin
+          : process.env.NEXT_PUBLIC_APP_URL || "https://paystup.com";
+
+      const mockPaymentLink = `${origin}/pay/${requestId}`;
 
       // Create mock payment request
       const paymentRequest = {
@@ -149,7 +156,7 @@ export default function SharingOptionsStep() {
   };
 
   return (
-    <div className="max-w-md mx-auto">
+    <div className="max-w-md mx-auto w-full px-4 sm:px-0">
       <div className="text-center mb-6 sm:mb-8">
         <h1 className="text-xl sm:text-2xl font-semibold text-[#111827] mb-2">
           {t("sharing.title")}
@@ -295,17 +302,17 @@ export default function SharingOptionsStep() {
         )}
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 w-full">
           <Button
             onClick={handleBack}
             variant="outline"
-            className="w-full sm:flex-1 py-3 rounded-lg cursor-pointer min-h-touch"
+            className="w-full sm:w-auto sm:flex-1 py-3 rounded-lg cursor-pointer min-h-touch"
           >
             {tCommon("buttons.back")}
           </Button>
           <Button
             onClick={handleProceedToTracking}
-            className="w-full sm:flex-1 bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white font-medium py-3 rounded-lg cursor-pointer min-h-touch"
+            className="w-full sm:w-auto sm:flex-1 bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white font-medium py-3 rounded-lg cursor-pointer min-h-touch"
           >
             {t("tracking.title")}
           </Button>

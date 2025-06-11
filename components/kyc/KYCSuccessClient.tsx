@@ -24,7 +24,7 @@ export default function KYCSuccessClient() {
   return (
     <div className="min-h-screen bg-[#F9FAFB] flex items-center justify-center">
       <div className="max-w-md mx-auto text-center px-4">
-        <div className="bg-white rounded-lg p-8 shadow-sm">
+        <div className="md:bg-white rounded-lg p-8">
           <div className="w-16 h-16 bg-[#0BAB7C] rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle className="w-8 h-8 text-white" />
           </div>

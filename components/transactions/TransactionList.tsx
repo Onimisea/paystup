@@ -114,7 +114,7 @@ export default function TransactionList({ searchQuery }: TransactionListProps) {
             {transactions.map((transaction) => (
               <div
                 key={transaction.id}
-                className="flex items-center justify-between p-4 bg-white rounded-lg border border-gray-100 hover:border-gray-200 transition-colors cursor-pointer"
+                className="flex items-center justify-between p-4 md:bg-white rounded-lg border border-gray-100 hover:border-gray-200 transition-colors cursor-pointer"
               >
                 <div className="flex items-center gap-3">
                   {/* Transaction Icon */}

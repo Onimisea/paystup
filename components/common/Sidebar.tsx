@@ -30,12 +30,7 @@ export default function Sidebar({ className = "" }: SidebarProps) {
       label: "Send",
       isActive: pathname === "/send" || pathname.includes("/send"),
     },
-    {
-      href: "/receive",
-      icon: Wallet,
-      label: "Receive",
-      isActive: pathname === "/receive" || pathname.includes("/receive"),
-    },
+
     {
       href: "/transactions",
       icon: Receipt,

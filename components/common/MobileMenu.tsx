@@ -30,12 +30,7 @@ export default function MobileMenu({ className = "" }: MobileMenuProps) {
       label: "Send",
       isActive: pathname === "/send" || pathname.includes("/send"),
     },
-    {
-      href: "/receive",
-      icon: Wallet,
-      label: "Receive",
-      isActive: pathname === "/receive" || pathname.includes("/receive"),
-    },
+
     {
       href: "/transactions",
       icon: Receipt,
@@ -56,7 +51,7 @@ export default function MobileMenu({ className = "" }: MobileMenuProps) {
       "flex items-center justify-center p-3 rounded-full cursor-pointer transition-all duration-200 min-h-[56px] min-w-[56px] relative group";
 
     const activeClasses = "text-white bg-[#0BAB7C]";
-    const inactiveClasses = "text-gray-600 bg-white shadow-md";
+    const inactiveClasses = "text-gray-600 bg-white";
 
     const classes = `${baseClasses} ${
       item.isActive ? activeClasses : inactiveClasses
@@ -79,7 +74,7 @@ export default function MobileMenu({ className = "" }: MobileMenuProps) {
         />
 
         {/* Tooltip for hover/focus states only */}
-        <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-[#0BAB7C] text-white text-xs px-3 py-1 rounded-md whitespace-nowrap z-20 shadow-lg opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-200 pointer-events-none">
+        <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-[#0BAB7C] text-white text-xs px-3 py-1 rounded-md whitespace-nowrap z-20 opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-200 pointer-events-none">
           {item.label}
           <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-[#0BAB7C]"></div>
         </div>

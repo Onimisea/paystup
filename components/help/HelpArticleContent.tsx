@@ -14,7 +14,11 @@ import LiveChatWidget from "./LiveChatWidget";
 const helpTopics = [
   { title: "Send money", slug: "send-money", isActive: false },
   { title: "Transfer times", slug: "transfer-times", isActive: false },
-  { title: "Supported countries", slug: "supported-countries", isActive: false },
+  {
+    title: "Supported countries",
+    slug: "supported-countries",
+    isActive: false,
+  },
   { title: "Fees and rates", slug: "fees-and-rates", isActive: false },
   { title: "Transfer delays", slug: "transfer-delays", isActive: false },
   { title: "Security", slug: "security", isActive: false },
@@ -33,9 +37,9 @@ export default function HelpArticleContent({ slug }: HelpArticleContentProps) {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   // Update active topic based on current slug
-  const topicsWithActive = helpTopics.map(topic => ({
+  const topicsWithActive = helpTopics.map((topic) => ({
     ...topic,
-    isActive: topic.slug === slug
+    isActive: topic.slug === slug,
   }));
 
   // Get article content based on slug
@@ -44,243 +48,286 @@ export default function HelpArticleContent({ slug }: HelpArticleContentProps) {
       case "send-money":
         return {
           title: "How Do I Send Money?",
-          description: "Learn the step-by-step process for sending money securely and easily using our platform.",
+          description:
+            "Learn the step-by-step process for sending money securely and easily using our platform.",
           steps: [
             {
               step: 1,
               title: "Log in to your account",
-              description: "Make sure you're signed in with your verified email and password"
+              description:
+                "Make sure you're signed in with your verified email and password",
             },
             {
               step: 2,
               title: "Click on 'Send Money'",
-              description: "You'll find this button on your dashboard or homepage."
+              description:
+                "You'll find this button on your dashboard or homepage.",
             },
             {
               step: 3,
               title: "Enter recipient details",
-              description: "Full name, Account number or email, Destination country"
+              description:
+                "Full name, Account number or email, Destination country",
             },
             {
               step: 4,
               title: "Enter transfer amount",
-              description: "Specify how much you want to send. The platform will automatically calculate the exchange rate and fees."
+              description:
+                "Specify how much you want to send. The platform will automatically calculate the exchange rate and fees.",
             },
             {
               step: 5,
               title: "Review transfer summary",
-              description: "Confirm all details including the exchange rate, fee, and delivery time."
+              description:
+                "Confirm all details including the exchange rate, fee, and delivery time.",
             },
             {
               step: 6,
               title: "Transfer to the company account",
-              description: "You'll be shown a company account number to transfer the exact amount to."
+              description:
+                "You'll be shown a company account number to transfer the exact amount to.",
             },
             {
               step: 7,
               title: "Enter your transaction password",
-              description: "This is a final layer of security to confirm your transaction."
+              description:
+                "This is a final layer of security to confirm your transaction.",
             },
             {
               step: 8,
               title: "Done!",
-              description: "You and the recipient will receive a confirmation once the money has been sent."
-            }
+              description:
+                "You and the recipient will receive a confirmation once the money has been sent.",
+            },
           ],
           tips: [
             "Double-check recipient details to avoid failed transactions",
             "Always ensure you're using your verified bank account to make the transfer",
-            "For large transfers, consider contacting support for quicker processing"
+            "For large transfers, consider contacting support for quicker processing",
           ],
           relatedArticles: [
             { title: "How do I get a password?", slug: "password-help" },
-            { title: "What is my transaction password?", slug: "transaction-password" }
-          ]
+            {
+              title: "What is my transaction password?",
+              slug: "transaction-password",
+            },
+          ],
         };
 
       case "transfer-times":
         return {
           title: "How Long Does a Transfer Take?",
-          description: "Understanding transfer processing times and what affects delivery speed.",
+          description:
+            "Understanding transfer processing times and what affects delivery speed.",
           steps: [
             {
               step: 1,
               title: "Instant Transfers",
-              description: "Most transfers within the same country are processed instantly during business hours."
+              description:
+                "Most transfers within the same country are processed instantly during business hours.",
             },
             {
               step: 2,
               title: "International Transfers",
-              description: "Cross-border transfers typically take 30 minutes to 3 hours depending on the destination."
+              description:
+                "Cross-border transfers typically take 30 minutes to 3 hours depending on the destination.",
             },
             {
               step: 3,
               title: "Bank Processing Times",
-              description: "Some banks may take additional time to process incoming transfers, especially during weekends."
+              description:
+                "Some banks may take additional time to process incoming transfers, especially during weekends.",
             },
             {
               step: 4,
               title: "Verification Delays",
-              description: "First-time transfers or large amounts may require additional verification, adding 1-24 hours."
-            }
+              description:
+                "First-time transfers or large amounts may require additional verification, adding 1-24 hours.",
+            },
           ],
           tips: [
             "Transfers sent during business hours are typically faster",
             "Weekend transfers may experience slight delays",
-            "Complete your KYC verification to avoid processing delays"
+            "Complete your KYC verification to avoid processing delays",
           ],
           relatedArticles: [
             { title: "Why was my transfer delayed?", slug: "transfer-delays" },
-            { title: "How to track my transfer", slug: "track-transfer" }
-          ]
+            { title: "How to track my transfer", slug: "track-transfer" },
+          ],
         };
 
       case "supported-countries":
         return {
           title: "What Countries Can I Send Money To?",
-          description: "View our comprehensive list of supported countries and regions for money transfers.",
+          description:
+            "View our comprehensive list of supported countries and regions for money transfers.",
           steps: [
             {
               step: 1,
               title: "Africa",
-              description: "Nigeria, Kenya, Ghana, South Africa, Uganda, Tanzania, Rwanda, and 15+ more countries."
+              description:
+                "Nigeria, Kenya, Ghana, South Africa, Uganda, Tanzania, Rwanda, and 15+ more countries.",
             },
             {
               step: 2,
               title: "Asia",
-              description: "India, Philippines, Bangladesh, Pakistan, Sri Lanka, Nepal, and other major destinations."
+              description:
+                "India, Philippines, Bangladesh, Pakistan, Sri Lanka, Nepal, and other major destinations.",
             },
             {
               step: 3,
               title: "Europe",
-              description: "United Kingdom, France, Germany, Spain, Italy, and most EU countries."
+              description:
+                "United Kingdom, France, Germany, Spain, Italy, and most EU countries.",
             },
             {
               step: 4,
               title: "Americas",
-              description: "United States, Canada, Mexico, Brazil, and other Latin American countries."
-            }
+              description:
+                "United States, Canada, Mexico, Brazil, and other Latin American countries.",
+            },
           ],
           tips: [
             "New countries are added regularly - check back for updates",
             "Some countries may have specific requirements or limits",
-            "Contact support if your destination country isn't listed"
+            "Contact support if your destination country isn't listed",
           ],
           relatedArticles: [
-            { title: "Country-specific requirements", slug: "country-requirements" },
-            { title: "Currency availability", slug: "currencies" }
-          ]
+            {
+              title: "Country-specific requirements",
+              slug: "country-requirements",
+            },
+            { title: "Currency availability", slug: "currencies" },
+          ],
         };
 
       case "fees-and-rates":
         return {
           title: "What Are the Fees and Exchange Rates?",
-          description: "Transparent pricing information for all your money transfer needs.",
+          description:
+            "Transparent pricing information for all your money transfer needs.",
           steps: [
             {
               step: 1,
               title: "Transfer Fees",
-              description: "Our fees start from as low as $2.99 for transfers up to $500, with competitive rates for larger amounts."
+              description:
+                "Our fees start from as low as $2.99 for transfers up to $500, with competitive rates for larger amounts.",
             },
             {
               step: 2,
               title: "Exchange Rates",
-              description: "We offer real-time exchange rates with a small margin to ensure competitive pricing."
+              description:
+                "We offer real-time exchange rates with a small margin to ensure competitive pricing.",
             },
             {
               step: 3,
               title: "No Hidden Charges",
-              description: "All fees are displayed upfront before you confirm your transfer - no surprises."
+              description:
+                "All fees are displayed upfront before you confirm your transfer - no surprises.",
             },
             {
               step: 4,
               title: "Premium Plans",
-              description: "Upgrade to Premium or Business plans for reduced fees and better exchange rates."
-            }
+              description:
+                "Upgrade to Premium or Business plans for reduced fees and better exchange rates.",
+            },
           ],
           tips: [
             "Compare our rates with traditional banks to see your savings",
             "Larger transfers often have better rate margins",
-            "Premium members get exclusive rate discounts"
+            "Premium members get exclusive rate discounts",
           ],
           relatedArticles: [
             { title: "How to upgrade your plan", slug: "upgrade-plan" },
-            { title: "Fee calculator", slug: "fee-calculator" }
-          ]
+            { title: "Fee calculator", slug: "fee-calculator" },
+          ],
         };
 
       case "transfer-delays":
         return {
           title: "Why Was My Transfer Delayed?",
-          description: "Common reasons for transfer delays and how to resolve them quickly.",
+          description:
+            "Common reasons for transfer delays and how to resolve them quickly.",
           steps: [
             {
               step: 1,
               title: "Verification Required",
-              description: "Your account or transfer may need additional verification for security purposes."
+              description:
+                "Your account or transfer may need additional verification for security purposes.",
             },
             {
               step: 2,
               title: "Bank Processing",
-              description: "The receiving bank may be experiencing delays or require additional processing time."
+              description:
+                "The receiving bank may be experiencing delays or require additional processing time.",
             },
             {
               step: 3,
               title: "Compliance Checks",
-              description: "Large transfers or certain destinations may trigger additional security checks."
+              description:
+                "Large transfers or certain destinations may trigger additional security checks.",
             },
             {
               step: 4,
               title: "Technical Issues",
-              description: "Rare technical problems with payment networks can cause temporary delays."
-            }
+              description:
+                "Rare technical problems with payment networks can cause temporary delays.",
+            },
           ],
           tips: [
             "Complete your profile and KYC verification to minimize delays",
             "Ensure all recipient details are accurate and complete",
-            "Contact support if your transfer is delayed more than expected"
+            "Contact support if your transfer is delayed more than expected",
           ],
           relatedArticles: [
-            { title: "How to complete KYC verification", slug: "kyc-verification" },
-            { title: "Transfer status tracking", slug: "track-transfer" }
-          ]
+            {
+              title: "How to complete KYC verification",
+              slug: "kyc-verification",
+            },
+            { title: "Transfer status tracking", slug: "track-transfer" },
+          ],
         };
 
       case "security":
         return {
           title: "How Secure Is My Information?",
-          description: "Learn about our comprehensive security measures to protect your data and funds.",
+          description:
+            "Learn about our comprehensive security measures to protect your data and funds.",
           steps: [
             {
               step: 1,
               title: "Bank-Level Encryption",
-              description: "All data is encrypted using 256-bit SSL encryption, the same standard used by major banks."
+              description:
+                "All data is encrypted using 256-bit SSL encryption, the same standard used by major banks.",
             },
             {
               step: 2,
               title: "Regulatory Compliance",
-              description: "We're licensed and regulated by financial authorities in all countries where we operate."
+              description:
+                "We're licensed and regulated by financial authorities in all countries where we operate.",
             },
             {
               step: 3,
               title: "Fraud Protection",
-              description: "Advanced AI monitors all transactions for suspicious activity and fraud prevention."
+              description:
+                "Advanced AI monitors all transactions for suspicious activity and fraud prevention.",
             },
             {
               step: 4,
               title: "Secure Storage",
-              description: "Your funds are held in segregated accounts with tier-1 financial institutions."
-            }
+              description:
+                "Your funds are held in segregated accounts with tier-1 financial institutions.",
+            },
           ],
           tips: [
             "Never share your login credentials with anyone",
             "Enable two-factor authentication for extra security",
-            "Report any suspicious activity immediately"
+            "Report any suspicious activity immediately",
           ],
           relatedArticles: [
             { title: "How to enable 2FA", slug: "two-factor-auth" },
-            { title: "Privacy policy", slug: "privacy-policy" }
-          ]
+            { title: "Privacy policy", slug: "privacy-policy" },
+          ],
         };
 
       default:
@@ -289,7 +336,7 @@ export default function HelpArticleContent({ slug }: HelpArticleContentProps) {
           description: "The requested help article could not be found.",
           steps: [],
           tips: [],
-          relatedArticles: []
+          relatedArticles: [],
         };
     }
   };
@@ -303,7 +350,7 @@ export default function HelpArticleContent({ slug }: HelpArticleContentProps) {
         <Header />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex gap-8">
+          <div className="flex md:gap-8">
             {/* Sidebar */}
             <div className="w-64 flex-shrink-0">
               {/* Back Button */}
@@ -316,7 +363,7 @@ export default function HelpArticleContent({ slug }: HelpArticleContentProps) {
               </Link>
 
               {/* Topics Sidebar */}
-              <div className="bg-white rounded-lg border border-gray-100 p-4">
+              <div className="md:bg-white rounded-lg p-4">
                 <h3 className="font-semibold text-[#111827] mb-4">Topics</h3>
                 <nav className="space-y-1">
                   {topicsWithActive.map((topic, index) => (
@@ -340,8 +387,12 @@ export default function HelpArticleContent({ slug }: HelpArticleContentProps) {
             <div className="flex-1">
               {/* Page Header */}
               <div className="mb-8">
-                <h1 className="text-2xl font-bold text-[#111827] mb-2">Need a hand?</h1>
-                <p className="text-[#4B5563] mb-6">Search our FAQs or get personal support</p>
+                <h1 className="text-2xl font-bold text-[#111827] mb-2">
+                  Need a hand?
+                </h1>
+                <p className="text-[#4B5563] mb-6">
+                  Search our FAQs or get personal support
+                </p>
 
                 {/* Search Bar */}
                 <div className="relative mb-6">
@@ -363,13 +414,19 @@ export default function HelpArticleContent({ slug }: HelpArticleContentProps) {
               </div>
 
               {/* Article Content */}
-              <div className="bg-white rounded-lg border border-gray-100 p-8">
-                <h2 className="text-xl font-bold text-[#111827] mb-4">{articleContent.title}</h2>
-                <p className="text-[#4B5563] mb-6">{articleContent.description}</p>
+              <div className="md:bg-white rounded-lg p-8">
+                <h2 className="text-xl font-bold text-[#111827] mb-4">
+                  {articleContent.title}
+                </h2>
+                <p className="text-[#4B5563] mb-6">
+                  {articleContent.description}
+                </p>
 
                 {articleContent.steps.length > 0 && (
                   <>
-                    <h3 className="text-lg font-semibold text-[#111827] mb-4">{articleContent.title}</h3>
+                    <h3 className="text-lg font-semibold text-[#111827] mb-4">
+                      {articleContent.title}
+                    </h3>
 
                     {/* Steps */}
                     <div className="space-y-6 mb-8">
@@ -379,8 +436,12 @@ export default function HelpArticleContent({ slug }: HelpArticleContentProps) {
                             {item.step}
                           </div>
                           <div>
-                            <h4 className="font-medium text-[#111827] mb-1">{item.title}</h4>
-                            <p className="text-[#4B5563] text-sm">{item.description}</p>
+                            <h4 className="font-medium text-[#111827] mb-1">
+                              {item.title}
+                            </h4>
+                            <p className="text-[#4B5563] text-sm">
+                              {item.description}
+                            </p>
                           </div>
                         </div>
                       ))}
@@ -390,11 +451,14 @@ export default function HelpArticleContent({ slug }: HelpArticleContentProps) {
 
                 {/* Tips Section */}
                 {articleContent.tips.length > 0 && (
-                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+                  <div className="bg-blue-50 rounded-lg p-6 mb-8">
                     <h4 className="font-semibold text-[#111827] mb-3">Tips:</h4>
                     <ul className="space-y-2">
                       {articleContent.tips.map((tip, index) => (
-                        <li key={index} className="flex items-start gap-2 text-[#4B5563] text-sm">
+                        <li
+                          key={index}
+                          className="flex items-start gap-2 text-[#4B5563] text-sm"
+                        >
                           <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
                           {tip}
                         </li>
@@ -406,7 +470,9 @@ export default function HelpArticleContent({ slug }: HelpArticleContentProps) {
                 {/* Related Articles */}
                 {articleContent.relatedArticles.length > 0 && (
                   <div className="border-t border-gray-100 pt-6">
-                    <h4 className="font-semibold text-[#111827] mb-4">Related Articles:</h4>
+                    <h4 className="font-semibold text-[#111827] mb-4">
+                      Related Articles:
+                    </h4>
                     <ul className="space-y-2">
                       {articleContent.relatedArticles.map((article, index) => (
                         <li key={index}>
@@ -425,7 +491,8 @@ export default function HelpArticleContent({ slug }: HelpArticleContentProps) {
                 {/* Support Actions */}
                 <div className="border-t border-gray-100 pt-6 mt-8">
                   <p className="text-[#4B5563] text-sm mb-4">
-                    Was this article helpful? If you need more assistance, feel free to contact our support team.
+                    Was this article helpful? If you need more assistance, feel
+                    free to contact our support team.
                   </p>
                   <div className="flex gap-3">
                     <Button

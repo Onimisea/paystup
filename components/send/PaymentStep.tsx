@@ -1,94 +1,64 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useSendStore } from "@/lib/stores/send-store";
 import { useTransactionsStore } from "@/lib/stores/transactions-store";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
 import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Eye, EyeClosed, X, Check } from "lucide-react";
+  Copy,
+  Check,
+  X,
+  Building2,
+  CreditCard,
+  Hash,
+  User,
+  AlertCircle,
+} from "lucide-react";
 import { useRouter } from "next/navigation";
-import {
-  processPassword,
-  PasswordValidationResult,
-  validatePassword,
-} from "@/lib/password-validation";
 import { useTranslations } from "next-intl";
 
-// Zod schema for payment password validation
-const paymentPasswordSchema = z.object({
-  password: z
-    .string()
-    .min(1, "Password is required")
-    .refine(
-      (password) => {
-        const validation = validatePassword(password.trim());
-        return validation.isValid;
-      },
-      {
-        message: "Password does not meet security requirements",
-      }
-    ),
-});
-
-type PaymentPasswordFormData = z.infer<typeof paymentPasswordSchema>;
+// Paystup account details for transfers
+const PAYSTUP_ACCOUNT_DETAILS = {
+  bankName: "First Bank of Nigeria",
+  accountNumber: "3012345678",
+  accountName: "Paystup Limited",
+  sortCode: "011",
+  routingNumber: "011152303",
+};
 
 export default function PaymentStep() {
   const { setCurrentStep, resetSend, recipient, amount } = useSendStore();
-
   const { addTransaction } = useTransactionsStore();
   const router = useRouter();
 
   const t = useTranslations("Send");
   const tCommon = useTranslations("Common");
 
-  const [showPassword, setShowPassword] = useState(false);
   const [showModal, setShowModal] = useState<"error" | "success" | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
-  const [passwordValidation, setPasswordValidation] =
-    useState<PasswordValidationResult | null>(null);
+  const [copiedField, setCopiedField] = useState<string | null>(null);
 
-  const form = useForm<PaymentPasswordFormData>({
-    resolver: zodResolver(paymentPasswordSchema),
-    defaultValues: {
-      password: "",
-    },
-  });
+  // Generate transaction reference
+  const transactionReference = `PAY${Date.now()
+    .toString()
+    .slice(-8)}${Math.random().toString(36).substring(2, 5).toUpperCase()}`;
 
-  // Watch password field for real-time validation
-  const watchedPassword = form.watch("password");
-
-  // Update password validation when password changes
-  useEffect(() => {
-    if (watchedPassword) {
-      const { validation } = processPassword(watchedPassword);
-      setPasswordValidation(validation);
-    } else {
-      setPasswordValidation(null);
+  // Copy to clipboard function
+  const copyToClipboard = async (text: string, field: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopiedField(field);
+      setTimeout(() => setCopiedField(null), 2000);
+    } catch (err) {
+      console.error("Failed to copy text: ", err);
     }
-  }, [watchedPassword]);
+  };
 
-  const onSubmit = async (data: PaymentPasswordFormData) => {
+  // Handle transfer completion confirmation
+  const handleTransferCompleted = async () => {
     setIsProcessing(true);
 
-    // Process password for validation and trimming
-    const { trimmed: trimmedPassword, validation } = processPassword(
-      data.password
-    );
-
-    console.log("💳 Payment Form Submitted:", {
-      passwordStrength: validation.strength,
+    console.log("💳 Transfer Completion Confirmed:", {
       recipient: {
         name: recipient.accountName,
         account: recipient.accountNumber,
@@ -103,16 +73,16 @@ export default function PaymentStep() {
         fees: amount.fees,
         total: amount.totalAmount,
       },
+      paystupAccount: PAYSTUP_ACCOUNT_DETAILS,
+      reference: transactionReference,
       timestamp: new Date().toISOString(),
-      userAgent: navigator.userAgent,
-      formValidation: "passed",
     });
 
-    // Simulate payment processing
+    // Simulate transfer verification processing
     setTimeout(() => {
       setIsProcessing(false);
       // Simulate random success/failure for demo
-      const isSuccess = Math.random() > 0.3; // 70% success rate
+      const isSuccess = Math.random() > 0.2; // 80% success rate
 
       if (isSuccess) {
         // Create transaction record
@@ -132,7 +102,7 @@ export default function PaymentStep() {
           status: "successful" as const,
           type: "send" as const,
           recipient: recipient.accountName,
-          reference: `REF${Date.now()}`,
+          reference: transactionReference,
           icon: "↗",
           iconColor: "#0BAB7C",
         };
@@ -153,13 +123,14 @@ export default function PaymentStep() {
           recipient: recipient.accountName,
           amount: amount.sendAmount,
           currency: amount.sendCurrency,
+          reference: transactionReference,
           timestamp: new Date().toISOString(),
-          reason: "Simulated failure for demo",
+          reason: "Transfer verification failed",
         });
       }
 
       setShowModal(isSuccess ? "success" : "error");
-    }, 2000);
+    }, 3000);
   };
 
   const handleBack = () => {
@@ -168,7 +139,6 @@ export default function PaymentStep() {
 
   const handleRetry = () => {
     setShowModal(null);
-    form.reset();
   };
 
   const handleGoToTransactions = () => {
@@ -176,118 +146,289 @@ export default function PaymentStep() {
     router.push("/transactions");
   };
 
-  // Modal close handler for potential future use
-  // const handleModalClose = () => {
-  //   setShowModal(null);
-  // };
-
   return (
     <>
-      <div className="max-w-sm sm:max-w-md mx-auto px-4 sm:px-0">
+      <div className="max-w-2xl mx-auto px-4 sm:px-0">
+        {/* Header */}
         <div className="text-center mb-6 sm:mb-8">
           <h1 className="text-xl sm:text-2xl font-semibold text-[#111827] mb-2">
-            {t("payment.title")}
+            Complete Your Transfer
           </h1>
           <p className="text-sm sm:text-base text-[#4B5563] mb-2">
-            {t("payment.subtitle")}
+            Transfer the exact amount to the Paystup account below
           </p>
-          <a
-            href="#"
-            className="text-[#0BAB7C] text-xs sm:text-sm hover:underline"
-          >
-            {t("payment.learnMore")}
-          </a>
+          <div className="flex items-center justify-center gap-2 text-xs sm:text-sm text-[#0BAB7C]">
+            <AlertCircle className="w-4 h-4" />
+            <span>Your bank account must be linked to your BVN</span>
+          </div>
         </div>
 
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-            {/* Password Field */}
-            <FormField
-              control={form.control}
-              name="password"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-[#4B5563] font-medium">
-                    {t("payment.password")}
-                  </FormLabel>
-                  <FormControl>
-                    <div className="relative">
-                      <Input
-                        type={showPassword ? "text" : "password"}
-                        placeholder={t("payment.passwordPlaceholder")}
-                        className="pr-12"
-                        {...field}
-                      />
-                      <button
-                        type="button"
-                        onClick={() => setShowPassword(!showPassword)}
-                        className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
-                      >
-                        {showPassword ? (
-                          <Eye className="w-5 h-5" />
-                        ) : (
-                          <EyeClosed className="w-5 h-5" />
-                        )}
-                      </button>
-                    </div>
-                  </FormControl>
-                  <FormMessage />
-                  {passwordValidation &&
-                    !passwordValidation.isValid &&
-                    field.value && (
-                      <div className="mt-2 space-y-1">
-                        {passwordValidation.errors.map((error, index) => (
-                          <p key={index} className="text-red-500 text-xs">
-                            {error}
-                          </p>
-                        ))}
-                      </div>
-                    )}
-                </FormItem>
-              )}
-            />
+        {/* Transfer Amount */}
+        <div className="md:bg-white rounded-lg p-6 mb-6">
+          <div className="text-center">
+            <p className="text-sm text-[#4B5563] mb-1">
+              Total Amount to Transfer
+            </p>
+            <p className="text-2xl sm:text-3xl font-bold text-[#111827]">
+              {amount.sendCurrency} {amount.totalAmount.toLocaleString()}
+            </p>
 
-            {/* Navigation Buttons */}
-            <div className="flex gap-4 pt-6">
+            {/* Amount Breakdown */}
+            <div className="mt-4 pt-4 border-t border-gray-100">
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between items-center">
+                  <span className="text-[#4B5563]">Send Amount:</span>
+                  <span className="font-medium text-[#111827]">
+                    {amount.sendCurrency}{" "}
+                    {parseFloat(amount.sendAmount).toLocaleString()}
+                  </span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-[#4B5563]">Paystup Fees:</span>
+                  <span className="font-medium text-[#111827]">
+                    {amount.sendCurrency} {amount.fees.toLocaleString()}
+                  </span>
+                </div>
+                <div className="flex justify-between items-center pt-2 border-t border-gray-100">
+                  <span className="font-medium text-[#111827]">Total:</span>
+                  <span className="font-bold text-[#0BAB7C]">
+                    {amount.sendCurrency} {amount.totalAmount.toLocaleString()}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Paystup Account Details */}
+        <div className="md:bg-white rounded-lg p-6 mb-6">
+          <div className="flex items-center gap-2 mb-4">
+            <Building2 className="w-5 h-5 text-[#0BAB7C]" />
+            <h2 className="text-lg font-semibold text-[#111827]">
+              Transfer to Paystup Account
+            </h2>
+          </div>
+
+          <div className="space-y-4">
+            {/* Bank Name */}
+            <div className="flex items-center justify-between p-3 bg-[#F9FAFB] rounded-lg">
+              <div className="flex items-center gap-3">
+                <Building2 className="w-4 h-4 text-[#4B5563]" />
+                <div>
+                  <p className="text-xs text-[#4B5563]">Bank Name</p>
+                  <p className="font-medium text-[#111827]">
+                    {PAYSTUP_ACCOUNT_DETAILS.bankName}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Account Number */}
+            <div className="flex items-center justify-between p-3 bg-[#F9FAFB] rounded-lg">
+              <div className="flex items-center gap-3">
+                <CreditCard className="w-4 h-4 text-[#4B5563]" />
+                <div>
+                  <p className="text-xs text-[#4B5563]">Account Number</p>
+                  <p className="font-medium text-[#111827]">
+                    {PAYSTUP_ACCOUNT_DETAILS.accountNumber}
+                  </p>
+                </div>
+              </div>
               <Button
-                type="button"
-                onClick={handleBack}
                 variant="outline"
-                className="flex-1 py-3 rounded-lg cursor-pointer"
-                disabled={isProcessing}
+                size="sm"
+                onClick={() =>
+                  copyToClipboard(
+                    PAYSTUP_ACCOUNT_DETAILS.accountNumber,
+                    "accountNumber"
+                  )
+                }
+                className="h-8 px-3"
               >
-                {tCommon("buttons.back")}
-              </Button>
-              <Button
-                type="submit"
-                className="flex-1 bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white font-medium py-3 rounded-lg cursor-pointer"
-                disabled={isProcessing}
-              >
-                {isProcessing ? "Processing..." : t("payment.confirmPayment")}
+                {copiedField === "accountNumber" ? (
+                  <Check className="w-4 h-4 text-green-600" />
+                ) : (
+                  <Copy className="w-4 h-4" />
+                )}
               </Button>
             </div>
-          </form>
-        </Form>
+
+            {/* Account Name */}
+            <div className="flex items-center justify-between p-3 bg-[#F9FAFB] rounded-lg">
+              <div className="flex items-center gap-3">
+                <User className="w-4 h-4 text-[#4B5563]" />
+                <div>
+                  <p className="text-xs text-[#4B5563]">Account Name</p>
+                  <p className="font-medium text-[#111827]">
+                    {PAYSTUP_ACCOUNT_DETAILS.accountName}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Sort Code */}
+            <div className="flex items-center justify-between p-3 bg-[#F9FAFB] rounded-lg">
+              <div className="flex items-center gap-3">
+                <Hash className="w-4 h-4 text-[#4B5563]" />
+                <div>
+                  <p className="text-xs text-[#4B5563]">Sort Code</p>
+                  <p className="font-medium text-[#111827]">
+                    {PAYSTUP_ACCOUNT_DETAILS.sortCode}
+                  </p>
+                </div>
+              </div>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() =>
+                  copyToClipboard(PAYSTUP_ACCOUNT_DETAILS.sortCode, "sortCode")
+                }
+                className="h-8 px-3"
+              >
+                {copiedField === "sortCode" ? (
+                  <Check className="w-4 h-4 text-green-600" />
+                ) : (
+                  <Copy className="w-4 h-4" />
+                )}
+              </Button>
+            </div>
+
+            {/* Transaction Reference */}
+            <div className="flex items-center justify-between p-3 bg-[#F9FAFB] rounded-lg">
+              <div className="flex items-center gap-3">
+                <Hash className="w-4 h-4 text-[#4B5563]" />
+                <div>
+                  <p className="text-xs text-[#4B5563]">Reference/Memo</p>
+                  <p className="font-medium text-[#111827]">
+                    {transactionReference}
+                  </p>
+                </div>
+              </div>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() =>
+                  copyToClipboard(transactionReference, "reference")
+                }
+                className="h-8 px-3"
+              >
+                {copiedField === "reference" ? (
+                  <Check className="w-4 h-4 text-green-600" />
+                ) : (
+                  <Copy className="w-4 h-4" />
+                )}
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        {/* Transfer Instructions */}
+        <div className="bg-blue-50 rounded-lg p-6 mb-6">
+          <h3 className="font-semibold text-[#111827] mb-3">
+            Transfer Instructions
+          </h3>
+          <ol className="space-y-2 text-sm text-[#4B5563]">
+            <li className="flex gap-3">
+              <span className="flex-shrink-0 w-5 h-5 bg-[#0BAB7C] text-white rounded-full flex items-center justify-center text-xs font-medium">
+                1
+              </span>
+              <span>Open your banking app or visit your bank</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="flex-shrink-0 w-5 h-5 bg-[#0BAB7C] text-white rounded-full flex items-center justify-center text-xs font-medium">
+                2
+              </span>
+              <span>
+                Transfer the total amount ({amount.sendCurrency}{" "}
+                {amount.totalAmount.toLocaleString()}) which includes your send
+                amount plus Paystup fees
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="flex-shrink-0 w-5 h-5 bg-[#0BAB7C] text-white rounded-full flex items-center justify-center text-xs font-medium">
+                3
+              </span>
+              <span>
+                Include the reference number:{" "}
+                <strong>{transactionReference}</strong>
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="flex-shrink-0 w-5 h-5 bg-[#0BAB7C] text-white rounded-full flex items-center justify-center text-xs font-medium">
+                4
+              </span>
+              <span>
+                Click "Transfer Completed" below once your transfer is
+                successful
+              </span>
+            </li>
+          </ol>
+        </div>
+
+        {/* Important Notice */}
+        <div className="bg-yellow-50 rounded-lg p-4 mb-6">
+          <div className="flex gap-3">
+            <AlertCircle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+            <div className="text-sm">
+              <p className="font-medium text-yellow-800 mb-1">
+                Important Requirements
+              </p>
+              <ul className="text-yellow-700 space-y-1">
+                <li>
+                  • Your bank account must be linked to your BVN (Bank
+                  Verification Number)
+                </li>
+                <li>• Transfer must be made from your registered account</li>
+                <li>• Include the exact reference number for tracking</li>
+                <li>
+                  • Transfer the exact total amount ({amount.sendCurrency}{" "}
+                  {amount.totalAmount.toLocaleString()}) including fees
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation Buttons */}
+        <div className="flex gap-4">
+          <Button
+            type="button"
+            onClick={handleBack}
+            variant="outline"
+            className="flex-1 py-3 rounded-lg cursor-pointer"
+            disabled={isProcessing}
+          >
+            {tCommon("buttons.back")}
+          </Button>
+          <Button
+            onClick={handleTransferCompleted}
+            className="flex-1 bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white font-medium py-3 rounded-lg cursor-pointer"
+            disabled={isProcessing}
+          >
+            {isProcessing ? "Verifying Transfer..." : "Transfer Completed"}
+          </Button>
+        </div>
       </div>
 
       {/* Error Modal */}
       {showModal === "error" && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-2xl p-6 sm:p-8 max-w-xs sm:max-w-sm w-full mx-4 text-center shadow-xl">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 max-w-xs sm:max-w-sm w-full mx-4 text-center">
             <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 border-2 border-red-500">
               <X className="w-6 h-6 sm:w-8 sm:h-8 text-red-500" />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold text-[#111827] mb-2">
-              {t("payment.error.title")}
+              Transfer Verification Failed
             </h3>
             <p className="text-sm sm:text-base text-[#4B5563] mb-6 sm:mb-8">
-              {t("payment.error.subtitle")}
+              We couldn't verify your transfer. Please check your transfer
+              details and try again.
             </p>
             <Button
               onClick={handleRetry}
               className="w-full bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white font-medium py-3 rounded-xl cursor-pointer min-h-touch"
             >
-              {t("payment.error.button")}
+              Try Again
             </Button>
           </div>
         </div>
@@ -296,21 +437,22 @@ export default function PaymentStep() {
       {/* Success Modal */}
       {showModal === "success" && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-2xl p-6 sm:p-8 max-w-xs sm:max-w-sm w-full mx-4 text-center shadow-xl">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 max-w-xs sm:max-w-sm w-full mx-4 text-center">
             <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 border-2 border-[#0BAB7C]">
               <Check className="w-6 h-6 sm:w-8 sm:h-8 text-[#0BAB7C]" />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold text-[#111827] mb-2">
-              {t("payment.success.title")}
+              Transfer Successful!
             </h3>
             <p className="text-sm sm:text-base text-[#4B5563] mb-6 sm:mb-8">
-              {t("payment.success.subtitle")}
+              Your money transfer has been processed successfully. The recipient
+              will receive the funds shortly.
             </p>
             <Button
               onClick={handleGoToTransactions}
               className="w-full bg-[#0BAB7C] hover:bg-[#0BAB7C]/90 text-white font-medium py-3 rounded-xl cursor-pointer min-h-touch"
             >
-              {t("payment.success.button")}
+              View Transactions
             </Button>
           </div>
         </div>

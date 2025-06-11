@@ -52,7 +52,7 @@ export default function KYCClient() {
         {/* Main Content Area with Sidebar */}
         <div className="flex-1">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
-            <div className="flex flex-row gap-4 sm:gap-6 lg:gap-8">
+            <div className="flex flex-row md:gap-4 lg:gap-6 xl:gap-8">
               {/* Sidebar - Hidden on mobile */}
               <div className="flex-shrink-0">
                 <Sidebar />

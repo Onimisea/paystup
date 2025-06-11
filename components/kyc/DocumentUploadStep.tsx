@@ -172,7 +172,7 @@ export default function DocumentUploadStep() {
         <p className="text-[#4B5563]">Upload a photo of your document</p>
       </div>
 
-      <div className="bg-white rounded-lg p-8 shadow-sm">
+      <div className="md:bg-white rounded-lg p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Front Side */}
           <div>

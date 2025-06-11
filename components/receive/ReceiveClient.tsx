@@ -37,7 +37,7 @@ export default function ReceiveClient() {
         <Header />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
-          <div className="flex flex-row gap-4 sm:gap-6 lg:gap-8 overflow-visible">
+          <div className="flex flex-row md:gap-4 lg:gap-6 xl:gap-8 overflow-visible">
             {/* Sidebar - Hidden on mobile */}
             <div className="flex-shrink-0">
               <Sidebar />
@@ -51,7 +51,7 @@ export default function ReceiveClient() {
               </div>
 
               {/* Receive Form Content */}
-              <div className="bg-white rounded-lg p-4 sm:p-6 lg:p-8 overflow-visible">
+              <div className="md:bg-white rounded-lg p-4 sm:p-6 lg:p-8 overflow-visible">
                 {renderStep()}
               </div>
             </div>

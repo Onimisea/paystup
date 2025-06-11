@@ -45,7 +45,7 @@ export default function VerificationStep() {
         </p>
       </div>
 
-      <div className="bg-white rounded-lg p-8 shadow-sm">
+      <div className="md:bg-white rounded-lg p-8">
         <div className="space-y-4">
           {documentTypes.map((doc) => (
             <button
