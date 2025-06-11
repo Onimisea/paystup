@@ -98,37 +98,30 @@ export default function LandingPageClient() {
               width={300}
               height={600}
               className={`
-                object-contain w-auto max-w-none transition-all duration-500 ease-in-out
-                /* Small-medium screens (480px - 640px) - Perfectly centered */
-                h-[clamp(350px,55vh,450px)] 
-                absolute left-1/2 transform -translate-x-1/2 bottom-0
-                
-                /* Medium screens (640px - 768px) - Fine-tuned centering */
-                md:h-[clamp(400px,60vh,500px)] 
-                md:left-1/2 md:-translate-x-1/2
-                
-                /* Medium-large screens with height considerations */
-                md2:h-[clamp(350px,45vh,450px)] 
-                md2:left-1/2 md2:-translate-x-1/2
-                
-                /* Adjust for very short viewports on medium screens */
-                [@media(min-width:640px)_and_(max-height:600px)]:h-[clamp(250px,40vh,350px)]
-                [@media(min-width:640px)_and_(max-height:500px)]:h-[clamp(200px,35vh,300px)]
-                
-                /* Medium-large transition screens */
-                md3:h-[clamp(400px,50vh,500px)] 
-                md3:left-1/2 md3:-translate-x-1/2
-                
-                /* Large screens and above - Fixed positioning */
-                lg:h-[55vh] lg:right-0 lg:left-auto lg:transform-none lg:translate-x-0 lg:relative
-                lg3:h-[60vh] 
-                xl:h-[65vh] 
-                2xl:h-[70vh]
-                
-                /* Handle very short large screens */
-                [@media(min-width:1024px)_and_(max-height:700px)]:lg:h-[45vh]
-                [@media(min-width:1024px)_and_(max-height:600px)]:lg:h-[40vh]
-              `}
+      object-contain w-auto max-w-none transition-all duration-500 ease-in-out
+      h-[clamp(350px,55vh,450px)] 
+      absolute left-1/2 transform -translate-x-[calc(50%-65px)] bottom-0
+      
+      md:h-[clamp(400px,60vh,500px)] 
+      md:left-1/2 md:-translate-x-[calc(50%-65px)]
+      
+      md2:h-[clamp(350px,45vh,450px)] 
+      md2:left-1/2 md2:-translate-x-[calc(50%-65px)]
+      
+      [@media(min-width:640px)_and_(max-height:600px)]:h-[clamp(250px,40vh,350px)]
+      [@media(min-width:640px)_and_(max-height:500px)]:h-[clamp(200px,35vh,300px)]
+      
+      md3:h-[clamp(400px,50vh,500px)] 
+      md3:left-1/2 md3:-translate-x-[calc(50%-65px)]
+      
+      lg:h-[55vh] lg:right-0 lg:left-auto lg:transform-none lg:translate-x-0 lg:relative
+      lg3:h-[60vh] 
+      xl:h-[65vh] 
+      2xl:h-[70vh]
+      
+      [@media(min-width:1024px)_and_(max-height:700px)]:lg:h-[45vh]
+      [@media(min-width:1024px)_and_(max-height:600px)]:lg:h-[40vh]
+    `}
             />
           </div>
 
@@ -146,7 +139,7 @@ export default function LandingPageClient() {
       <div className="bg-white w-full">
         <section className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] lg3:w-[50%] xl:w-[40%] max-w-[1400px] mx-auto relative flex flex-col items-center justify-center py-28 text-center gap-6">
           <div className="relative">
-            <h3 className="text-[min(10vw,38px)] font-brico capitalize text-[#0BAB7C] relative">
+            <h3 className="text-[min(10vw,38px)] font-brico capitalize text-[#0BAB7C] font-bold relative">
               Send money without borders
             </h3>
 
@@ -221,6 +214,21 @@ export default function LandingPageClient() {
                 strokeLinecap="round"
               />
             </svg>
+          </div>
+
+          <p className="text-[min(10vw,24px)]">
+            Built for the people moving money between Africa and Asia. Finally a
+            smarter way to send and receive funds
+          </p>
+        </section>
+      </div>
+
+      <div className="bg-[#F9FAFB] w-full">
+        <section className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] lg3:w-[50%] xl:w-[40%] max-w-[1400px] mx-auto relative flex flex-col items-center justify-center py-28 text-center gap-6">
+          <div className="relative">
+            <h3 className="text-[min(10vw,38px)] font-brico capitalize text-black font-bold relative">
+              Money Sent Without Complications
+            </h3>
           </div>
 
           <p className="text-[min(10vw,24px)]">
