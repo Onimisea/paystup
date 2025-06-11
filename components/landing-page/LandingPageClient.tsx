@@ -22,7 +22,7 @@ export default function LandingPageClient() {
           </header>
 
           {/* Main Content */}
-          <section className="flex-1 flex items-center justify-between w-full pb-[60%] lg:items-center lg:pb-0">
+          <section className="flex-1 flex items-center justify-between w-full pb-[120%] lg:items-center lg:pb-0">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-12 lg:gap-16 xl:gap-20 w-full">
               {/* Left Column: Text and Button */}
               <div className="w-full lg:w-[47%] flex flex-col items-start justify-center text-white max-w-xl gap-6 sm:gap-8 text-center lg:text-left sm:justify-start sm:items-center sm:pt-8 lg:justify-center lg:items-start lg:pt-0">
