@@ -22,7 +22,7 @@ export default function LandingPageClient() {
           </header>
 
           {/* Main Content */}
-          <section className="flex-1 flex items-center justify-between w-full pb-[400px] lg:items-center lg:pb-0">
+          <section className="flex-1 flex items-center justify-between w-full pb-[50%] lg:items-center lg:pb-0">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-12 lg:gap-16 xl:gap-20 w-full">
               {/* Left Column: Text and Button */}
               <div className="w-full lg:w-[47%] flex flex-col items-start justify-center text-white max-w-xl gap-6 sm:gap-8 text-center lg:text-left sm:justify-start sm:items-center sm:pt-8 lg:justify-center lg:items-start lg:pt-0">
@@ -139,81 +139,83 @@ export default function LandingPageClient() {
       <div className="bg-white w-full">
         <section className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] lg3:w-[50%] xl:w-[40%] max-w-[1400px] mx-auto relative flex flex-col items-center justify-center py-28 text-center gap-6">
           <div className="relative">
-            <h3 className="text-[21px] sm:text-[27px] sm2:text-[32px] md:text-[38px] font-brico capitalize text-[#0BAB7C] font-bold relative">
-              Send money without borders
-            </h3>
+            <div className="flex items-center justify-center gap-4 relative ">
+              <h3 className="text-[21px] sm:text-[27px] md:text-[32px] md3:text-[38px] font-brico capitalize text-[#0BAB7C] font-bold relative">
+                Send money without borders
+              </h3>
 
-            {/* Star behind first letter "S" */}
-            <svg
-              className="absolute top-[10px] left-[-10px] w-8 h-8 -translate-y-1/2 -translate-x-1/2 pointer-events-none opacity-70"
-              viewBox="0 0 100 100"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line
-                x1="50"
-                y1="10"
-                x2="50"
-                y2="90"
-                stroke="#0BAB7C"
-                strokeWidth="3"
-                strokeLinecap="round"
-              />
-              <line
-                x1="19.3"
-                y1="25"
-                x2="80.7"
-                y2="75"
-                stroke="#0BAB7C"
-                strokeWidth="3"
-                strokeLinecap="round"
-              />
-              <line
-                x1="80.7"
-                y1="25"
-                x2="19.3"
-                y2="75"
-                stroke="#0BAB7C"
-                strokeWidth="3"
-                strokeLinecap="round"
-              />
-            </svg>
+              {/* Star behind first letter "S" */}
+              <svg
+                className="absolute top-[10px] left-[-10px] w-8 h-8 -translate-y-1/2 -translate-x-1/2 pointer-events-none opacity-70"
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="50"
+                  y1="10"
+                  x2="50"
+                  y2="90"
+                  stroke="#0BAB7C"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                />
+                <line
+                  x1="19.3"
+                  y1="25"
+                  x2="80.7"
+                  y2="75"
+                  stroke="#0BAB7C"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                />
+                <line
+                  x1="80.7"
+                  y1="25"
+                  x2="19.3"
+                  y2="75"
+                  stroke="#0BAB7C"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                />
+              </svg>
 
-            {/* Star behind last letter "s" */}
-            <svg
-              className="absolute top-[10px] right-[-10px] w-8 h-8 -translate-y-1/2 translate-x-1/2 pointer-events-none opacity-70"
-              viewBox="0 0 100 100"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line
-                x1="50"
-                y1="10"
-                x2="50"
-                y2="90"
-                stroke="#0BAB7C"
-                strokeWidth="3"
-                strokeLinecap="round"
-              />
-              <line
-                x1="19.3"
-                y1="25"
-                x2="80.7"
-                y2="75"
-                stroke="#0BAB7C"
-                strokeWidth="3"
-                strokeLinecap="round"
-              />
-              <line
-                x1="80.7"
-                y1="25"
-                x2="19.3"
-                y2="75"
-                stroke="#0BAB7C"
-                strokeWidth="3"
-                strokeLinecap="round"
-              />
-            </svg>
+              {/* Star behind last letter "s" */}
+              <svg
+                className="absolute top-[10px] right-[-10px] w-8 h-8 -translate-y-1/2 translate-x-1/2 pointer-events-none opacity-70"
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="50"
+                  y1="10"
+                  x2="50"
+                  y2="90"
+                  stroke="#0BAB7C"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                />
+                <line
+                  x1="19.3"
+                  y1="25"
+                  x2="80.7"
+                  y2="75"
+                  stroke="#0BAB7C"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                />
+                <line
+                  x1="80.7"
+                  y1="25"
+                  x2="19.3"
+                  y2="75"
+                  stroke="#0BAB7C"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </div>
           </div>
 
           <p className="text-[min(10vw,24px)]">
