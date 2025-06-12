@@ -435,7 +435,7 @@ export default function LandingPageClient() {
                 <h3 className="text-4xl lg:text-5xl font-bold font-brico leading-tight sm:leading-snug lg:leading-[1.1] text-center md3:text-left w-fit ">
                   Receiver Gets Paid Fast
                 </h3>
-                <div className="hidden sm:flex">
+                <div className="hidden md3:flex">
                   <div className="relative w-[70px] h-[70px]">
                     <Image
                       src="/lpimgs/lp-star.svg"
@@ -494,6 +494,151 @@ export default function LandingPageClient() {
             />
           </div>
         </section>
+      </div>
+
+      <div className="w-full bg-[#022219]">
+        <div className="py:16 md:py-32 w-[90%] sm:w-[85%] lg:w-[80%] max-w-[1400px] mx-auto relative flex flex-col items-center justify-center gap-6">
+          <div className="flex items-center justify-center gap-4 relative">
+            <div className="absolute left-[-70px] sm2:left-[-100px]">
+              <div className="relative w-[80px] h-[80px] sm2:w-[100px] sm2:h-[100px]">
+                <Image
+                  src="/lpimgs/lp-star.svg"
+                  alt="Star 1"
+                  width={20}
+                  height={20}
+                  className="absolute top-0 left-[50px] w-[20px] h-[20px]"
+                />
+                <Image
+                  src="/lpimgs/lp-star.svg"
+                  alt="Star 2"
+                  width={32}
+                  height={32}
+                  className="absolute bottom-[20px] left-0 w-8 h-8"
+                />
+                <Image
+                  src="/lpimgs/lp-star.svg"
+                  alt="Star 3"
+                  width={27}
+                  height={27}
+                  className="absolute bottom-[-10px] right-[-30px] w-7 h-7"
+                />
+              </div>
+            </div>
+            <h3 className="text-[21px] sm:text-[27px] sm2:text-[32px] md:text-[38px] font-brico capitalize font-bold relative text-white text-center">
+              Why people use
+              <br />
+              <span className="relative inline-block">
+                Paystup
+                <span className="absolute left-0 right-0 bottom-[-2px] h-3 pointer-events-none select-none flex justify-center">
+                  <Image
+                    src="/lpimgs/lp-africa-squiggle.svg"
+                    alt="squiggle underline"
+                    width={120}
+                    height={16}
+                    className="w-full h-3 object-contain"
+                  />
+                </span>
+              </span>
+            </h3>
+            <div className="absolute right-[-70px] sm2:right-[-100px]">
+              <div className="relative w-[80px] h-[80px] sm2:w-[100px] sm2:h-[100px]">
+                <Image
+                  src="/lpimgs/lp-star.svg"
+                  alt="Star 1"
+                  width={20}
+                  height={20}
+                  className="absolute top-0 right-[50px] w-[20px] h-[20px]"
+                />
+                <Image
+                  src="/lpimgs/lp-star.svg"
+                  alt="Star 2"
+                  width={32}
+                  height={32}
+                  className="absolute bottom-[20px] right-0 w-8 h-8"
+                />
+                <Image
+                  src="/lpimgs/lp-star.svg"
+                  alt="Star 3"
+                  width={27}
+                  height={27}
+                  className="absolute bottom-[-10px] left-[-30px] w-7 h-7"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md3:grid-cols-2 gap-10 w-full mt-8">
+            <div className="bg-[#06563E66] rounded-2xl min-h-[120px] md:min-h-[160px] flex flex-col items-center justify-center p-8 md:p-16">
+              <div className="h-[120px] md3:h-[200px] w-full flex justify-end ">
+                {/* No image */}
+              </div>
+
+              <div className="w-full flex flex-col gap-3 text-white">
+                <h4 className="text-3xl font-semibold font-brico">
+                  Fast Transfers
+                </h4>
+                <p className="">Money arrives in minutes, not days</p>
+              </div>
+            </div>
+
+            <div className="bg-[#06563E66] rounded-2xl min-h-[120px] md:min-h-[160px] flex flex-col items-center justify-center p-8 md:p-16">
+              <div className="w-full flex justify-end">
+                <Image
+                  src="/lpimgs/lp-money-note.png"
+                  alt="Money note"
+                  width={80}
+                  height={80}
+                  className="w-[40%] md3:w-[60%] h-auto object-contain"
+                  priority
+                />
+              </div>
+
+              <div className="w-full flex flex-col gap-3 text-white">
+                <h4 className="text-3xl font-semibold font-brico">Low Fees</h4>
+                <p className="">
+                  What you see is what you pay, No hidden charges
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[#06563E66] rounded-2xl min-h-[120px] md:min-h-[160px] flex flex-col items-center justify-center p-8 md:p-16">
+              <div className="w-full flex justify-end">
+                <Image
+                  src="/lpimgs/lp-compass.png"
+                  alt="Money note"
+                  width={80}
+                  height={80}
+                  className="w-[40%] md3:w-[60%] h-auto object-contain "
+                  priority
+                />
+              </div>
+
+              <div className="w-full flex flex-col gap-3 text-white">
+                <h4 className="text-3xl font-semibold font-brico">
+                  Easy to Use
+                </h4>
+                <p className="">
+                  No complex forms. No banking headache. Just send and go
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[#06563E66] rounded-2xl min-h-[120px] md:min-h-[160px] flex flex-col items-center justify-center p-8 md:p-16">
+              <div className="h-[120px] md3:h-[200px] w-full flex justify-end">
+                {/* No Image */}
+              </div>
+
+              <div className="w-full flex flex-col gap-3 text-white">
+                <h4 className="text-3xl font-semibold font-brico">
+                  Reliable Across boarders
+                </h4>
+                <p className="">
+                  From Nigeria to India, we&apos;re built for this
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
