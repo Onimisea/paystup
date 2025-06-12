@@ -363,8 +363,9 @@ export default function LandingPageClient() {
             </div>
           </div>
 
-          <div className="w-full mx-auto px-0 py-0 flex flex-col lg:flex-row md:justify-between md:items-center mt-10 gap-12">
-            <div className="rounded-3xl w-full lg:w-[47%] overflow-hidden">
+          <div className="w-full mx-auto px-0 py-0 mt-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Image Column */}
+            <div className="rounded-3xl overflow-hidden h-[700px]">
               <Image
                 src="/lpimgs/lp-girl-pressing-phone.png"
                 alt="Dashimg"
@@ -375,8 +376,9 @@ export default function LandingPageClient() {
               />
             </div>
 
+            {/* Content Column */}
             <div
-              className="rounded-3xl bg-[#E1D9FC] w-full lg:w-[47%] relative flex flex-col items-center justify-between overflow-hidden h-[700px]"
+              className="rounded-3xl bg-[#E1D9FC] relative flex flex-col items-center justify-between overflow-hidden h-[700px]"
               style={{
                 backgroundImage: "url('/lpimgs/lp-s-shape.png')",
                 backgroundRepeat: "no-repeat",
@@ -425,6 +427,71 @@ export default function LandingPageClient() {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="bg-[#ECF5FF] rounded-3xl w-full mx-auto pt-16 flex flex-col items-center justify-center md3:flex-row md3:justify-between relative mt-10">
+            <div className="w-full md3:w-[60%] flex flex-col items-center md3:items-start gap-8 p-10 ">
+              <div className="flex items-center justify-center md3:items-start relative gap-6 ">
+                <h3 className="text-4xl lg:text-5xl font-bold font-brico leading-tight sm:leading-snug lg:leading-[1.1] text-center md3:text-left w-fit ">
+                  Receiver Gets Paid Fast
+                </h3>
+                <div className="hidden sm:flex">
+                  <div className="relative w-[70px] h-[70px]">
+                    <Image
+                      src="/lpimgs/lp-star.svg"
+                      alt="Star 1"
+                      width={20}
+                      height={20}
+                      className="absolute top-0 right-[50px] w-[20px] h-[20px]"
+                    />
+                    <Image
+                      src="/lpimgs/lp-star.svg"
+                      alt="Star 2"
+                      width={32}
+                      height={32}
+                      className="absolute bottom-[20px] right-0 w-8 h-8"
+                    />
+                    <Image
+                      src="/lpimgs/lp-star.svg"
+                      alt="Star 3"
+                      width={27}
+                      height={27}
+                      className="absolute bottom-[-10px] left-[-30px] w-7 h-7"
+                    />
+                  </div>
+                </div>
+              </div>
+              <p className="text-base sm:text-lg lg:text-xl opacity-90 leading-relaxed max-w-lg mx-auto lg:mx-0 text-[#4B5563] text-center md3:text-left">
+                Recipients gets the money in their own local currency-directly
+                to their bank or wallet
+              </p>
+              <Link
+                href="/send"
+                className="bg-[#041152] px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg rounded-full z-10 transition-all duration-300 hover:bg-opacity-90 active:scale-95 hover:shadow-lg text-white w-fit"
+              >
+                Get started now
+              </Link>
+            </div>
+
+            {/* Image Container with responsive positioning */}
+            <div className="w-full md3:w-[40%] relative min-h-[300px] hidden md3:flex justify-center md3:justify-end ">
+              <Image
+                src="/lpimgs/lp-female-holding-hand2.png"
+                alt="Female holding hand 2"
+                width={320}
+                height={320}
+                className=""
+                priority
+              />
+            </div>
+
+            <Image
+              src="/lpimgs/lp-arrow2.svg"
+              alt="Dashed line arrow"
+              width={400}
+              height={120}
+              className="object-contain w-[50%] lg2:w-[60%] xl:w-[70%] absolute left-0 bottom-0 hidden lg:flex"
+            />
           </div>
         </section>
       </div>
