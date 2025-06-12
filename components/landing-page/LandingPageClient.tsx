@@ -6,8 +6,8 @@ import Image from "next/image";
 export default function LandingPageClient() {
   return (
     <div className="min-h-screen bg-[#F9FAFB] relative">
-      <div className="bg-[#043929] bg-[url('/lpimgs/lp-s-shape2.png')] bg-center bg-no-repeat bg-cover min-h-screen relative overflow-hidden">
-        <section className="w-[90%] sm:w-[85%] lg:w-[80%] max-w-[1400px] mx-auto relative flex flex-col items-center justify-center min-h-screen">
+      <div className="bg-[#043929] bg-[url('/lpimgs/lp-s-shape2.png')] bg-center bg-no-repeat bg-cover relative overflow-hidden ">
+        <section className="w-[90%] sm:w-[85%] lg:w-[80%] max-w-[1400px] mx-auto relative flex flex-col items-center lg:min-h-screen">
           {/* Header */}
           <header className="py-10 flex items-center justify-center lg:justify-between relative z-20 w-full">
             <h1 className="text-5xl xl:text-6xl font-black text-white font-brico">
@@ -22,10 +22,10 @@ export default function LandingPageClient() {
           </header>
 
           {/* Main Content */}
-          <section className="flex-1 flex items-center justify-between w-full pb-[120%] lg:items-center lg:pb-0">
+          <section className=" flex items-center justify-between w-full pb-0 mt-[10vh]">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-12 lg:gap-16 xl:gap-20 w-full">
               {/* Left Column: Text and Button */}
-              <div className="w-full lg:w-[47%] flex flex-col items-start justify-center text-white max-w-xl gap-6 sm:gap-8 text-center lg:text-left sm:justify-start sm:items-center sm:pt-8 lg:justify-center lg:items-start lg:pt-0">
+              <div className="w-full lg:w-[47%] flex flex-col items-start justify-center text-white max-w-xl gap-6 sm:gap-8 text-center lg:text-left sm:justify-start sm:items-center sm:pt-8 lg:justify-center lg:items-start lg:pt-0 mb-[10vh]">
                 <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold font-brico leading-tight sm:leading-snug lg:leading-[1.1]">
                   Send money across{" "}
                   <span className="relative inline-block">
@@ -68,9 +68,9 @@ export default function LandingPageClient() {
               </div>
 
               {/* Right Column: QR Code only */}
-              <div className="hidden lg:block  w-full lg:w-[47%] relative items-center justify-center min-h-[350px] sm:min-h-[400px] lg:min-h-[500px]">
+              <div className="w-full lg:w-[47%] relative items-center justify-center min-h-[350px] sm:min-h-[400px] lg:min-h-[500px]">
                 {/* QR Code - Top Left */}
-                <div className="absolute left-0 top-[-20px] lg3:top-[-80px] xl:left-[-130px] z-10">
+                <div className="hidden lg:block absolute left-0 top-0 lg3:top-[-20px] xl:left-[-70px] z-10">
                   <Image
                     src="/lpimgs/lp-QRCode.png"
                     alt="QR Code"
@@ -86,42 +86,77 @@ export default function LandingPageClient() {
                     </div>
                   </div>
                 </div>
+
+                {/* Female Image - Enhanced responsive positioning with smooth transitions */}
+                <div className="block lg:hidden lg:absolute lg:bottom-0 md:right-[150px] lg:right-0 pointer-events-none z-10 transition-all duration-500 ease-in-out ">
+                  <Image
+                    src="/lpimgs/lp-female-holding-hand.png"
+                    alt="Female holding hand"
+                    width={300}
+                    height={600}
+                    className={`
+          object-contain w-auto max-w-none transition-all duration-500 ease-in-out
+          h-[clamp(350px,55vh,450px)] 
+          absolute left-1/2 transform -translate-x-[calc(50%-65px)] bottom-0
+          
+          md:h-[clamp(400px,60vh,500px)] 
+          md:left-1/2 md:-translate-x-[calc(50%-65px)]
+          
+          md2:h-[clamp(350px,45vh,450px)] 
+          md2:left-1/2 md2:-translate-x-[calc(50%-65px)]
+          
+          [@media(min-width:640px)_and_(max-height:600px)]:h-[clamp(250px,40vh,350px)]
+          [@media(min-width:640px)_and_(max-height:500px)]:h-[clamp(200px,35vh,300px)]
+          
+          md3:h-[clamp(400px,50vh,500px)] 
+          md3:left-1/2 md3:-translate-x-[calc(50%-65px)]
+          
+          lg:h-[55vh] lg:right-0 lg:left-auto lg:transform-none lg:translate-x-0 lg:relative
+          lg3:h-[60vh] 
+          xl:h-[65vh] 
+          2xl:h-[70vh]
+          
+          [@media(min-width:1024px)_and_(max-height:700px)]:lg:h-[45vh]
+          [@media(min-width:1024px)_and_(max-height:600px)]:lg:h-[40vh]
+        `}
+                  />
+                </div>
               </div>
             </div>
           </section>
 
           {/* Female Image - Enhanced responsive positioning with smooth transitions */}
-          <div className="hidden sm:block lg:absolute lg:bottom-0 md:right-[150px] lg:right-0 pointer-events-none z-10 transition-all duration-500 ease-in-out">
+          <div className="hidden lg:block lg:absolute lg:bottom-0 md:right-[150px] lg:right-0 pointer-events-none z-10 transition-all duration-500 ease-in-out">
             <Image
               src="/lpimgs/lp-female-holding-hand.png"
               alt="Female holding hand"
               width={300}
               height={600}
               className={`
-      object-contain w-auto max-w-none transition-all duration-500 ease-in-out
-      h-[clamp(350px,55vh,450px)] 
-      absolute left-1/2 transform -translate-x-[calc(50%-65px)] bottom-0
-      
-      md:h-[clamp(400px,60vh,500px)] 
-      md:left-1/2 md:-translate-x-[calc(50%-65px)]
-      
-      md2:h-[clamp(350px,45vh,450px)] 
-      md2:left-1/2 md2:-translate-x-[calc(50%-65px)]
-      
-      [@media(min-width:640px)_and_(max-height:600px)]:h-[clamp(250px,40vh,350px)]
-      [@media(min-width:640px)_and_(max-height:500px)]:h-[clamp(200px,35vh,300px)]
-      
-      md3:h-[clamp(400px,50vh,500px)] 
-      md3:left-1/2 md3:-translate-x-[calc(50%-65px)]
-      
-      lg:h-[55vh] lg:right-0 lg:left-auto lg:transform-none lg:translate-x-0 lg:relative
-      lg3:h-[60vh] 
-      xl:h-[65vh] 
-      2xl:h-[70vh]
-      
-      [@media(min-width:1024px)_and_(max-height:700px)]:lg:h-[45vh]
-      [@media(min-width:1024px)_and_(max-height:600px)]:lg:h-[40vh]
-    `}
+          object-contain w-auto max-w-none transition-all duration-500 ease-in-out
+          h-[clamp(350px,55vh,450px)] 
+          absolute left-1/2 transform -translate-x-[calc(50%-65px)] bottom-0
+          
+          md:h-[clamp(400px,60vh,500px)] 
+          md:left-1/2 md:-translate-x-[calc(50%-65px)]
+          
+          md2:h-[clamp(350px,45vh,450px)] 
+          md2:left-1/2 md2:-translate-x-[calc(50%-65px)]
+          
+          [@media(min-width:640px)_and_(max-height:600px)]:h-[clamp(250px,40vh,350px)]
+          [@media(min-width:640px)_and_(max-height:500px)]:h-[clamp(200px,35vh,300px)]
+          
+          md3:h-[clamp(400px,50vh,500px)] 
+          md3:left-1/2 md3:-translate-x-[calc(50%-65px)]
+          
+          lg:h-[55vh] lg:right-0 lg:left-auto lg:transform-none lg:translate-x-0 lg:relative
+          lg3:h-[60vh] 
+          xl:h-[65vh] 
+          2xl:h-[70vh]
+          
+          [@media(min-width:1024px)_and_(max-height:700px)]:lg:h-[45vh]
+          [@media(min-width:1024px)_and_(max-height:600px)]:lg:h-[40vh]
+        `}
             />
           </div>
 
@@ -285,6 +320,107 @@ export default function LandingPageClient() {
                     width={27}
                     height={27}
                     className="absolute bottom-[-10px] left-[-30px] w-7 h-7"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-[#CEEEE5] rounded-3xl w-full mx-auto px-0 py-0 overflow-hidden flex flex-col md3:flex-row items-stretch mt-10">
+            {/* Left Column: Mountains background */}
+            <div
+              className="w-full md3:w-[50%]  min-w-0 relative flex items-center justify-center bg-cover bg-center"
+              style={{ backgroundImage: "url('/lpimgs/lp-mountains.png')" }}
+            >
+              <div className="w-full flex flex-col gap-6 sm:gap-8 p-10 lg:p-14 text-left">
+                <h2 className="text-4xl md2:text-5xl font-bold font-brico leading-[1.2] text-black">
+                  Your Currency. <br />
+                  Your Method. <br />
+                  Your Way
+                </h2>
+                <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-[#4B5563]">
+                  Send in your local currency, use your preferred local method-
+                  bank transfer, mobile wallet
+                </p>
+                <Link
+                  href="/send"
+                  className="bg-primary-green px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg rounded-full z-10 transition-all duration-300 hover:bg-opacity-90 active:scale-95 hover:shadow-lg text-white w-fit"
+                >
+                  Get started now
+                </Link>
+              </div>
+            </div>
+            {/* Right Column: Dashimg */}
+            <div className="flex-1 flex-col relative flex items-center justify-end">
+              <Image
+                src="/lpimgs/lp-dashimg.png"
+                alt="Dashimg"
+                width={320}
+                height={320}
+                className="w-full h-auto object-contain"
+                priority
+              />
+            </div>
+          </div>
+
+          <div className="w-full mx-auto px-0 py-0 flex flex-col lg:flex-row md:justify-between md:items-center mt-10 gap-12">
+            <div className="rounded-3xl w-full lg:w-[47%] overflow-hidden">
+              <Image
+                src="/lpimgs/lp-girl-pressing-phone.png"
+                alt="Dashimg"
+                width={320}
+                height={320}
+                className="w-full h-auto object-contain"
+                priority
+              />
+            </div>
+
+            <div
+              className="rounded-3xl bg-[#E1D9FC] w-full lg:w-[47%] relative flex flex-col items-center justify-between overflow-hidden h-[700px]"
+              style={{
+                backgroundImage: "url('/lpimgs/lp-s-shape.png')",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              {/* Overlay for background opacity */}
+              <div className="absolute inset-0 bg-[#E1D9FC] opacity-90 pointer-events-none z-0" />
+              <div className="relative z-10 w-full flex flex-col items-center justify-between h-full">
+                <div className="flex flex-col text-left p-8 pb-0 md:p-16 md:pb-0 gap-6 ">
+                  <h2 className="text-4xl lg3:text-5xl font-bold font-brico leading-[1.2] text-black">
+                    We Process and <br />
+                    Deliver Instantly
+                  </h2>
+                  <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-[#4B5563]">
+                    We handle the conversion and routing behind the scenes. No
+                    stress and no waiting
+                  </p>
+                  <Link
+                    href="/send"
+                    className="bg-primary-green px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg rounded-full z-10 transition-all duration-300 hover:bg-opacity-90 active:scale-95 hover:shadow-lg text-white w-fit"
+                  >
+                    Get started now
+                  </Link>
+                </div>
+                <div className="flex justify-end w-full mr-16">
+                  <Image
+                    src="/lpimgs/lp-refresh-arrow.png"
+                    alt="Dashimg"
+                    width={320}
+                    height={320}
+                    className="w-[200px] h-[200px] object-contain"
+                    priority
+                  />
+                </div>
+                <div className="relative ">
+                  <Image
+                    src="/lpimgs/lp-globe.png"
+                    alt="Dashimg"
+                    width={320}
+                    height={320}
+                    className="w-full h-auto object-contain"
+                    priority
                   />
                 </div>
               </div>
