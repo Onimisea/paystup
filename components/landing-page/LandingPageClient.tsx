@@ -497,7 +497,7 @@ export default function LandingPageClient() {
       </div>
 
       <div className="w-full bg-[#022219]">
-        <div className="py:16 md:py-32 w-[90%] sm:w-[85%] lg:w-[80%] max-w-[1400px] mx-auto relative flex flex-col items-center justify-center gap-6">
+        <div className="py-16 md:py-32 w-[90%] sm:w-[85%] lg:w-[80%] max-w-[1400px] mx-auto relative flex flex-col items-center justify-center gap-6 ">
           <div className="flex items-center justify-center gap-4 relative">
             <div className="absolute left-[-70px] sm2:left-[-100px]">
               <div className="relative w-[80px] h-[80px] sm2:w-[100px] sm2:h-[100px]">
@@ -634,6 +634,84 @@ export default function LandingPageClient() {
                 </h4>
                 <p className="">
                   From Nigeria to India, we&apos;re built for this
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full bg-white">
+        <div className="py-16 md:py-32 w-[90%] sm:w-[85%] lg:w-[80%] max-w-[1400px] mx-auto relative flex flex-col items-center justify-center gap-6">
+          <div className="flex flex-col items-center justify-center gap-4 relative">
+            <span className="bg-[#E1D9FC] border-[#6A42F2] border font-brico text-[14px] px-8 py-3 rounded-lg w-fit">
+              Who is it for?
+            </span>
+
+            <h3 className="text-[21px] sm:text-[27px] sm2:text-[32px] md:text-[38px] font-brico capitalize font-bold relative text-[#111827] text-center w-[90%] sm:w-[80%] md:w-[70%] md3:w-[60%]">
+              Made for Everyday People, Built for Global Impact
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 md3:grid-cols-2 gap-10 w-full mt-8">
+            <div className="bg-[#E1D9FC] rounded-2xl flex flex-col items-center justify-center p-10 gap-4 text-center">
+              <Image
+                src="/lpimgs/lp-globe2.png"
+                alt="Money note"
+                width={80}
+                height={80}
+                className="w-[120px] md3:w-[200px] h-auto object-contain"
+                priority
+              />
+
+              <div className="w-full flex flex-col gap-1 items-center justify-center">
+                <h4 className="text-3xl font-semibold font-brico text-black">
+                  Fast Transfers
+                </h4>
+                <p className="text-[#4B5563]">
+                  Money arrives in minutes, not days
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[#E1D9FC] rounded-2xl flex flex-col items-center justify-center p-10 gap-4 text-center">
+              <Image
+                src="/lpimgs/lp-hands-lifting-people.png"
+                alt="Money note"
+                width={80}
+                height={80}
+                className="w-[120px] md3:w-[200px] h-auto object-contain"
+                priority
+              />
+
+              <div className="w-full flex flex-col gap-1 items-center justify-center">
+                <h4 className="text-3xl font-semibold font-brico text-black">
+                  Families & Loved Ones
+                </h4>
+                <p className="text-[#4B5563]">
+                  Support your people across boarders- without stress or high
+                  fees
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[#E1D9FC] rounded-2xl flex flex-col items-center justify-center md3:flex-row-reverse p-10 gap-4 text-center md3:text-left md3:col-span-2">
+              <Image
+                src="/lpimgs/lp-briefcase.png"
+                alt="Money note"
+                width={80}
+                height={80}
+                className="w-[120px] md3:w-[200px] h-auto object-contain"
+                priority
+              />
+
+              <div className="w-full flex flex-col items-center justify-center md3:items-start md3:justify-start gap-1">
+                <h4 className="text-3xl font-semibold font-brico text-black">
+                  Small Business Owners
+                </h4>
+                <p className="text-[#4B5563] w-full md3:w-[70%]">
+                  Pay international suppliers and partners without complicated
+                  banking steps
                 </p>
               </div>
             </div>
