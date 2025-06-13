@@ -718,6 +718,156 @@ export default function LandingPageClient() {
           </div>
         </div>
       </div>
+
+      <div className="w-full bg-[#022219] overflow-hidden md3:h-[500px]">
+        <div className="w-[90%] sm:w-[85%] lg:w-[80%] max-w-[1400px] mx-auto relative flex flex-col md3:flex-row items-center justify-center md3:justify-between gap-6 h-full ">
+          <div className="pt-16 pb-4 md:pt-32 md:pb-8 text-white w-full md3:w-[50%] flex flex-col gap-4 items-center justify-center md3:items-start md3:justify-start ">
+            <h4 className="text-3xl lg:text-4xl font-semibold font-brico text-center md3:text-left">
+              What Makes Paystup Different
+            </h4>
+            <ul className="space-y-1 text-white md3:pl-6 flex flex-col items-center md3:items-start">
+              <li className="flex items-start ">
+                <span className="inline-block w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Designed specifically for Africa to Asia transfers
+              </li>
+              <li className="flex items-start ">
+                <span className="inline-block w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Local payment methods on both sides
+              </li>
+              <li className="flex items-start ">
+                <span className="inline-block w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Transparent pricing
+              </li>
+              <li className="flex items-start ">
+                <span className="inline-block w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Fast delivery time
+              </li>
+            </ul>
+            <p className="text-xl">Join the movement now!</p>
+
+            <div className="w-fit flex items-center gap-6 mt-4">
+              <Link href="/" className="">
+                <Image
+                  src="/lpimgs/lp-google-play.png"
+                  alt="Money note"
+                  width={250}
+                  height={800}
+                  className="w-[150px] md3:w-[220px] h-auto object-contain"
+                  priority
+                />
+              </Link>
+
+              <Link href="/" className="">
+                <Image
+                  src="/lpimgs/lp-apple-store.png"
+                  alt="Money note"
+                  width={250}
+                  height={800}
+                  className="w-[150px] md3:w-[220px] h-auto object-contain"
+                  priority
+                />
+              </Link>
+            </div>
+          </div>
+
+          <div className="w-full md3:w-[35%] relative flex justify-center md3:justify-end h-full">
+            <Image
+              src="/lpimgs/lp-iphone16.png"
+              alt="Money note"
+              width={250}
+              height={400}
+              className="w-[50%] md3:w-[70%] h-auto object-contain md3:absolute md3:bottom-0 md3:right-0"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full bg-[#043929] py-16">
+        <div className="bg-[#85D5BD] rounded-4xl sm:rounded-full w-[90%] mx-auto flex flex-col sm:flex-row items-center justify-between overflow-hidden">
+          <Link
+            href="/"
+            className="text-[#111827] bg-[#85D5BD] hover:bg-[#043929] font-brico py-4 px-6 hover:text-white"
+          >
+            FAQs
+          </Link>
+
+          <Link
+            href="/"
+            className="text-[#111827] bg-[#85D5BD] hover:bg-[#043929] font-brico py-4 px-6 hover:text-white"
+          >
+            Help centre
+          </Link>
+
+          <Link
+            href="/"
+            className="text-[#111827] bg-[#85D5BD] hover:bg-[#043929] font-brico py-4 px-6 hover:text-white"
+          >
+            Privacy
+          </Link>
+
+          <Link
+            href="/"
+            className="text-[#111827] bg-[#85D5BD] hover:bg-[#043929] font-brico py-4 px-6 hover:text-white"
+          >
+            Terms
+          </Link>
+        </div>
+      </div>
+
+      <div className="w-full bg-[#043929] pt-6 pb-24">
+        <div className="w-[90%] max-w-[1400px] mx-auto relative flex flex-col items-center md:items-start md:flex-row justify-center md:justify-between gap-6">
+          <h1 className="text-5xl xl:text-6xl font-black text-white font-brico w-fit mb-6">
+            Paystup
+          </h1>
+
+          <div className="w-fit flex flex-col items-end text-white gap-6">
+            <div className="flex gap-6 items-center">
+              {[
+                {
+                  href: "https://linkedin.com/",
+                  icon: "/lpimgs/lp-social-ln.svg",
+                  alt: "LinkedIn",
+                },
+                {
+                  href: "https://instagram.com/",
+                  icon: "/lpimgs/lp-social-ins.svg",
+                  alt: "Instagram",
+                },
+                {
+                  href: "https://twitter.com/",
+                  icon: "/lpimgs/lp-social-x.svg",
+                  alt: "Twitter/X",
+                },
+                {
+                  href: "https://facebook.com/",
+                  icon: "/lpimgs/lp-social-fb.svg",
+                  alt: "Facebook",
+                }
+              ].map(({ href, icon, alt }) => (
+                <Link
+                  key={icon}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[50px] h-[50px] rounded-full border-2 border-white flex items-center justify-center bg-transparent hover:bg-white/20 transition"
+                >
+                  <Image
+                    src={icon}
+                    alt={alt}
+                    width={20}
+                    height={20}
+                    className="object-contain"
+                  />
+                </Link>
+              ))}
+            </div>
+            <p className="">
+              &copy; {new Date().getFullYear()} Paystup. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
